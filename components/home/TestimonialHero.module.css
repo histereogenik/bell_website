@@ -1,0 +1,161 @@
+.hero {
+  display: grid;
+  height: 630px;
+  grid-template-columns: 1fr 1fr;
+  background: var(--color-off-white);
+}
+
+.copy {
+  display: grid;
+  align-items: center;
+  padding: clamp(48px, 7vw, 100px) var(--page-padding);
+}
+
+.copyInner {
+  display: grid;
+  width: min(100%, 520px);
+  height: 460px;
+  margin-left: auto;
+  grid-template-rows: auto 1fr 48px auto;
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-5);
+  color: var(--color-orange);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quoteStage {
+  display: flex;
+  min-height: 0;
+  align-items: center;
+}
+
+.quote {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.35vw, 40px);
+  font-weight: 700;
+  line-height: 1.08;
+  animation: quote-in 450ms ease-out both;
+}
+
+.authorStage {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+}
+
+.author {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.author strong {
+  font-weight: 500;
+}
+
+.author span {
+  color: var(--color-gray-dark);
+}
+
+.indicators {
+  display: flex;
+  gap: 9px;
+}
+
+.indicators button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  background: #b8b1aa;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.indicators button.active {
+  background: var(--color-black);
+  transform: scale(1.12);
+}
+
+.portrait {
+  position: relative;
+  height: 630px;
+  overflow: hidden;
+  background: var(--color-off-white);
+}
+
+.portraitImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes quote-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .copy {
+    order: 2;
+    min-height: 530px;
+  }
+
+  .copyInner {
+    width: 100%;
+    height: 440px;
+    margin: 0;
+    grid-template-rows: auto 295px 48px auto;
+  }
+
+  .quoteStage {
+    align-items: flex-start;
+    padding-top: 28px;
+  }
+
+  .portrait {
+    height: min(72vw, 560px);
+  }
+
+  .portraitImage {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 560px) {
+  .copy {
+    min-height: 550px;
+    padding-block: 42px 52px;
+  }
+
+  .copyInner {
+    height: 465px;
+    grid-template-rows: auto 320px 48px auto;
+  }
+
+  .quote {
+    font-size: 23px;
+  }
+}

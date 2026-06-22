@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+  width: 168px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.large {
+  width: min(100%, 1280px);
+}
+
+.inverted {
+  filter: invert(1);
+}
