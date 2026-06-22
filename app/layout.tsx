@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Bell Nacif | Liderança, vendas e operações",
+  title: "Bell Nacif | Liderança e vendas",
   description:
     "Mentoria, consultoria, palestras e treinamentos para líderes e negócios que querem crescer com método.",
 };

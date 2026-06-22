@@ -91,36 +91,37 @@ export const authorityMetrics = [
 ] as const;
 
 export const clients = [
-  { name: "PepsiCo", image: "/images/clients/pepsico.png" },
-  { name: "Lipton", image: "/images/clients/lipton.png" },
-  { name: "Columbia", image: "/images/clients/columbia.png" },
-  { name: "Natura", image: "/images/clients/natura.png" },
-  { name: "Amicci", image: "/images/clients/amicci.png" },
+  { name: "PepsiCo", image: "/images/clients-logos/pepsico.png" },
+  { name: "Lipton", image: "/images/clients-logos/lipton.png" },
+  { name: "Columbia", image: "/images/clients-logos/columbia.png" },
+  { name: "Natura", image: "/images/clients-logos/natura.png" },
   {
     name: "Rosi Castro Pena Advogados",
-    image: "/images/clients/rosi-castro-pena.png",
+    image: "/images/clients-logos/rosicastro.png",
   },
-  { name: "OAB Prev MG", image: "/images/clients/oabprev-mg.png" },
-  { name: "Ene Ene", image: "/images/clients/eneene.png" },
-  { name: "Frank Chaves Calçados", image: "/images/clients/frank-chaves.png" },
-  { name: "Sebrae", image: "/images/clients/sebrae.png" },
-  { name: "EMS", image: "/images/clients/ems.png" },
-  { name: "N Produções", image: "/images/clients/n-producoes.png" },
-  { name: "Manná", image: "/images/clients/manna.png" },
-  { name: "Cozi", image: "/images/clients/cozi.png" },
-  { name: "Meat House", image: "/images/clients/meat-house.png" },
-  { name: "Goreu Burguer", image: "/images/clients/goreu-burguer.png" },
+  { name: "Ene Ene", image: "/images/clients-logos/eneene.png" },
+  {
+    name: "Frank Chaves Calçados",
+    image: "/images/clients-logos/frankchaves.png",
+  },
+  { name: "Sebrae", image: "/images/clients-logos/sebrae.png" },
+  { name: "EMS", image: "/images/clients-logos/ems.png" },
+  { name: "N Produções", image: "/images/clients-logos/nprod.png" },
+  { name: "Manná", image: "/images/clients-logos/manna.png" },
+  { name: "Cozi", image: "/images/clients-logos/cozi.png" },
+  { name: "Meat House", image: "/images/clients-logos/mkthouse.png" },
+  { name: "Coreu Burguer", image: "/images/clients-logos/coreu.png" },
   {
     name: "Clínica Transformando Faces",
-    image: "/images/clients/transformando-faces.png",
+    image: "/images/clients-logos/transformando.png",
   },
   {
     name: "Congresso de Inovação COLVET",
-    image: "/images/clients/congresso-inovacao-colvet.png",
+    image: "/images/clients-logos/congresso.png",
   },
   {
     name: "Clínica Martinezo",
-    image: "/images/clients/clinica-martinezo.png",
+    image: "/images/clients-logos/martinez.png",
   },
 ] as const;
 

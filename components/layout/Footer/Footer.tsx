@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { contact, footerNavigation } from "@/content/site";
 import { BrandLogo } from "@/components/ui/BrandLogo/BrandLogo";
@@ -15,13 +16,31 @@ export function Footer() {
         <div className={styles.information}>
           <div className={styles.social}>
             <a href="#" aria-label="Instagram">
-              IG
+              <Image
+                src="/vectors/insta.png"
+                alt=""
+                width={28}
+                height={28}
+                aria-hidden="true"
+              />
             </a>
             <a href="#" aria-label="LinkedIn">
-              IN
+              <Image
+                src="/vectors/linkedin.png"
+                alt=""
+                width={25}
+                height={28}
+                aria-hidden="true"
+              />
             </a>
             <a href="#" aria-label="YouTube">
-              YT
+              <Image
+                src="/vectors/yt.png"
+                alt=""
+                width={28}
+                height={28}
+                aria-hidden="true"
+              />
             </a>
           </div>
 
@@ -39,7 +58,7 @@ export function Footer() {
 
           <div className={styles.invitation}>
             <span className={styles.microphone} aria-hidden="true">
-              ◉
+              <Image src="/vectors/mic.png" alt="" width={27} height={37} />
             </span>
             <p>Convites para podcasts e outras mídias.</p>
           </div>

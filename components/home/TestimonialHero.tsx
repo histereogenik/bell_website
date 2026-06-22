@@ -25,9 +25,8 @@ export function TestimonialHero() {
     <section className={styles.hero} aria-labelledby="home-title">
       <div className={styles.copy}>
         <div className={styles.copyInner}>
-          <p className={styles.eyebrow}>Liderança, vendas e operações</p>
           <h1 id="home-title" className="sr-only">
-            Bell Nacif — liderança, vendas e operações
+            Bell Nacif — liderança e vendas
           </h1>
           <div className={styles.quoteStage}>
             <blockquote key={active.quote} className={styles.quote}>
@@ -57,12 +56,13 @@ export function TestimonialHero() {
       <div className={styles.portrait}>
         <Image
           className={styles.portraitImage}
-          src="/images/home/bell-nacif-hero.png"
+          src="/images/home/bell_hero.png"
           alt="Bell Nacif"
-          width={1440}
-          height={960}
+          width={674}
+          height={872}
           priority
-          sizes="(max-width: 900px) 100vw, 66vw"
+          unoptimized
+          sizes="(max-width: 700px) 100vw, (max-width: 1100px) 46vw, 47vw"
         />
       </div>
     </section>

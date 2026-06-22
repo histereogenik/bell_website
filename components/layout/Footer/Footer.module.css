@@ -28,11 +28,12 @@
   width: 28px;
   height: 28px;
   place-items: center;
-  background: var(--color-black);
-  border-radius: 4px;
-  color: var(--color-white);
-  font-size: 9px;
-  font-weight: 700;
+}
+
+.social img {
+  width: auto;
+  height: 28px;
+  object-fit: contain;
 }
 
 .footerNav {
@@ -69,8 +70,15 @@
 }
 
 .microphone {
-  color: var(--color-gray-dark);
-  font-size: 28px;
+  display: block;
+  width: 27px;
+  height: 37px;
+  flex: 0 0 auto;
+}
+
+.microphone img {
+  width: 27px;
+  height: 37px;
 }
 
 .contact {

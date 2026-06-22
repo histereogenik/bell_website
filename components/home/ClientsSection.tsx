@@ -18,9 +18,9 @@ export function ClientsSection() {
                 <Image
                   src={client.image}
                   alt={index < clients.length ? client.name : ""}
-                  width={360}
-                  height={220}
-                  sizes="180px"
+                  width={158}
+                  height={115}
+                  sizes="158px"
                 />
               </div>
             ))}
