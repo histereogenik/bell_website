@@ -41,23 +41,18 @@ export type Article = {
 };
 
 const defaultCoverImage = "/images/tothepoint/tothepoint_hero.png";
+const placeholderTitle = "Lorem ipsum dolor sit amet consectetur";
+const placeholderExcerpt =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non sem vitae justo faucibus facilisis.";
 
 function buildDraftSections(excerpt: string): ArticleSection[] {
+  void excerpt;
+
   return [
     {
-      id: "intro",
+      id: "lorem-ipsum",
       paragraphs: [
-        excerpt,
-        "Este aprendizado está estruturado para seguir o mesmo modelo editorial do Direto ao Ponto. O conteúdo definitivo pode ser atualizado mantendo rota, card, filtros e layout.",
-      ],
-    },
-    {
-      id: "pratica",
-      title: "Como levar para a prática",
-      list: [
-        "Observe onde a operação depende de autorização constante.",
-        "Transforme expectativas em combinados claros e visíveis.",
-        "Acompanhe a execução com frequência, sem centralizar todas as respostas.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non sem vitae justo faucibus facilisis. Sed euismod, lorem at interdum viverra, nibh erat consequat magna, vitae posuere justo lacus sed neque.",
       ],
     },
   ];
@@ -167,9 +162,8 @@ export const articles: Article[] = [
   },
   {
     slug: "lideranca-que-organiza-a-rotina",
-    title: "Liderança que organiza a rotina sem centralizar decisões",
-    excerpt:
-      "Como criar acordos claros, distribuir responsabilidades e manter o time avançando com autonomia.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Liderança",
@@ -184,9 +178,8 @@ export const articles: Article[] = [
   },
   {
     slug: "vender-mais-sem-depender-de-promocao",
-    title: "Como vender mais sem depender de promoção o tempo todo",
-    excerpt:
-      "Uma visão prática sobre atendimento, percepção de valor e consistência comercial no dia a dia.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Vendas",
@@ -201,9 +194,8 @@ export const articles: Article[] = [
   },
   {
     slug: "processos-simples-negocio-crescer",
-    title: "Processos simples para o negócio crescer sem perder o controle",
-    excerpt:
-      "Os primeiros processos que precisam sair da cabeça do dono e entrar na rotina da equipe.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Estratégia",
@@ -218,9 +210,8 @@ export const articles: Article[] = [
   },
   {
     slug: "equipe-sabe-o-que-espera-dela",
-    title: "Sua equipe sabe exatamente o que você espera dela?",
-    excerpt:
-      "Metas só funcionam quando cada pessoa entende prioridades, comportamento esperado e critérios de sucesso.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Liderança",
@@ -235,9 +226,8 @@ export const articles: Article[] = [
   },
   {
     slug: "experiencia-cliente-comeca-bastidores",
-    title: "A experiência do cliente começa muito antes do atendimento",
-    excerpt:
-      "Organização, repertório e segurança da equipe também fazem parte da experiência que chega ao consumidor.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Experiência do cliente",
@@ -252,9 +242,8 @@ export const articles: Article[] = [
   },
   {
     slug: "reunioes-que-geram-decisao",
-    title: "Reuniões que geram decisão, responsabilidade e movimento",
-    excerpt:
-      "Um roteiro objetivo para transformar encontros longos em conversas que realmente fazem o trabalho avançar.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Cultura",
@@ -269,9 +258,8 @@ export const articles: Article[] = [
   },
   {
     slug: "indicadores-essenciais-loja",
-    title: "Os indicadores essenciais para entender a saúde da sua loja",
-    excerpt:
-      "O que acompanhar para tomar decisões melhores sem transformar a operação em uma planilha impossível.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Indicadores",
@@ -286,9 +274,8 @@ export const articles: Article[] = [
   },
   {
     slug: "feedback-que-desenvolve",
-    title: "Feedback que desenvolve em vez de apenas corrigir",
-    excerpt:
-      "Como conduzir conversas firmes e respeitosas, com exemplos claros e próximos passos possíveis.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Liderança",
@@ -303,9 +290,8 @@ export const articles: Article[] = [
   },
   {
     slug: "jornada-de-vendas-repetivel",
-    title: "Como construir uma jornada de vendas que a equipe consiga repetir",
-    excerpt:
-      "Da abordagem ao pós-venda: organize etapas sem engessar a personalidade de quem atende.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Vendas",
@@ -320,9 +306,8 @@ export const articles: Article[] = [
   },
   {
     slug: "dono-sair-da-operacao",
-    title: "O que precisa acontecer para o dono conseguir sair da operação",
-    excerpt:
-      "Delegar não é desaparecer: é criar estrutura, acompanhamento e critérios para que o negócio funcione.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Negociação",
@@ -337,9 +322,8 @@ export const articles: Article[] = [
   },
   {
     slug: "atendimento-que-gera-retorno",
-    title: "Atendimento que faz o cliente querer voltar",
-    excerpt:
-      "Pequenos comportamentos que aumentam confiança, proximidade e a percepção de cuidado no varejo.",
+    title: placeholderTitle,
+    excerpt: placeholderExcerpt,
     eyebrow: "Aprendizados práticos com Bell Nacif",
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Varejo",
