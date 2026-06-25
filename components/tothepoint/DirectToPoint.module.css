@@ -251,17 +251,21 @@
 
 .card {
   display: grid;
+  height: 588px;
   min-width: 0;
   background: var(--color-off-white);
-  grid-template-rows: 220px 1fr;
+  grid-template-rows: 222px 1fr;
 }
 
 .cardImage {
   position: relative;
   display: block;
-  background-image: url("/images/tothepoint/tothepoint_hero.png");
-  background-repeat: no-repeat;
-  background-size: 210%;
+  background-color: var(--color-off-white);
+  overflow: hidden;
+}
+
+.cardImage img {
+  object-fit: cover;
 }
 
 .duration {
@@ -522,10 +526,6 @@
   .grid {
     row-gap: 60px;
     grid-template-columns: 1fr;
-  }
-
-  .card {
-    grid-template-rows: 210px 1fr;
   }
 
   .cardBody {

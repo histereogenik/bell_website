@@ -1,0 +1,76 @@
+.share {
+  position: relative;
+  display: grid;
+  min-height: 575px;
+  place-items: center;
+  overflow: hidden;
+  background: url("/images/tothepoint/share_section.png") center / cover no-repeat;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.shareInner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 34px;
+}
+
+.share h2 {
+  width: min(100%, 1058px);
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+.socials a {
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  transition: opacity var(--transition-fast);
+}
+
+.socials a:hover {
+  opacity: 0.72;
+}
+
+.socials img {
+  width: auto;
+  height: 62px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .share h2 {
+    font-size: clamp(32px, 4.7vw, 42px);
+  }
+}
+
+@media (max-width: 620px) {
+  .share {
+    min-height: 440px;
+    background-position: 62% center;
+  }
+
+  .share h2 {
+    font-size: 30px;
+  }
+
+  .socials a,
+  .socials img {
+    height: 48px;
+  }
+
+  .socials a {
+    width: 48px;
+  }
+}

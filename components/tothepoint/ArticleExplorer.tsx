@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { articles } from "@/content/articles";
@@ -207,9 +208,17 @@ export function ArticleExplorer() {
                     <Link
                       href={href}
                       className={styles.cardImage}
-                      style={{ backgroundPosition: article.imagePosition }}
                       aria-label={`Ler: ${article.title}`}
-                    />
+                    >
+                      <Image
+                        src={article.coverImage}
+                        alt=""
+                        fill
+                        sizes="(max-width: 620px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        style={{ objectPosition: article.cardImagePosition }}
+                        aria-hidden="true"
+                      />
+                    </Link>
                     <div className={styles.cardBody}>
                       <span className={styles.duration}>
                         {article.duration} minutos
