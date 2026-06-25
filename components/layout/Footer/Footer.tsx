@@ -5,6 +5,9 @@ import { BrandLogo } from "@/components/ui/BrandLogo/BrandLogo";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 import styles from "./Footer.module.css";
 
+const mediaInvitationHref =
+  "https://wa.me/5511987884722?text=Ol%C3%A1%2C%20Bell!%20Gostaria%20de%20falar%20sobre%20um%20convite%20para%20podcast%20ou%20m%C3%ADdia.";
+
 export function Footer() {
   return (
     <footer className={styles.footer}>
@@ -56,12 +59,18 @@ export function Footer() {
             ))}
           </nav>
 
-          <div className={styles.invitation}>
+          <a
+            className={styles.invitation}
+            href={mediaInvitationHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Enviar convite para podcasts e outras mídias pelo WhatsApp"
+          >
             <span className={styles.microphone} aria-hidden="true">
               <Image src="/vectors/mic.png" alt="" width={27} height={37} />
             </span>
             <p>Convites para podcasts e outras mídias.</p>
-          </div>
+          </a>
 
           <address className={styles.contact}>
             <a href={contact.phoneHref}>{contact.phoneDisplay}</a>
