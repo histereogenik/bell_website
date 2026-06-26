@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
+import { CtaButton } from "@/components/ui/CtaButton";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   description:
     "Mentoria estratégica para donos de negócios que buscam clareza para vender, liderar e crescer com direção.",
 };
+
+const contactClientsHref = "/contato/clientes";
 
 export default function BusinessOwnersMentorshipPage() {
   return (
@@ -48,9 +51,7 @@ export default function BusinessOwnersMentorshipPage() {
               e transformar ruídos em próximos passos claros para vender,
               liderar e crescer com direção.
             </p>
-            <a className={styles.cta} href="#proximos-passos">
-              Quero clarear meus próximos passos
-            </a>
+            <CtaButton className={styles.heroCta} href={contactClientsHref} />
           </div>
         </section>
 
@@ -79,9 +80,11 @@ export default function BusinessOwnersMentorshipPage() {
                 leitura do negócio e orientação prática para construir caminhos
                 claros, possíveis e aplicáveis à sua realidade.
               </p>
-              <a className={styles.secondaryCta} href="#proximos-passos">
-                Quero falar com a Bell
-              </a>
+              <CtaButton
+                className={styles.introCta}
+                href={contactClientsHref}
+                variant="black"
+              />
             </div>
           </div>
         </section>
@@ -193,9 +196,239 @@ export default function BusinessOwnersMentorshipPage() {
               height={596}
             />
 
-            <a className={styles.pillarsCta} href="#proximos-passos">
-              Quero conversar com a Bell
-            </a>
+            <CtaButton
+              className={styles.pillarsCta}
+              href={contactClientsHref}
+              variant="black"
+            />
+          </div>
+        </section>
+
+        <section className={styles.strategicJourney}>
+          <div className={`container ${styles.strategicJourneyInner}`}>
+            <ul className={styles.journeyList} aria-label="O que a mentoria não é">
+              <li>
+                <Image
+                  src="/images/metorship/x.png"
+                  alt=""
+                  width={15}
+                  height={13}
+                  aria-hidden="true"
+                />
+                <span>Não é fórmula pronta.</span>
+              </li>
+              <li>
+                <Image
+                  src="/images/metorship/x.png"
+                  alt=""
+                  width={15}
+                  height={13}
+                  aria-hidden="true"
+                />
+                <span>Não é palestra motivacional.</span>
+              </li>
+              <li>
+                <Image
+                  src="/images/metorship/x.png"
+                  alt=""
+                  width={15}
+                  height={13}
+                  aria-hidden="true"
+                />
+                <span>
+                  Não é um método engessado
+                  <br />
+                  igual para todo mundo.
+                </span>
+              </li>
+              <li>
+                <Image
+                  src="/images/metorship/x.png"
+                  alt=""
+                  width={15}
+                  height={13}
+                  aria-hidden="true"
+                />
+                <span>
+                  Não é uma lista de tarefas
+                  <br />
+                  que ignora sua realidade.
+                </span>
+              </li>
+            </ul>
+
+            <p className={styles.journeyStatement}>
+              É uma jornada
+              <br />
+              estratégica,
+              <br />
+              personalizada e
+              <br />
+              prática para
+              <br />
+              clarear decisões e
+              <br />
+              orientar ações.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.testimonials} aria-labelledby="testimonials-title">
+          <div className={`container ${styles.testimonialsInner}`}>
+            <p className={styles.testimonialsEyebrow}>
+              O que muda depois da mentoria
+            </p>
+            <h2 id="testimonials-title">Transformações reais</h2>
+
+            <div className={styles.testimonialMain}>
+              <div className={styles.testimonialText}>
+                <Image
+                  className={styles.quoteIcon}
+                  src="/images/metorship/aspas.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
+                <div>
+                  <p>
+                    A Bell apareceu na minha vida num momento de instabilidade,
+                    dúvidas, medos e incertezas.
+                    <br />
+                    Ela me ensinou a enxergar a vida por outro ângulo, o ângulo
+                    do autoconhecimento.
+                  </p>
+                  <p>
+                    Com a mentoria dela, eu pude recalcular a rota da minha
+                    vida, evitar muitos erros e acelerar o resultado de sucesso
+                    que todos procuram. Bell é transparente, fala a verdade,
+                    fala com amor. Em nossas sessões de mentoria ela me fez
+                    conhecer uma força que eu não sabia que eu tinha e que eu
+                    podia usar a meu favor. Bell, acompanha de perto, pega na
+                    mão se precisar, é acessível e com muito respeito valoriza
+                    um dos bens mais preciosos que temos: o nosso tempo.
+                  </p>
+                  <p>
+                    Acredito que eu esteja vivendo hoje um momento único na
+                    minha carreira, e se não fosse pela mentoria da Bell Nacif,
+                    de duas, uma, ou eu não estaria vivendo isso ou esse momento
+                    demoraria muitos anos para chegar.
+                  </p>
+                </div>
+              </div>
+
+              <figure className={styles.testimonialAuthor}>
+                <Image
+                  src="/images/metorship/renata.png"
+                  alt="Dra. Renata Bomfim Bartolozzi"
+                  width={278}
+                  height={266}
+                />
+                <figcaption>
+                  Dra. Renata Bomfim Bartolozzi
+                  <br />
+                  Dentista Mestre HOF
+                </figcaption>
+              </figure>
+            </div>
+
+            <div className={styles.videoTestimonial}>
+              <figure className={styles.videoFigure}>
+                <div className={styles.videoPlaceholder} aria-label="Vídeo em breve">
+                  <span className={styles.playButton} aria-hidden="true" />
+                </div>
+                <figcaption>
+                  Chris Gontigo
+                  <br />
+                  Empresária e Escritora
+                  <br />
+                  Especialista em Etiqueta e Excelência Corporativa
+                </figcaption>
+              </figure>
+
+              <blockquote className={styles.videoQuote}>
+                <Image
+                  src="/images/metorship/aspas.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
+                <p>
+                  Eu não indico eu
+                  <br />
+                  assino embaixo.
+                  <br />
+                  Bell, sem você eu não
+                  <br />
+                  chegaria onde estou.”
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.faq} aria-labelledby="faq-title">
+          <div className={`container ${styles.faqInner}`}>
+            <h2 id="faq-title">Perguntas frequentes</h2>
+
+            <div className={styles.faqList}>
+              <details className={styles.faqItem}>
+                <summary>A mentoria é igual para todo mundo?</summary>
+                <p>
+                  Não. Cada jornada é construída a partir do perfil da pessoa e
+                  do momento do negócio.
+                </p>
+              </details>
+
+              <details className={styles.faqItem}>
+                <summary>
+                  Preciso saber exatamente qual é o meu problema?
+                </summary>
+                <p>
+                  Não. Muitas vezes, o primeiro passo é justamente organizar o
+                  que está confuso.
+                </p>
+              </details>
+
+              <details className={styles.faqItem}>
+                <summary>É mais vendas ou gestão?</summary>
+                <p>
+                  Depende do que o seu momento pedir. Podemos trabalhar vendas,
+                  posicionamento, processos, liderança, precificação, proposta
+                  ou rotina comercial.
+                </p>
+              </details>
+
+              <details className={styles.faqItem}>
+                <summary>Vou receber um plano pronto?</summary>
+                <p>
+                  Não. Você constrói caminhos com orientação, considerando sua
+                  realidade, seu perfil e sua capacidade de execução.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.finalCta} aria-labelledby="final-cta-title">
+          <div className={`container ${styles.finalCtaInner}`}>
+            <h2 id="final-cta-title">
+              Quer parar de decidir no
+              <br />
+              escuro e sozinho?
+            </h2>
+            <p>
+              Imagine conduzir o negócio com clareza sobre o que priorizar,
+              <br />
+              quais decisões tomar e quais ajustes podem destravar vendas,
+              <br />
+              processos e liderança.
+            </p>
+            <CtaButton
+              className={styles.finalCtaButton}
+              href={contactClientsHref}
+            />
           </div>
         </section>
       </main>
