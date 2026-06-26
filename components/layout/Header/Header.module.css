@@ -56,7 +56,8 @@
 }
 
 .navItem:hover .navLink,
-.navLink:hover {
+.navLink:hover,
+.navLink.active {
   color: var(--color-orange);
 }
 

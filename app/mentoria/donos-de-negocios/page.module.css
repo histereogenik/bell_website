@@ -1,0 +1,459 @@
+.hero {
+  position: relative;
+  min-height: clamp(760px, 72.78vw, 1048px);
+  overflow: hidden;
+  background: var(--color-off-white);
+}
+
+.heroImage {
+  z-index: 0;
+  object-fit: cover;
+  object-position: right bottom;
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgb(247 243 238 / 14%) 0%,
+    rgb(247 243 238 / 5%) 48%,
+    rgb(247 243 238 / 0%) 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  min-height: clamp(760px, 72.78vw, 1048px);
+  align-content: start;
+  padding-block: clamp(86px, 9.3vw, 134px) 90px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 0 clamp(58px, 4.72vw, 68px);
+  font-size: clamp(14px, 1.39vw, 20px);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  width: 44px;
+  height: 2px;
+  flex: 0 0 auto;
+  background: var(--color-black);
+}
+
+.eyebrow strong {
+  color: var(--color-orange);
+  font-weight: 400;
+}
+
+.hero h1 {
+  max-width: 580px;
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(46px, 4.44vw, 64px);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.description {
+  max-width: 620px;
+  margin: clamp(38px, 3.75vw, 54px) 0 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  line-height: 1.2;
+}
+
+.cta {
+  width: fit-content;
+  margin-top: clamp(38px, 3.75vw, 54px);
+  padding: 16px 31px;
+  background: var(--color-orange);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 24%);
+  color: var(--color-white);
+  font-size: clamp(16px, 1.25vw, 18px);
+  font-weight: 700;
+  line-height: 1.1;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.cta:hover {
+  background: var(--color-orange-hover);
+  transform: translateY(-1px);
+}
+
+.decisionIntro {
+  background: var(--color-white);
+}
+
+.decisionIntroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(360px, 0.72fr);
+  gap: 60px;
+  align-items: center;
+  min-height: 590px;
+  padding-block: clamp(86px, 8vw, 116px);
+}
+
+.decisionIntro h2 {
+  max-width: 612px;
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(42px, 4.44vw, 64px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.decisionIntroCopy {
+  max-width: 590px;
+}
+
+.decisionIntroCopy p {
+  margin: 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.secondaryCta {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 43px;
+  padding: 16px 31px;
+  background: var(--color-black);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 24%);
+  color: var(--color-white);
+  font-size: clamp(16px, 1.25vw, 18px);
+  font-weight: 700;
+  line-height: 1.1;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.secondaryCta:hover {
+  background: var(--color-gray-dark);
+  transform: translateY(-1px);
+}
+
+.workScope {
+  background: var(--color-off-white);
+}
+
+.workScopeInner {
+  max-width: 1074px;
+  padding-block: clamp(86px, 7.9vw, 114px) clamp(86px, 7.3vw, 105px);
+}
+
+.workScopeHeader {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+.workScopeHeader h2 {
+  margin: 0 0 50px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(38px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.workScopeHeader p {
+  margin: 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  line-height: 1.2;
+}
+
+.workScopeHeader p + p {
+  margin-top: 31px;
+}
+
+.workScopeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 54px 84px;
+  margin-top: 50px;
+}
+
+.workCard {
+  min-height: 304px;
+  padding: 23px 24px 24px;
+  background: transparent;
+  border: 1px solid var(--color-gray-dark);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+}
+
+.workCard img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.workCard h3 {
+  max-width: 370px;
+  margin: 38px 0 16px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(26px, 2.22vw, 32px);
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+.workCard p {
+  margin: 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  line-height: 1.2;
+}
+
+.pillars {
+  min-height: 904px;
+  background:
+    url("/images/metorship/background_piramide.png") center / cover no-repeat,
+    var(--color-white);
+}
+
+.pillarsInner {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.72fr) minmax(520px, 1fr);
+  column-gap: 70px;
+  align-items: center;
+  min-height: 904px;
+  padding-block: 86px 94px;
+}
+
+.pillarsCopy {
+  align-self: center;
+}
+
+.pillarsCopy h2 {
+  margin: 0;
+  font-size: clamp(38px, 3.33vw, 48px);
+  font-weight: 400;
+  line-height: 1.21;
+}
+
+.pillarsCopy p {
+  max-width: 520px;
+  margin: 86px 0 0;
+  font-size: clamp(24px, 2.22vw, 32px);
+  line-height: 1.2;
+}
+
+.pillarsImage {
+  width: min(100%, 694px);
+  height: auto;
+  justify-self: end;
+}
+
+.pillarsCta {
+  display: inline-flex;
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 16px 31px;
+  background: var(--color-black);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 24%);
+  color: var(--color-white);
+  font-size: clamp(16px, 1.25vw, 18px);
+  font-weight: 700;
+  line-height: 1.1;
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.pillarsCta:hover {
+  background: var(--color-gray-dark);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px) {
+  .heroImage {
+    opacity: 0.58;
+    object-position: 62% bottom;
+  }
+
+  .hero::after {
+    background: linear-gradient(
+      90deg,
+      rgb(247 243 238 / 74%) 0%,
+      rgb(247 243 238 / 48%) 68%,
+      rgb(247 243 238 / 18%) 100%
+    );
+  }
+
+  .hero h1 {
+    max-width: 720px;
+  }
+
+  .decisionIntroInner {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    min-height: auto;
+  }
+
+  .decisionIntro h2 {
+    max-width: 760px;
+  }
+
+  .decisionIntroCopy {
+    max-width: 720px;
+  }
+
+  .workScopeInner {
+    max-width: var(--container-max-width);
+  }
+
+  .workScopeGrid {
+    gap: 36px;
+  }
+
+  .pillars {
+    min-height: auto;
+  }
+
+  .pillarsInner {
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+    min-height: auto;
+  }
+
+  .pillarsCopy p {
+    margin-top: 42px;
+  }
+
+  .pillarsImage {
+    justify-self: center;
+  }
+
+  .pillarsCta {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero {
+    min-height: 720px;
+  }
+
+  .heroInner {
+    min-height: 720px;
+    padding-block: 58px 64px;
+  }
+
+  .heroImage {
+    opacity: 0.34;
+    object-position: 64% bottom;
+  }
+
+  .eyebrow {
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 46px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .eyebrow span {
+    width: 28px;
+    margin-top: 7px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 12vw, 52px);
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .cta {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .decisionIntroInner {
+    padding-block: 68px;
+  }
+
+  .decisionIntro h2 {
+    font-size: clamp(34px, 10vw, 46px);
+    line-height: 1.14;
+  }
+
+  .decisionIntroCopy p {
+    font-size: 18px;
+  }
+
+  .secondaryCta {
+    margin-top: 32px;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .workScopeInner {
+    padding-block: 68px;
+  }
+
+  .workScopeHeader h2 {
+    margin-bottom: 34px;
+  }
+
+  .workScopeHeader p {
+    font-size: 18px;
+  }
+
+  .workScopeGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 38px;
+  }
+
+  .workCard {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .workCard h3 {
+    margin-top: 32px;
+  }
+
+  .workCard p {
+    font-size: 18px;
+  }
+
+  .pillarsInner {
+    padding-block: 68px;
+  }
+
+  .pillarsCopy h2 {
+    font-size: clamp(34px, 10vw, 44px);
+  }
+
+  .pillarsCopy p {
+    font-size: 22px;
+  }
+
+  .pillarsCta {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
