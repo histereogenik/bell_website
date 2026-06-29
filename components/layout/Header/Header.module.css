@@ -36,9 +36,13 @@
   align-items: center;
   gap: 5px;
   padding-block: 34px;
+  padding-inline: 0;
+  background: transparent;
+  border: 0;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
+  cursor: pointer;
   transition: color var(--transition-default);
 }
 
@@ -163,14 +167,20 @@
   border-bottom: 1px solid var(--color-gray-light);
 }
 
-.mobileGroup > a:first-child {
+.mobileGroup > a:first-child,
+.mobileGroup > button:first-child {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 17px 0;
+  background: transparent;
+  border: 0;
   font-family: var(--font-display), sans-serif;
   font-size: clamp(20px, 4vw, 30px);
   font-weight: 700;
+  color: inherit;
+  cursor: pointer;
   text-transform: uppercase;
 }
 

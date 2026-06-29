@@ -31,8 +31,10 @@ export default function BusinessOwnersMentorshipPage() {
           <div className={`container ${styles.heroInner}`}>
             <p className={styles.eyebrow}>
               <span aria-hidden="true" />
-              <strong>Lúmina Mentoria</strong> Estratégica para donos de
-              negócios
+              <span>
+                <strong>Lúmina Mentoria</strong> Estratégica para donos de
+                negócios
+              </span>
             </p>
             <h1 id="mentorship-title">
               Clareza para
@@ -41,8 +43,10 @@ export default function BusinessOwnersMentorshipPage() {
               <br />
               Direção para o
               <br />
-              vender, liderar e
+              vender, liderar
+              <span className={styles.desktopOnly}> e</span>
               <br />
+              <span className={styles.mobileOnly}>e </span>
               crescer.
             </h1>
             <p className={styles.description}>
@@ -173,7 +177,7 @@ export default function BusinessOwnersMentorshipPage() {
           <div className={`container ${styles.pillarsInner}`}>
             <div className={styles.pillarsCopy}>
               <h2 id="pillars-title">
-                A Lúmina não
+                A LÚMINA não
                 <br />
                 segue uma fórmula
                 <br />

@@ -44,7 +44,11 @@
   text-transform: uppercase;
 }
 
-.eyebrow span {
+.eyebrow > span:last-child {
+  display: inline;
+}
+
+.eyebrow > span:first-child {
   width: 44px;
   height: 2px;
   flex: 0 0 auto;
@@ -63,6 +67,10 @@
   font-size: clamp(46px, 4.44vw, 64px);
   font-weight: 700;
   line-height: 1.08;
+}
+
+.mobileOnly {
+  display: none;
 }
 
 .description {
@@ -700,39 +708,75 @@
 }
 
 @media (max-width: 620px) {
+  .heroInner,
+  .decisionIntroInner,
+  .workScopeInner,
+  .pillarsInner,
+  .strategicJourneyInner,
+  .testimonialsInner,
+  .faqInner,
+  .finalCtaInner {
+    width: calc(100% - 56px);
+    margin-inline: auto;
+  }
+
   .hero {
     min-height: 720px;
+    overflow: hidden;
   }
 
   .heroInner {
     min-height: 720px;
-    padding-block: 58px 64px;
+    padding-block: 57px 64px;
   }
 
   .heroImage {
     opacity: 0.34;
-    object-position: 64% bottom;
+    object-position: 72% center;
+    transform: scale(0.78);
+    transform-origin: right center;
   }
 
   .eyebrow {
-    align-items: flex-start;
+    align-items: center;
     gap: 9px;
     margin-bottom: 46px;
-    font-size: 12px;
-    line-height: 1.45;
+    font-size: 14px;
+    line-height: 1.55;
   }
 
-  .eyebrow span {
+  .eyebrow > span:first-child {
     width: 28px;
-    margin-top: 7px;
+    margin-top: 0;
+  }
+
+  .eyebrow > span:last-child {
+    width: auto;
+    max-width: 294px;
+    height: auto;
+    flex: 1 1 auto;
+    background: transparent;
   }
 
   .hero h1 {
-    font-size: clamp(38px, 12vw, 52px);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: inline;
   }
 
   .description {
-    font-size: 18px;
+    max-width: 336px;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.2;
   }
 
   .decisionIntroInner {
@@ -740,7 +784,8 @@
   }
 
   .decisionIntro h2 {
-    font-size: clamp(34px, 10vw, 46px);
+    font-size: 34px;
+    font-weight: 800;
     line-height: 1.14;
   }
 
@@ -758,6 +803,7 @@
 
   .workScopeHeader h2 {
     margin-bottom: 34px;
+    font-size: 28px;
   }
 
   .workScopeHeader p {
@@ -777,6 +823,7 @@
 
   .workCard h3 {
     margin-top: 32px;
+    font-size: 18px;
   }
 
   .workCard p {
@@ -788,15 +835,19 @@
   }
 
   .pillarsCopy h2 {
-    font-size: clamp(34px, 10vw, 44px);
+    font-size: 28px;
   }
 
   .pillarsCopy p {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .strategicJourney {
     min-height: auto;
+  }
+
+  .strategicJourney::before {
+    display: none;
   }
 
   .strategicJourneyInner {
@@ -811,11 +862,24 @@
   .journeyList li {
     grid-template-columns: 15px minmax(0, 1fr);
     gap: 12px;
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .journeyStatement {
-    font-size: clamp(32px, 10vw, 42px);
+    position: relative;
+    max-width: none;
+    padding-left: 24px;
+    font-size: 30px;
+  }
+
+  .journeyStatement::before {
+    position: absolute;
+    top: 0.12em;
+    bottom: 0.12em;
+    left: 0;
+    width: 1px;
+    background: rgb(255 255 255 / 88%);
+    content: "";
   }
 
   .testimonialsInner {
@@ -824,10 +888,12 @@
 
   .testimonialsEyebrow {
     margin-bottom: 42px;
+    font-size: 18px;
   }
 
   .testimonials h2 {
     margin-bottom: 48px;
+    font-size: 28px;
   }
 
   .testimonialText {
@@ -841,7 +907,7 @@
 
   .testimonialAuthor figcaption,
   .videoFigure figcaption {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .videoTestimonial {
@@ -854,11 +920,15 @@
   }
 
   .videoQuote p {
-    font-size: clamp(32px, 10vw, 42px);
+    font-size: 30px;
   }
 
   .faqInner {
     padding-block: 68px;
+  }
+
+  .faq h2 {
+    font-size: 28px;
   }
 
   .faqList {
@@ -867,7 +937,21 @@
 
   .faqItem summary {
     padding: 26px 48px 24px 0;
-    font-size: 24px;
+    font-size: 16px;
+  }
+
+  .faqItem summary::after {
+    width: 16px;
+    height: 16px;
+    background-size:
+      16px 2px,
+      2px 16px;
+  }
+
+  .faqItem[open] summary::after {
+    background-size:
+      16px 2px,
+      2px 0;
   }
 
   .faqItem p {
@@ -881,11 +965,11 @@
   }
 
   .finalCta h2 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .finalCta p {
     font-size: 18px;
+    font-weight: 400;
   }
-
 }
