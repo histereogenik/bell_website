@@ -377,7 +377,7 @@ export default function BusinessOwnersMentorshipPage() {
             <h2 id="faq-title">Perguntas frequentes</h2>
 
             <div className={styles.faqList}>
-              <details className={styles.faqItem}>
+              <details className={styles.faqItem} name="mentorship-faq">
                 <summary>A mentoria é igual para todo mundo?</summary>
                 <p>
                   Não. Cada jornada é construída a partir do perfil da pessoa e
@@ -385,7 +385,7 @@ export default function BusinessOwnersMentorshipPage() {
                 </p>
               </details>
 
-              <details className={styles.faqItem}>
+              <details className={styles.faqItem} name="mentorship-faq">
                 <summary>
                   Preciso saber exatamente qual é o meu problema?
                 </summary>
@@ -395,7 +395,7 @@ export default function BusinessOwnersMentorshipPage() {
                 </p>
               </details>
 
-              <details className={styles.faqItem}>
+              <details className={styles.faqItem} name="mentorship-faq">
                 <summary>É mais vendas ou gestão?</summary>
                 <p>
                   Depende do que o seu momento pedir. Podemos trabalhar vendas,
@@ -404,7 +404,7 @@ export default function BusinessOwnersMentorshipPage() {
                 </p>
               </details>
 
-              <details className={styles.faqItem}>
+              <details className={styles.faqItem} name="mentorship-faq">
                 <summary>Vou receber um plano pronto?</summary>
                 <p>
                   Não. Você constrói caminhos com orientação, considerando sua

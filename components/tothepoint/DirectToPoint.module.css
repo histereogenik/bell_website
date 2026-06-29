@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   display: grid;
-  min-height: 700px;
+  min-height: 500px;
   align-items: center;
   background:
     linear-gradient(90deg, rgb(247 243 238 / 8%), rgb(247 243 238 / 3%)),
@@ -9,14 +9,14 @@
 }
 
 .heroContent {
-  padding-block: 90px 120px;
+  padding-block: 58px 68px;
 }
 
 .eyebrow {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 0 0 64px;
+  margin: 0 0 42px;
   font-size: clamp(12px, 1.4vw, 20px);
   text-transform: uppercase;
 }
@@ -45,22 +45,40 @@
 
 .intro {
   max-width: 560px;
-  margin: 70px 0 0;
+  margin: 46px 0 0;
   padding-left: 16px;
   border-left: 3px solid var(--color-orange);
   font-size: clamp(20px, 2.22vw, 32px);
   line-height: 1.28;
 }
 
+@media (min-width: 1440px) {
+  .hero {
+    min-height: 700px;
+  }
+
+  .heroContent {
+    padding-block: 90px 120px;
+  }
+
+  .eyebrow {
+    margin-bottom: 64px;
+  }
+
+  .intro {
+    margin-top: 70px;
+  }
+}
+
 .filters {
-  padding-block: 30px;
+  padding-block: 16px;
   background: linear-gradient(90deg, #111, #777);
 }
 
 .filterInner {
   position: relative;
   display: flex;
-  min-height: 76px;
+  min-height: 60px;
   align-items: center;
   gap: 36px;
   padding: 10px 22px;
@@ -79,7 +97,7 @@
 
 .filterInner button,
 .filterPopover summary {
-  min-height: 44px;
+  min-height: 38px;
   padding: 8px 18px;
   background: var(--color-black);
   border: 1px solid transparent;
@@ -293,6 +311,14 @@
 }
 
 .card h3 a {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.card h3 a {
   transition: color var(--transition-fast);
 }
 
@@ -301,10 +327,15 @@
 }
 
 .excerpt {
+  display: -webkit-box;
+  overflow: hidden;
   margin: 18px 0 24px;
   color: #393632;
   font-size: 16px;
   line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .readMore {
@@ -400,12 +431,12 @@
 
 @media (max-width: 900px) {
   .hero {
-    min-height: 620px;
+    min-height: 500px;
     background-position: 60% center;
   }
 
   .heroContent {
-    padding-block: 70px 90px;
+    padding-block: 54px 64px;
   }
 
   .eyebrow {
@@ -446,7 +477,7 @@
 
 @media (max-width: 620px) {
   .hero {
-    min-height: 600px;
+    min-height: 500px;
     background-position: 56% center;
   }
 

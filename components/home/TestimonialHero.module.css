@@ -1,5 +1,5 @@
 .hero {
-  --hero-height: clamp(600px, 60.42vw, 870px);
+  --hero-height: min(870px, calc(100svh - var(--header-height)));
   display: grid;
   height: var(--hero-height);
   width: 100%;
@@ -102,9 +102,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: min(100%, 674px);
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  max-width: none;
+  height: min(100%, 872px);
   object-fit: contain;
 }
 
@@ -162,9 +162,9 @@
 
   .portraitImage {
     right: 0;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    max-width: none;
+    height: min(100%, 872px);
   }
 }
 

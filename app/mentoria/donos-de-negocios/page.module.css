@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: clamp(760px, 72.78vw, 1048px);
+  min-height: 540px;
   overflow: hidden;
   background: var(--color-off-white);
 }
@@ -29,17 +29,17 @@
   position: relative;
   z-index: 2;
   display: grid;
-  min-height: clamp(760px, 72.78vw, 1048px);
+  min-height: 540px;
   align-content: start;
-  padding-block: clamp(86px, 9.3vw, 134px) 90px;
+  padding-block: 44px 48px;
 }
 
 .eyebrow {
   display: flex;
   align-items: center;
   gap: 11px;
-  margin: 0 0 clamp(58px, 4.72vw, 68px);
-  font-size: clamp(14px, 1.39vw, 20px);
+  margin: 0 0 30px;
+  font-size: clamp(14px, 1.2vw, 17px);
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -64,7 +64,7 @@
   max-width: 580px;
   margin: 0;
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(46px, 4.44vw, 64px);
+  font-size: clamp(40px, 3.1vw, 44px);
   font-weight: 700;
   line-height: 1.08;
 }
@@ -75,13 +75,42 @@
 
 .description {
   max-width: 620px;
-  margin: clamp(38px, 3.75vw, 54px) 0 0;
-  font-size: clamp(20px, 1.67vw, 24px);
+  margin: 26px 0 0;
+  font-size: clamp(17px, 1.4vw, 19px);
   line-height: 1.2;
 }
 
 .heroCta {
-  margin-top: clamp(38px, 3.75vw, 54px);
+  margin-top: 28px;
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    min-height: 1048px;
+  }
+
+  .heroInner {
+    min-height: 1048px;
+    padding-block: 134px 90px;
+  }
+
+  .eyebrow {
+    margin-bottom: 68px;
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .description {
+    margin-top: 54px;
+    font-size: 24px;
+  }
+
+  .heroCta {
+    margin-top: 54px;
+  }
 }
 
 .decisionIntro {
@@ -721,13 +750,13 @@
   }
 
   .hero {
-    min-height: 720px;
+    min-height: 540px;
     overflow: hidden;
   }
 
   .heroInner {
-    min-height: 720px;
-    padding-block: 57px 64px;
+    min-height: 540px;
+    padding-block: 48px 52px;
   }
 
   .heroImage {
