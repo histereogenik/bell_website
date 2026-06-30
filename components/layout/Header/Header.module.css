@@ -1,5 +1,6 @@
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 50;
   height: var(--header-height);
   background: var(--color-white);
@@ -192,11 +193,6 @@
 }
 
 @media (max-width: 1180px) {
-  .header {
-    position: sticky;
-    top: 0;
-  }
-
   .desktopNav {
     display: none;
   }
