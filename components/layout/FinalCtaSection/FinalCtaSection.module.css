@@ -1,0 +1,58 @@
+.cta {
+  display: grid;
+  min-height: 574px;
+  place-items: center;
+  background: url("/images/tothepoint/share_section.png") center / cover no-repeat;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.inner {
+  display: grid;
+  justify-items: center;
+}
+
+.cta h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(38px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.cta p {
+  max-width: 830px;
+  margin: 34px 0 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.button {
+  margin-top: 36px;
+}
+
+@media (max-width: 620px) {
+  .cta {
+    min-height: 470px;
+    background-position: 62% center;
+  }
+
+  .inner {
+    width: calc(100% - 56px);
+    margin-inline: auto;
+  }
+
+  .cta h2 {
+    font-size: 34px;
+  }
+
+  .cta h2 br,
+  .cta p br {
+    display: none;
+  }
+
+  .cta p {
+    font-size: 18px;
+  }
+}

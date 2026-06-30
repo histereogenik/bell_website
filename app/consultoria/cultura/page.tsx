@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ConsultingHero } from "@/components/consulting/ConsultingHero";
+import { FinalCtaSection } from "@/components/layout/FinalCtaSection";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import styles from "./page.module.css";
@@ -61,6 +63,78 @@ const cultureResults = [
   {
     title: "Constância",
     text: "Práticas e comportamentos que sustentam a cultura.",
+  },
+];
+
+const cultureProcess = [
+  {
+    tag: "Diagnóstico",
+    title: "Imersão na realidade da empresa",
+    description:
+      "Conversas com lideranças e colaboradores para entender como a cultura é vivida hoje. O que funciona, o que não funciona, e onde estão os desalinhamentos entre discurso e prática.",
+    tags: ["Entrevistas", "Análise de clima", "Mapeamento cultural"],
+    deliverable:
+      "Diagnóstico cultural com principais achados e oportunidades.",
+  },
+  {
+    tag: "Clareza",
+    title: "Definição do propósito, valores e visão",
+    description:
+      "Construção coletiva do porquê da empresa existir, dos princípios que orientam decisões e da direção que se deseja alcançar. Tudo traduzido em linguagem clara e aplicável.",
+    tags: ["Workshops", "Co-criação", "Refinamento"],
+    deliverable: "Documento de propósito, valores operacionais e visão estratégica.",
+  },
+  {
+    tag: "Comportamento",
+    title: "Tradução de valores em comportamentos",
+    description:
+      "Cada valor vira um conjunto de comportamentos esperados para líderes e colaboradores. O que se deve fazer mais, o que se deve parar de fazer, e o que será reforçado.",
+    tags: ["Definição de comportamentos", "Níveis de liderança", "Indicadores"],
+    deliverable: "Matriz de comportamentos por valor e por nível hierárquico.",
+  },
+  {
+    tag: "Coerência",
+    title: "Alinhamento entre fala, decisão e prática",
+    description:
+      "Análise de onde o discurso diverge da realidade. Identificação de processos, políticas e práticas que precisam ser ajustados para sustentar a cultura desejada.",
+    tags: ["Mapeamento de gaps", "Revisão de processos", "Ajustes de políticas"],
+    deliverable: "Plano de alinhamento com prioridades e responsáveis.",
+  },
+  {
+    tag: "Consistência",
+    title: "Criação de práticas que sustentam a cultura",
+    description:
+      "Definição de práticas, momentos de reconhecimento, formas de feedback e canais de comunicação que mantêm a cultura viva na rotina, não apenas nos slides e materiais institucionais.",
+    tags: ["Práticas de reconhecimento", "Feedbacks", "Canais de comunicação"],
+    deliverable: "Protocolo de práticas culturais implementáveis.",
+  },
+  {
+    tag: "Acompanhamento",
+    title: "Ajustes, evolução e sustentação",
+    description:
+      "Cultura não se constrói da noite para o dia. É preciso acompanhar, medir e ajustar continuamente para que o que foi definido se torne realidade no dia a dia.",
+    tags: ["Pulsos de clima", "Revisões trimestrais", "Ajustes contínuos"],
+    deliverable: "Ciclo de acompanhamento com métricas e evolução.",
+  },
+];
+
+const workFormat = [
+  {
+    icon: "clock.png",
+    title: "Duração",
+    text: "De 3 a 6 meses, dependendo do tamanho da empresa e da profundidade do trabalho.",
+  },
+  {
+    icon: "round_group.png",
+    title: "Formato",
+    text:
+      "Workshops presenciais e virtuais, entrevistas individuais e acompanhamento contínuo.",
+  },
+  {
+    icon: "pyramid_group.png",
+    title: "Equipe envolvida",
+    text:
+      "Alta Liderança, RH e representantes das equipes para garantir adesão real.",
   },
 ];
 
@@ -173,6 +247,94 @@ export default function CultureConsultingPage() {
             </div>
           </div>
         </section>
+
+        <section
+          className={styles.process}
+          id="como-funciona"
+          aria-labelledby="culture-process-title"
+        >
+          <div className={`container ${styles.processInner}`}>
+            <header className={styles.processHeader}>
+              <p>Processo</p>
+              <h2 id="culture-process-title">Como funciona, passo a passo.</h2>
+              <p>
+                Um processo estruturado para transformar cultura em direção
+                aplicável.
+              </p>
+            </header>
+
+            <div className={styles.processTimeline}>
+              {cultureProcess.map((step, index) => (
+                <div className={styles.processStep} key={step.title}>
+                  <details className={styles.processCard}>
+                    <summary>
+                      <span className={styles.processTag}>{step.tag}</span>
+                      <span className={styles.processToggle} aria-hidden="true" />
+                      <span className={styles.processTitle}>{step.title}</span>
+                    </summary>
+                    <div className={styles.processCardBody}>
+                      <p>{step.description}</p>
+                      <div className={styles.processTags}>
+                        {step.tags.map((tag, tagIndex) => (
+                          <span key={`${step.title}-${tag}-${tagIndex}`}>
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <p>{step.deliverable}</p>
+                    </div>
+                  </details>
+                  <span className={styles.processNumber} aria-hidden="true">
+                    {index + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.format} aria-labelledby="work-format-title">
+          <div className={`container ${styles.formatInner}`}>
+            <p className={styles.formatEyebrow}>Formato do trabalho</p>
+            <h2 id="work-format-title">O que esperar da jornada</h2>
+            <div className={styles.formatGrid}>
+              {workFormat.map((item) => (
+                <article key={item.title}>
+                  <span aria-hidden="true">
+                    <Image
+                      src={`/images/consulting/culture/${item.icon}`}
+                      alt=""
+                      width={42}
+                      height={42}
+                    />
+                  </span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <FinalCtaSection
+          titleId="culture-final-cta-title"
+          href={contactClientsHref}
+          buttonLabel="Quero conversar com a Bell"
+          title={
+            <>
+              Quer transformar a cultura da sua
+              <br />
+              empresa em direção clara e prática?
+            </>
+          }
+          description={
+            <>
+              Vamos conversar sobre como construir uma cultura coerente,
+              <br />
+              viva e aplicável no dia a dia.
+            </>
+          }
+        />
       </main>
       <Footer />
     </>
