@@ -1,0 +1,1 @@
+export { VerticalTestimonialsCarousel } from "./VerticalTestimonialsCarousel";

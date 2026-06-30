@@ -4,7 +4,7 @@ import styles from "./FinalCtaSection.module.css";
 
 type FinalCtaSectionProps = {
   title: ReactNode;
-  description: ReactNode;
+  description?: ReactNode;
   buttonLabel: string;
   href: string;
   titleId?: string;
@@ -21,7 +21,7 @@ export function FinalCtaSection({
     <section className={styles.cta} aria-labelledby={titleId}>
       <div className={`container ${styles.inner}`}>
         <h2 id={titleId}>{title}</h2>
-        <p>{description}</p>
+        {description ? <p>{description}</p> : null}
         <CtaButton className={styles.button} href={href}>
           {buttonLabel}
         </CtaButton>

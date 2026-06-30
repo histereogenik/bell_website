@@ -10,14 +10,16 @@ type ConsultingHeroProps = {
   description: ReactNode;
   image: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain-height";
   primaryCta: {
     label: string;
     href: string;
   };
-  secondaryCta: {
+  secondaryCta?: {
     label: string;
     href: string;
   };
+  scrimVariant?: "default" | "strategy";
 };
 
 export function ConsultingHero({
@@ -27,20 +29,30 @@ export function ConsultingHero({
   description,
   image,
   imageAlt = "",
+  imageFit = "cover",
   primaryCta,
   secondaryCta,
+  scrimVariant = "default",
 }: ConsultingHeroProps) {
+  const imageClassName = [styles.image, styles[imageFit]]
+    .filter(Boolean)
+    .join(" ");
+
+  const scrimClassName = [styles.scrim, styles[scrimVariant]]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <section className={styles.hero} aria-labelledby="consulting-hero-title">
       <Image
-        className={styles.image}
+        className={imageClassName}
         src={image}
         alt={imageAlt}
         fill
         priority
         sizes="100vw"
       />
-      <div className={styles.scrim} aria-hidden="true" />
+      <div className={scrimClassName} aria-hidden="true" />
 
       <div className={`container ${styles.inner}`}>
         <p className={styles.eyebrow}>
@@ -53,9 +65,11 @@ export function ConsultingHero({
         <p className={styles.description}>{description}</p>
         <div className={styles.actions}>
           <CtaButton href={primaryCta.href}>{primaryCta.label}</CtaButton>
-          <CtaButton href={secondaryCta.href} variant="black">
-            {secondaryCta.label}
-          </CtaButton>
+          {secondaryCta ? (
+            <CtaButton href={secondaryCta.href} variant="black">
+              {secondaryCta.label}
+            </CtaButton>
+          ) : null}
         </div>
       </div>
     </section>

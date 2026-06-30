@@ -1,0 +1,207 @@
+.program {
+  background: var(--color-white);
+}
+
+.programInner {
+  max-width: 1100px;
+  padding-block: clamp(76px, 6.5vw, 94px) clamp(104px, 9vw, 130px);
+}
+
+.program h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.programList {
+  display: grid;
+  gap: 68px;
+  margin-top: 55px;
+}
+
+.programCard {
+  background: #fff1eb;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 18%);
+}
+
+.programCard summary {
+  position: relative;
+  display: grid;
+  min-height: 216px;
+  padding: 38px 86px 34px 38px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.programCard summary::-webkit-details-marker {
+  display: none;
+}
+
+.programNumber {
+  color: var(--color-orange);
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(48px, 4.44vw, 64px);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.programToggle {
+  position: absolute;
+  top: 103px;
+  right: 37px;
+  width: 24px;
+  height: 24px;
+}
+
+.programToggle::before,
+.programToggle::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--color-black);
+  content: "";
+  transform: translate(-50%, -50%);
+  transition: transform var(--transition-fast);
+}
+
+.programToggle::before {
+  width: 24px;
+  height: 4px;
+}
+
+.programToggle::after {
+  width: 4px;
+  height: 24px;
+}
+
+.programCard[open] .programToggle::after {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+.programTitle {
+  margin-top: 30px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
+.programBody {
+  display: grid;
+  padding: 0 86px 34px 38px;
+}
+
+.programText {
+  max-width: 910px;
+  margin: 0;
+  font-size: clamp(18px, 1.39vw, 20px);
+  font-weight: 500;
+  line-height: 1.12;
+  white-space: pre-line;
+}
+
+.programTag {
+  width: fit-content;
+  margin-top: 25px;
+  padding: 13px 30px;
+  background: var(--color-orange-soft);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.testimonials {
+  background: var(--color-off-white);
+}
+
+.testimonialsInner {
+  padding-block: clamp(86px, 7.5vw, 108px) clamp(96px, 8.8vw, 126px);
+}
+
+.testimonials h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(34px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+@media (max-width: 760px) {
+  .programInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .program h2 {
+    font-size: 34px;
+  }
+
+  .programList {
+    gap: 28px;
+    margin-top: 42px;
+  }
+
+  .programCard summary {
+    min-height: 0;
+    padding: 28px 58px 28px 26px;
+  }
+
+  .programBody {
+    padding: 0 58px 28px 26px;
+  }
+
+  .programNumber {
+    font-size: 46px;
+  }
+
+  .programToggle {
+    top: 72px;
+    right: 24px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .programToggle::before {
+    width: 22px;
+    height: 3px;
+  }
+
+  .programToggle::after {
+    width: 3px;
+    height: 22px;
+  }
+
+  .programTitle {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  .programText {
+    font-size: 16px;
+  }
+
+  .programTag {
+    margin-top: 22px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .testimonialsInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .testimonials h2 {
+    font-size: 32px;
+  }
+
+}
