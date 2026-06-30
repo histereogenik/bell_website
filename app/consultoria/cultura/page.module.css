@@ -1,0 +1,271 @@
+.cultureIntro {
+  background: var(--color-off-white);
+}
+
+.cultureIntroInner {
+  max-width: 1280px;
+  padding-block: clamp(82px, 7.6vw, 110px);
+  text-align: center;
+}
+
+.cultureIntro h2 {
+  margin: 0 0 54px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.cultureIntro p {
+  margin: 0;
+  font-size: clamp(18px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cultureIntro p + p {
+  margin-top: 34px;
+}
+
+.practice {
+  background: var(--color-white);
+}
+
+.practiceInner {
+  padding-block: clamp(86px, 7.8vw, 112px) clamp(110px, 9vw, 130px);
+}
+
+.practiceHeader h2 {
+  max-width: 1040px;
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+.practiceHeader p {
+  margin: 66px 0 0;
+  font-size: clamp(18px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.practiceGrid {
+  display: grid;
+  gap: 61px 27px;
+  margin-top: 58px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.practiceCard {
+  min-height: 432px;
+  padding: 32px;
+  background: var(--color-off-white);
+  border: 1px solid var(--color-gray-light);
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 18%);
+}
+
+.practiceCard:last-child {
+  min-height: 318px;
+  grid-column: 1 / -1;
+}
+
+.practiceCard > span {
+  display: grid;
+  width: 61px;
+  height: 61px;
+  place-items: center;
+  margin-bottom: 45px;
+  background: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  font-family: var(--font-display), sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.practiceCard h3 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.practiceCard p {
+  margin: 12px 0 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.practiceCard p + p {
+  margin-top: 34px;
+  font-size: clamp(18px, 1.39vw, 20px);
+}
+
+.result {
+  background: var(--color-off-white);
+}
+
+.resultInner {
+  padding-block: clamp(82px, 7.7vw, 110px);
+  text-align: center;
+}
+
+.resultEyebrow {
+  margin: 0;
+  color: var(--color-orange);
+  font-size: clamp(18px, 1.67vw, 24px);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.result h2 {
+  margin: 64px auto 0;
+  font-family: var(--font-body), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.resultGrid {
+  display: grid;
+  gap: 48px;
+  margin-top: 74px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.resultGrid article {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+}
+
+.resultGrid h3 {
+  width: fit-content;
+  margin: 0;
+  padding: 8px 17px;
+  background: var(--color-orange-soft);
+  border-radius: 6px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.resultGrid p {
+  max-width: 370px;
+  margin: 28px 0 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+@media (max-width: 760px) {
+  .cultureIntroInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .cultureIntro h2 {
+    margin-bottom: 38px;
+    font-size: 34px;
+  }
+
+  .cultureIntro p {
+    font-size: 18px;
+  }
+
+  .cultureIntro br {
+    display: none;
+  }
+
+  .practiceInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .practiceHeader h2 {
+    font-size: 34px;
+  }
+
+  .practiceHeader br {
+    display: none;
+  }
+
+  .practiceHeader p {
+    margin-top: 32px;
+    font-size: 18px;
+  }
+
+  .practiceGrid {
+    gap: 24px;
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+  }
+
+  .practiceCard,
+  .practiceCard:last-child {
+    min-height: 0;
+    grid-column: auto;
+    padding: 26px;
+  }
+
+  .practiceCard > span {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 32px;
+    font-size: 26px;
+  }
+
+  .practiceCard h3 {
+    font-size: 24px;
+  }
+
+  .practiceCard p {
+    font-size: 18px;
+  }
+
+  .practiceCard p + p {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  .resultInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .resultEyebrow {
+    font-size: 18px;
+  }
+
+  .result h2 {
+    margin-top: 36px;
+    font-size: 24px;
+  }
+
+  .result h2 br {
+    display: none;
+  }
+
+  .resultGrid {
+    gap: 38px;
+    margin-top: 48px;
+    grid-template-columns: 1fr;
+  }
+
+  .resultGrid h3 {
+    font-size: 28px;
+  }
+
+  .resultGrid p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
