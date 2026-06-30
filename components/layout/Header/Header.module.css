@@ -192,6 +192,11 @@
 }
 
 @media (max-width: 1180px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
   .desktopNav {
     display: none;
   }

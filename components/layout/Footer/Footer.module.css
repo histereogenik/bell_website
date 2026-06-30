@@ -6,6 +6,7 @@
 .brand {
   display: grid;
   min-height: 300px;
+  margin-inline: calc(clamp(0px, 3vw, 40px) * -1);
   place-items: center;
   overflow: hidden;
 }
