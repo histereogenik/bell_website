@@ -18,6 +18,10 @@ export const navigation = [
         label: "Planejamento estratégico",
         href: "/consultoria/planejamento-estrategico",
       },
+      {
+        label: "Análise plantas PDV",
+        href: "/consultoria/analise-plantas-pdv",
+      },
     ],
   },
   { label: "Palestras", href: "/palestras" },

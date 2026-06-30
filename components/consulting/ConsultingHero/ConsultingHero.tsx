@@ -19,6 +19,7 @@ type ConsultingHeroProps = {
     label: string;
     href: string;
   };
+  ctaLayout?: "row" | "column";
   scrimVariant?: "default" | "strategy";
 };
 
@@ -32,6 +33,7 @@ export function ConsultingHero({
   imageFit = "cover",
   primaryCta,
   secondaryCta,
+  ctaLayout = "row",
   scrimVariant = "default",
 }: ConsultingHeroProps) {
   const imageClassName = [styles.image, styles[imageFit]]
@@ -39,6 +41,10 @@ export function ConsultingHero({
     .join(" ");
 
   const scrimClassName = [styles.scrim, styles[scrimVariant]]
+    .filter(Boolean)
+    .join(" ");
+
+  const actionsClassName = [styles.actions, styles[ctaLayout]]
     .filter(Boolean)
     .join(" ");
 
@@ -63,7 +69,7 @@ export function ConsultingHero({
         </p>
         <h1 id="consulting-hero-title">{title}</h1>
         <p className={styles.description}>{description}</p>
-        <div className={styles.actions}>
+        <div className={actionsClassName}>
           <CtaButton href={primaryCta.href}>{primaryCta.label}</CtaButton>
           {secondaryCta ? (
             <CtaButton href={secondaryCta.href} variant="black">
