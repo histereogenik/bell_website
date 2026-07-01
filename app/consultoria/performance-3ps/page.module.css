@@ -1,0 +1,373 @@
+.buildTogether {
+  background: var(--color-white);
+}
+
+.buildTogetherInner {
+  padding-block: clamp(82px, 7.7vw, 110px);
+}
+
+.buildTogether h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
+.buildTogetherIntro {
+  display: grid;
+  gap: 26px;
+  margin-top: 29px;
+}
+
+.buildTogetherIntro p {
+  margin: 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.buildTogetherGrid {
+  display: grid;
+  gap: 24px;
+  margin-top: 61px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.buildTogetherGrid article {
+  border-top: 1px solid var(--color-orange);
+  padding-top: 33px;
+}
+
+.buildTogetherGrid h3 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.buildTogetherGrid p {
+  margin: 24px 0 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.14;
+}
+
+.pillars {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.pillarsInner {
+  padding-block: clamp(88px, 7.8vw, 112px);
+}
+
+.pillars h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.pillarsGrid {
+  display: grid;
+  gap: 58px;
+  margin-top: 64px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pillarsGrid article {
+  min-height: 454px;
+  padding: 49px 32px;
+  background: #fff1eb;
+  border-radius: 6px;
+  color: var(--color-black);
+}
+
+.pillarsGrid img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.pillarsGrid h3 {
+  margin: 67px 0 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.pillarsGrid p {
+  margin: 21px 0 0;
+  font-size: clamp(18px, 1.39vw, 20px);
+  font-weight: 400;
+  line-height: 1.35;
+  white-space: pre-line;
+}
+
+.peopleAxis {
+  background: var(--color-white);
+}
+
+.peopleAxisInner {
+  padding-block: clamp(82px, 7.8vw, 112px) clamp(104px, 9vw, 130px);
+}
+
+.peopleAxis h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
+.peopleAxisIntro {
+  display: grid;
+  gap: 32px;
+  margin-top: 27px;
+}
+
+.peopleAxisIntro p {
+  margin: 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.peopleAxisImage {
+  width: 100%;
+  height: auto;
+  margin-top: 58px;
+  border-radius: 6px;
+}
+
+.peopleAxis h3 {
+  margin: 62px 0 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.peopleResults {
+  display: grid;
+  gap: 40px;
+  margin-top: 72px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.peopleResults article {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.peopleResults img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.peopleResults p {
+  max-width: 250px;
+  margin: 33px 0 0;
+  font-size: clamp(18px, 1.39vw, 20px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.processAxis,
+.productsAxis {
+  background: var(--color-white);
+}
+
+.processAxisInner,
+.productsAxisInner {
+  padding-block: clamp(82px, 7.8vw, 112px);
+}
+
+.processAxis h2,
+.productsAxis h2 {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(36px, 3.33vw, 48px);
+  font-weight: 700;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+
+.processAxis p,
+.productsAxis p {
+  margin: 28px 0 0;
+  font-size: clamp(20px, 1.67vw, 24px);
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.processAxisImage,
+.productsAxisImage {
+  width: 100%;
+  height: auto;
+  margin-top: 58px;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 18%);
+}
+
+.productsAxisImage {
+  margin-top: 0;
+}
+
+@media (max-width: 860px) {
+  .buildTogetherGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .peopleResults {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .buildTogetherInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .buildTogether h2 {
+    font-size: 34px;
+  }
+
+  .buildTogetherIntro p {
+    font-size: 18px;
+  }
+
+  .buildTogetherIntro br {
+    display: none;
+  }
+
+  .buildTogetherGrid {
+    gap: 36px;
+    margin-top: 42px;
+  }
+
+  .buildTogetherGrid h3 {
+    font-size: 24px;
+  }
+
+  .buildTogetherGrid p {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+
+  .pillarsInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .pillars h2 {
+    font-size: 34px;
+  }
+
+  .pillarsGrid {
+    gap: 24px;
+    margin-top: 42px;
+  }
+
+  .pillarsGrid article {
+    min-height: 0;
+    padding: 34px 26px;
+  }
+
+  .pillarsGrid img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .pillarsGrid h3 {
+    margin-top: 42px;
+    font-size: 26px;
+  }
+
+  .pillarsGrid p {
+    font-size: 18px;
+  }
+
+  .peopleAxisInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .peopleAxis h2 {
+    font-size: 34px;
+  }
+
+  .peopleAxisIntro p {
+    font-size: 18px;
+  }
+
+  .peopleAxisIntro br {
+    display: none;
+  }
+
+  .peopleAxisImage {
+    margin-top: 42px;
+  }
+
+  .peopleAxis h3 {
+    margin-top: 42px;
+    font-size: 20px;
+  }
+
+  .peopleResults {
+    gap: 34px;
+    margin-top: 42px;
+    grid-template-columns: 1fr;
+  }
+
+  .peopleResults p {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+
+  .processAxisInner,
+  .productsAxisInner {
+    width: calc(100% - 56px);
+    padding-block: 68px;
+  }
+
+  .processAxis h2,
+  .productsAxis h2 {
+    font-size: 34px;
+  }
+
+  .processAxis p,
+  .productsAxis p {
+    font-size: 18px;
+  }
+
+  .processAxis p br,
+  .productsAxis p br {
+    display: none;
+  }
+
+  .processAxisImage,
+  .productsAxisImage {
+    margin-top: 42px;
+  }
+
+  .productsAxisImage {
+    margin-top: 0;
+  }
+}

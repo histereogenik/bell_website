@@ -5,7 +5,7 @@ import styles from "./ConsultingHero.module.css";
 
 type ConsultingHeroProps = {
   eyebrow: string;
-  eyebrowHighlight: string;
+  eyebrowHighlight?: string;
   title: ReactNode;
   description: ReactNode;
   image: string;
@@ -64,7 +64,13 @@ export function ConsultingHero({
         <p className={styles.eyebrow}>
           <span aria-hidden="true" />
           <span>
-            <strong>{eyebrowHighlight}</strong> | {eyebrow}
+            {eyebrowHighlight ? (
+              <>
+                <strong>{eyebrowHighlight}</strong> | {eyebrow}
+              </>
+            ) : (
+              eyebrow
+            )}
           </span>
         </p>
         <h1 id="consulting-hero-title">{title}</h1>

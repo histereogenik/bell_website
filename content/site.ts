@@ -22,6 +22,10 @@ export const navigation = [
         label: "Análise plantas PDV",
         href: "/consultoria/analise-plantas-pdv",
       },
+      {
+        label: "Performance 3 P's",
+        href: "/consultoria/performance-3ps",
+      },
     ],
   },
   { label: "Palestras", href: "/palestras" },
