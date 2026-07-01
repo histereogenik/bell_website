@@ -1,5 +1,6 @@
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 50;
   height: var(--header-height);
   background: var(--color-white);
@@ -35,17 +36,21 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  padding-block: 34px;
+  padding-block: 27px;
+  padding-inline: 0;
+  background: transparent;
+  border: 0;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
+  cursor: pointer;
   transition: color var(--transition-default);
 }
 
 .navLink::after {
   position: absolute;
   right: 0;
-  bottom: 25px;
+  bottom: 18px;
   left: 0;
   height: 1px;
   background: var(--color-orange);
@@ -56,7 +61,8 @@
 }
 
 .navItem:hover .navLink,
-.navLink:hover {
+.navLink:hover,
+.navLink.active {
   color: var(--color-orange);
 }
 
@@ -162,14 +168,20 @@
   border-bottom: 1px solid var(--color-gray-light);
 }
 
-.mobileGroup > a:first-child {
+.mobileGroup > a:first-child,
+.mobileGroup > button:first-child {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 17px 0;
+  background: transparent;
+  border: 0;
   font-family: var(--font-display), sans-serif;
   font-size: clamp(20px, 4vw, 30px);
   font-weight: 700;
+  color: inherit;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -192,7 +204,7 @@
 
 @media (max-width: 560px) {
   .header {
-    --header-height: 72px;
+    --header-height: 74px;
   }
 
   .actions .iconButton:first-child {

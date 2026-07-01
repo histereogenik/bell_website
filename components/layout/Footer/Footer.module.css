@@ -6,6 +6,7 @@
 .brand {
   display: grid;
   min-height: 300px;
+  margin-inline: calc(clamp(0px, 3vw, 40px) * -1);
   place-items: center;
   overflow: hidden;
 }
@@ -54,7 +55,8 @@
 }
 
 .footerNav a:hover,
-.contact a:hover {
+.contact a:hover,
+.invitation:hover {
   color: var(--color-orange);
 }
 
@@ -62,6 +64,7 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-3);
+  transition: color var(--transition-fast);
 }
 
 .invitation p {

@@ -49,6 +49,26 @@ export function CloseIcon({ size = 24, className }: IconProps) {
   );
 }
 
+export function FilterIcon({ size = 18, className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M4 7h16M7 12h10M10 17h4"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="1.8"
+      />
+    </svg>
+  );
+}
+
 export function ChevronDownIcon({ size = 12, className }: IconProps) {
   return (
     <svg

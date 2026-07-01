@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { navigation } from "@/content/site";
 import { BrandLogo } from "@/components/ui/BrandLogo/BrandLogo";
@@ -14,6 +15,12 @@ import styles from "./Header.module.css";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActive(href: string) {
+    if (href === "/") return pathname === href;
+    return pathname === href || pathname.startsWith(`${href}/`);
+  }
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -39,10 +46,27 @@ export function Header() {
         <nav className={styles.desktopNav} aria-label="Navegação principal">
           {navigation.map((item) => (
             <div className={styles.navItem} key={item.label}>
-              <Link href={item.href} className={styles.navLink}>
-                {item.label}
-                {"children" in item && <ChevronDownIcon />}
-              </Link>
+              {"children" in item ? (
+                <button
+                  className={`${styles.navLink} ${
+                    isActive(item.href) ? styles.active : ""
+                  }`}
+                  type="button"
+                  aria-haspopup="true"
+                >
+                  {item.label}
+                  <ChevronDownIcon />
+                </button>
+              ) : (
+                <Link
+                  href={item.href}
+                  className={`${styles.navLink} ${
+                    isActive(item.href) ? styles.active : ""
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )}
 
               {"children" in item && (
                 <div className={styles.submenu}>
@@ -85,10 +109,17 @@ export function Header() {
         <nav className={styles.mobileNav} aria-label="Menu">
           {navigation.map((item) => (
             <div className={styles.mobileGroup} key={item.label}>
-              <Link href={item.href} onClick={() => setMenuOpen(false)}>
-                {item.label}
-                <span aria-hidden="true">→</span>
-              </Link>
+              {"children" in item ? (
+                <button type="button">
+                  {item.label}
+                  <ChevronDownIcon />
+                </button>
+              ) : (
+                <Link href={item.href} onClick={() => setMenuOpen(false)}>
+                  {item.label}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              )}
               {"children" in item &&
                 item.children.map((child) => (
                   <Link
