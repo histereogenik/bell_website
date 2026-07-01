@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import { CtaButton } from "@/components/ui/CtaButton";
+import { VideoThumbnail } from "@/components/ui/VideoThumbnail";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function BusinessOwnersMentorshipPage() {
         <section className={styles.hero} aria-labelledby="mentorship-title">
           <Image
             className={styles.heroImage}
-            src="/images/metorship/donosdenegocios_capa.png"
+            src="/images/metorship/bússola.png"
             alt=""
             fill
             priority
@@ -338,9 +339,13 @@ export default function BusinessOwnersMentorshipPage() {
 
             <div className={styles.videoTestimonial}>
               <figure className={styles.videoFigure}>
-                <div className={styles.videoPlaceholder} aria-label="Vídeo em breve">
-                  <span className={styles.playButton} aria-hidden="true" />
-                </div>
+                <VideoThumbnail
+                  className={styles.videoPlaceholder}
+                  title="Chris Gontigo"
+                  thumbnail="/images/metorship/chris.png"
+                  aspectRatio="430 / 628"
+                  sizes="(max-width: 768px) 100vw, 430px"
+                />
                 <figcaption>
                   Chris Gontigo
                   <br />

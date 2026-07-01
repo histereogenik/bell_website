@@ -700,57 +700,6 @@
   margin-top: 64px;
 }
 
-.videoPlaceholder > div {
-  position: relative;
-  display: grid;
-  aspect-ratio: 322 / 514;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 5px;
-  background:
-    linear-gradient(145deg, rgb(255 255 255 / 18%), rgb(0 0 0 / 18%)),
-    linear-gradient(135deg, #d9cdbf 0%, #8b7d70 46%, #272727 100%);
-}
-
-.videoPlaceholder:nth-child(2) > div {
-  background:
-    linear-gradient(145deg, rgb(255 255 255 / 12%), rgb(0 0 0 / 24%)),
-    linear-gradient(135deg, #222 0%, #52606c 52%, #0c0c0c 100%);
-}
-
-.videoPlaceholder:nth-child(3) > div {
-  background:
-    linear-gradient(145deg, rgb(255 255 255 / 16%), rgb(0 0 0 / 16%)),
-    linear-gradient(135deg, #e6e2df 0%, #6c7a8a 56%, #263344 100%);
-}
-
-.videoPlaceholder > div::before {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 28%, rgb(255 255 255 / 20%), transparent 22%);
-  content: "";
-}
-
-.videoPlaceholder span {
-  position: relative;
-  display: grid;
-  width: 76px;
-  height: 76px;
-  place-items: center;
-  background: var(--color-white);
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 14%);
-}
-
-.videoPlaceholder span::before {
-  width: 0;
-  height: 0;
-  border-block: 14px solid transparent;
-  border-left: 20px solid #9b5a42;
-  content: "";
-  transform: translateX(3px);
-}
-
 .nanaTestimonial {
   display: grid;
   grid-template-columns: 230px minmax(0, 1fr);
@@ -1308,20 +1257,6 @@
   .videoGrid {
     gap: 38px;
     margin-top: 48px;
-  }
-
-  .videoPlaceholder > div {
-    aspect-ratio: 322 / 430;
-  }
-
-  .videoPlaceholder span {
-    width: 64px;
-    height: 64px;
-  }
-
-  .videoPlaceholder span::before {
-    border-block-width: 11px;
-    border-left-width: 16px;
   }
 
   .nanaTestimonial {

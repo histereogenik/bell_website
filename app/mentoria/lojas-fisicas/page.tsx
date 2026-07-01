@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import { CtaButton } from "@/components/ui/CtaButton";
+import { VideoThumbnail } from "@/components/ui/VideoThumbnail";
 import styles from "./page.module.css";
 
 const contactClientsHref = "/contato/clientes";
@@ -81,14 +82,20 @@ const videoTestimonials = [
   {
     name: "Priscila Chaves",
     role: "Dona lojas Frank Chaves & Olivia Chaves Calçados",
+    thumbnail: `${imageBase}/priscilla.png`,
+    videoUrl: "https://www.youtube.com/shorts/fHIob0W567M",
   },
   {
     name: "Everson Boeck",
     role: "Gerente de Loja",
+    thumbnail: `${imageBase}/everson_2.jpeg`,
+    videoUrl: "https://www.youtube.com/watch?v=dxCSZfRKh_4",
   },
   {
     name: "Rafael Paulozo",
     role: "Gerente de Loja",
+    thumbnail: `${imageBase}/rafael.png`,
+    videoUrl: "https://youtu.be/iNNSEyqNyMo",
   },
 ];
 
@@ -100,7 +107,7 @@ export default function StoreMentorshipPage() {
         <section className={styles.hero} aria-labelledby="store-hero-title">
           <Image
             className={styles.heroImage}
-            src={`${imageBase}/hero.png`}
+            src={`${imageBase}/mapa.png`}
             alt=""
             fill
             priority
@@ -548,9 +555,13 @@ export default function StoreMentorshipPage() {
             <div className={styles.videoGrid}>
               {videoTestimonials.map((person) => (
                 <figure className={styles.videoPlaceholder} key={person.name}>
-                  <div aria-label={`Vídeo de ${person.name} em breve`}>
-                    <span aria-hidden="true" />
-                  </div>
+                  <VideoThumbnail
+                    title={person.name}
+                    thumbnail={person.thumbnail}
+                    videoUrl={person.videoUrl}
+                    aspectRatio="322 / 514"
+                    sizes="(max-width: 768px) 100vw, 322px"
+                  />
                   <figcaption>
                     <strong>{person.name}</strong>
                     <br />

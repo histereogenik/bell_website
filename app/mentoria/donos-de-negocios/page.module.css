@@ -428,43 +428,7 @@
   aspect-ratio: 430 / 628;
   overflow: hidden;
   border-radius: 6px;
-  background:
-    linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 18%) 100%),
-    linear-gradient(135deg, #d7d0c5 0%, #81786e 48%, #1b1b1b 100%);
   box-shadow: 0 2px 5px rgb(0 0 0 / 22%);
-}
-
-.videoPlaceholder::before {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 44% 28%, rgb(255 255 255 / 30%) 0 12%, transparent 13%),
-    linear-gradient(90deg, rgb(255 255 255 / 16%) 0 1px, transparent 1px 100%);
-  background-size: auto, 120px 100%;
-  content: "";
-  opacity: 0.55;
-}
-
-.playButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  width: 94px;
-  height: 94px;
-  place-items: center;
-  background: var(--color-white);
-  border-radius: 999px;
-  transform: translate(-50%, -50%);
-}
-
-.playButton::before {
-  width: 0;
-  height: 0;
-  border-block: 18px solid transparent;
-  border-left: 26px solid #8f4c33;
-  content: "";
-  transform: translateX(3px);
 }
 
 .videoQuote {
