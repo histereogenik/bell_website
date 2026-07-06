@@ -351,7 +351,13 @@ export default function TalksPage() {
 
             <div className={styles.talkTestimonialsGrid}>
               <article className={`${styles.testimonialCard} ${styles.cardOrange}`}>
-                <span aria-hidden="true">“</span>
+                <Image
+                  src="/images/mentorship_store/abre.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
                 <p>Muito obrigada por me ensinar a vender com amor.</p>
                 <footer>
                   <strong>Eliane Basso</strong>
@@ -361,7 +367,13 @@ export default function TalksPage() {
               </article>
 
               <article className={`${styles.testimonialCard} ${styles.cardBlackWide}`}>
-                <span aria-hidden="true">“</span>
+                <Image
+                  src="/images/mentorship_store/abre.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
                 <p>
                   Bell nos mostrou que, por trás de grandes resultados, sempre
                   existem relações genuínas.
@@ -373,7 +385,13 @@ export default function TalksPage() {
               </article>
 
               <article className={`${styles.testimonialCard} ${styles.cardGrayFull}`}>
-                <span aria-hidden="true">“</span>
+                <Image
+                  src="/images/mentorship_store/abre.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
                 <p>
                   Linda e encantadora sua palestra. Me senti representada por uma
                   mulher tão encantadora, firme e ao mesmo tempo delicada.
@@ -386,7 +404,13 @@ export default function TalksPage() {
               </article>
 
               <article className={`${styles.testimonialCard} ${styles.cardBlackSmall}`}>
-                <span aria-hidden="true">“</span>
+                <Image
+                  src="/images/mentorship_store/abre.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
                 <p>Queria te ouvir muito mais!</p>
                 <footer>
                   <strong>Laryssa Queiroz</strong>
@@ -396,7 +420,13 @@ export default function TalksPage() {
               </article>
 
               <article className={`${styles.testimonialCard} ${styles.cardLight}`}>
-                <span aria-hidden="true">“</span>
+                <Image
+                  src="/images/mentorship_store/abre.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
                 <p>Sua palestra nos ajudou muito.</p>
                 <footer>
                   <strong>Catia Oshira</strong>
@@ -406,7 +436,13 @@ export default function TalksPage() {
               </article>
 
               <article className={`${styles.testimonialCard} ${styles.cardOrangeWide}`}>
-                <span aria-hidden="true">“</span>
+                <Image
+                  src="/images/mentorship_store/abre.png"
+                  alt=""
+                  width={51}
+                  height={40}
+                  aria-hidden="true"
+                />
                 <p>Você ilumina tudo por onde passa. Sua palestra é show demais!</p>
                 <footer>
                   <strong>Erick Barbi</strong>

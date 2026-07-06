@@ -521,14 +521,10 @@
   box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
 }
 
-.testimonialCard > span {
+.testimonialCard > img {
   display: block;
-  height: 42px;
-  color: var(--color-orange);
-  font-family: var(--font-display), sans-serif;
-  font-size: 56px;
-  font-weight: 800;
-  line-height: 0.9;
+  width: 51px;
+  height: auto;
 }
 
 .testimonialCard p {
