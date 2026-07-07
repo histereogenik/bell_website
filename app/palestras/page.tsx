@@ -223,9 +223,8 @@ export default function TalksPage() {
         <section className={styles.methodSection} aria-labelledby="talks-method-title">
           <div className={`container ${styles.methodInner}`}>
             <h2 id="talks-method-title">
-              Por trás de cada palestra um método autoral
-              <br />
-              simples, humano e aplicável
+              Por trás de cada palestra um método autoral simples, humano e
+              aplicável
             </h2>
 
             <div className={styles.methodList}>

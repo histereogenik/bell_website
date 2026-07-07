@@ -139,7 +139,7 @@ Conteúdo visível:
 
 Autoria visível:
 
-- Nara Cunha;
+- Nana Cunha;
 - cargo/marca precisa ser confirmado em maior resolução.
 
 O conjunto de indicadores sugere um carrossel com aproximadamente seis depoimentos.
@@ -170,12 +170,12 @@ Ainda precisa ser confirmado:
 
 Seção em fundo preto, texto branco e divisórias horizontais. Possui quatro linhas:
 
-| Indicador | Título | Complemento |
-|---|---|---|
-| `+23` | Anos de experiência | em liderança, vendas e operações. |
-| `+40` | Clientes confiaram na minha experiência | para fortalecer equipes, estruturar processos, e melhorar resultados comerciais. |
-| `+500` | Profissionais desenvolvidos | em jornadas de vendas, liderança e atendimento. |
-| `+30%` | De crescimento | em cases de consultoria, vendas e desenvolvimento de equipes. |
+| Indicador | Título                                  | Complemento                                                                      |
+| --------- | --------------------------------------- | -------------------------------------------------------------------------------- |
+| `+23`     | Anos de experiência                     | em liderança, vendas e operações.                                                |
+| `+40`     | Clientes confiaram na minha experiência | para fortalecer equipes, estruturar processos, e melhorar resultados comerciais. |
+| `+500`    | Profissionais desenvolvidos             | em jornadas de vendas, liderança e atendimento.                                  |
+| `+30%`    | De crescimento                          | em cases de consultoria, vendas e desenvolvimento de equipes.                    |
 
 Componente sugerido:
 
@@ -290,27 +290,27 @@ Conteúdo que deve ser centralizado:
 
 ### Componentes reutilizados na Home
 
-| Componente | Origem | Reutilização |
-|---|---|---|
-| `PublicHeader` | Style guide | Todas as páginas públicas |
-| `NavigationItem` | Component sets do Figma | Header e possíveis menus |
-| `TestimonialHero` | Home | Possível uso em páginas institucionais |
-| `AuthorityMetricRow` | Home | Sobre, serviços e propostas |
-| `ClientLogoList` | Home | Sobre, consultoria, palestras e treinamentos |
-| `PublicFooter` | Style guide | Todas as páginas públicas |
-| `NewsletterForm` | Footer | Footer e possíveis landing pages |
+| Componente           | Origem                  | Reutilização                                 |
+| -------------------- | ----------------------- | -------------------------------------------- |
+| `PublicHeader`       | Style guide             | Todas as páginas públicas                    |
+| `NavigationItem`     | Component sets do Figma | Header e possíveis menus                     |
+| `TestimonialHero`    | Home                    | Possível uso em páginas institucionais       |
+| `AuthorityMetricRow` | Home                    | Sobre, serviços e propostas                  |
+| `ClientLogoList`     | Home                    | Sobre, consultoria, palestras e treinamentos |
+| `PublicFooter`       | Style guide             | Todas as páginas públicas                    |
+| `NewsletterForm`     | Footer                  | Footer e possíveis landing pages             |
 
 ### Rota e metadados
 
-| Item | Definição |
-|---|---|
-| Rota | `/` |
-| Layout | público |
-| Frame | `Home` |
-| Node ID | `20:440` |
-| Largura de referência | `1440 px` |
-| H1 | Não há H1 textual evidente no frame; precisa ser validado para SEO |
-| CTA principal | Não há CTA evidente no hero atual |
+| Item                  | Definição                                                          |
+| --------------------- | ------------------------------------------------------------------ |
+| Rota                  | `/`                                                                |
+| Layout                | público                                                            |
+| Frame                 | `Home`                                                             |
+| Node ID               | `20:440`                                                           |
+| Largura de referência | `1440 px`                                                          |
+| H1                    | Não há H1 textual evidente no frame; precisa ser validado para SEO |
+| CTA principal         | Não há CTA evidente no hero atual                                  |
 
 A ausência de um H1 descritivo e de CTA principal deve ser discutida antes da
 implementação. O depoimento não deve ser promovido automaticamente a H1 apenas para
@@ -364,38 +364,38 @@ preencher a semântica.
 
 ### Página de topo
 
-| Página | Node ID | Conteúdo |
-|---|---|---|
-| Style Guide & Components | `0:1` | Moodboard, foundations, componentes e layouts compartilhados |
+| Página                   | Node ID | Conteúdo                                                     |
+| ------------------------ | ------- | ------------------------------------------------------------ |
+| Style Guide & Components | `0:1`   | Moodboard, foundations, componentes e layouts compartilhados |
 
 ### Frames e componentes principais
 
-| Elemento | Node ID | Tipo | Dimensão | Situação |
-|---|---|---|---:|---|
-| MOODBOARD | `9:36` | Frame | 2552 × 1312 | 10 imagens de referência |
-| Cores | `4:2` | Frame | 1440 × 1262 | Paleta e orientação de uso |
-| Tipografia | `5:65` | Frame | 1440 × 1599 | Famílias e escala tipográfica |
-| Botões | `5:153` | Frame | 1440 × 353 | Amostras dos três níveis de botão e link |
-| Header | `14:31` | Component | 1440 × 90 | Navegação pública desktop |
-| Footer | `166:403` | Component | 1440 × 768 | Footer público desktop |
-| Header blog | `315:1441` | Component | 1519 × 80 | Cabeçalho de área administrativa |
+| Elemento    | Node ID    | Tipo      |    Dimensão | Situação                                 |
+| ----------- | ---------- | --------- | ----------: | ---------------------------------------- |
+| MOODBOARD   | `9:36`     | Frame     | 2552 × 1312 | 10 imagens de referência                 |
+| Cores       | `4:2`      | Frame     | 1440 × 1262 | Paleta e orientação de uso               |
+| Tipografia  | `5:65`     | Frame     | 1440 × 1599 | Famílias e escala tipográfica            |
+| Botões      | `5:153`    | Frame     |  1440 × 353 | Amostras dos três níveis de botão e link |
+| Header      | `14:31`    | Component |   1440 × 90 | Navegação pública desktop                |
+| Footer      | `166:403`  | Component |  1440 × 768 | Footer público desktop                   |
+| Header blog | `315:1441` | Component |   1519 × 80 | Cabeçalho de área administrativa         |
 
 ### Component sets
 
-| Componente | Node ID | Estados |
-|---|---|---|
-| Botão Primário | `14:14` | Default e hover |
-| Botão Secundário | `14:20` | Default e hover |
-| Botão Terciário | `14:26` | Default e hover |
-| Link com seta | `20:273` | 2 variantes |
-| Home | `365:1123` | Default e hover |
-| Direto ao Ponto | `365:1170` | Default e hover |
-| Mentoria | `365:1214` | Default e hover |
-| Consultoria | `471:1226` | Default e hover |
-| Palestras | `365:1317` | Default e hover |
-| Treinamentos | `365:1359` | Default e hover |
-| Sobre | `365:1401` | Default e hover |
-| Contato | `553:1712` | Default e hover |
+| Componente       | Node ID    | Estados         |
+| ---------------- | ---------- | --------------- |
+| Botão Primário   | `14:14`    | Default e hover |
+| Botão Secundário | `14:20`    | Default e hover |
+| Botão Terciário  | `14:26`    | Default e hover |
+| Link com seta    | `20:273`   | 2 variantes     |
+| Home             | `365:1123` | Default e hover |
+| Direto ao Ponto  | `365:1170` | Default e hover |
+| Mentoria         | `365:1214` | Default e hover |
+| Consultoria      | `471:1226` | Default e hover |
+| Palestras        | `365:1317` | Default e hover |
+| Treinamentos     | `365:1359` | Default e hover |
+| Sobre            | `365:1401` | Default e hover |
+| Contato          | `553:1712` | Default e hover |
 
 Os estados de hover usam `CHANGE_TO`, Smart Animate, `ease-out` e duração de
 aproximadamente `300 ms`.
@@ -517,28 +517,28 @@ confirmadas por frames de página.
 
 ### Grupo público
 
-| Rota sugerida | Finalidade | Confiança |
-|---|---|---|
-| `/` | Home | Alta |
-| `/direto-ao-ponto` | Conteúdo editorial ou página do programa | Alta |
-| `/mentoria` | Oferta de mentoria | Alta |
-| `/consultoria` | Oferta de consultoria | Alta |
-| `/palestras` | Oferta de palestras | Alta |
-| `/treinamentos` | Oferta de treinamentos | Alta |
-| `/sobre` | Perfil e história de Bell Nacif | Alta |
-| `/contato` | Contato comercial e mídia | Média |
-| `/politica-de-privacidade` | Política de privacidade | Alta |
-| `/login` | Entrada da área administrativa | Média |
+| Rota sugerida              | Finalidade                               | Confiança |
+| -------------------------- | ---------------------------------------- | --------- |
+| `/`                        | Home                                     | Alta      |
+| `/direto-ao-ponto`         | Conteúdo editorial ou página do programa | Alta      |
+| `/mentoria`                | Oferta de mentoria                       | Alta      |
+| `/consultoria`             | Oferta de consultoria                    | Alta      |
+| `/palestras`               | Oferta de palestras                      | Alta      |
+| `/treinamentos`            | Oferta de treinamentos                   | Alta      |
+| `/sobre`                   | Perfil e história de Bell Nacif          | Alta      |
+| `/contato`                 | Contato comercial e mídia                | Média     |
+| `/politica-de-privacidade` | Política de privacidade                  | Alta      |
+| `/login`                   | Entrada da área administrativa           | Média     |
 
 ### Blog e administração
 
-| Rota sugerida | Finalidade | Confiança |
-|---|---|---|
-| `/blog` | Lista pública de artigos | Baixa |
-| `/blog/[slug]` | Artigo público | Baixa |
-| `/admin/blog` | Lista administrativa | Média |
-| `/admin/blog/novo` | Criação de artigo | Baixa |
-| `/admin/blog/[id]/editar` | Edição de artigo | Baixa |
+| Rota sugerida             | Finalidade               | Confiança |
+| ------------------------- | ------------------------ | --------- |
+| `/blog`                   | Lista pública de artigos | Baixa     |
+| `/blog/[slug]`            | Artigo público           | Baixa     |
+| `/admin/blog`             | Lista administrativa     | Média     |
+| `/admin/blog/novo`        | Criação de artigo        | Baixa     |
+| `/admin/blog/[id]/editar` | Edição de artigo         | Baixa     |
 
 ### Agrupamento sugerido no App Router
 
@@ -648,18 +648,18 @@ telas ou repetição real:
 
 ### Cores
 
-| Token sugerido | Nome no Figma | Valor | Uso indicado |
-|---|---|---|---|
-| `--color-black` | Preto | `#0B0B0B` | Footer, header escuro, hero escuro, texto forte e CTAs escuros |
-| `--color-off-white` | Off-White | `#F7F3EE` | Fundo principal, páginas internas e áreas claras |
-| `--color-white` | Branco | `#FFFFFF` | Cards, formulários e superfícies elevadas |
-| `--color-gray-light` | Cinza Claro | `#E8E4DE` | Bordas, divisórias e fundos secundários |
-| `--color-gray-dark` | Cinza Escuro | `#5E5A55` | Corpo de texto, captions e textos auxiliares |
-| `--color-orange` | Laranja Principal | `#FF5A00` | CTAs, hover, links, ícones, detalhes e destaques |
-| `--color-orange-hover` | Laranja Hover | `#FF5F15` | Hover |
-| `--color-orange-soft` | Laranja Soft | `#FFA87F` | Superfícies e destaques suaves |
-| `--color-blue-muted` | Azul | `#116655` | Nomeado como Azul no arquivo, apesar do tom verde-petróleo |
-| `--color-orange-alt` | LARANJA | `#FC4C02` | Laranja alternativo; uso não documentado |
+| Token sugerido         | Nome no Figma     | Valor     | Uso indicado                                                   |
+| ---------------------- | ----------------- | --------- | -------------------------------------------------------------- |
+| `--color-black`        | Preto             | `#0B0B0B` | Footer, header escuro, hero escuro, texto forte e CTAs escuros |
+| `--color-off-white`    | Off-White         | `#F7F3EE` | Fundo principal, páginas internas e áreas claras               |
+| `--color-white`        | Branco            | `#FFFFFF` | Cards, formulários e superfícies elevadas                      |
+| `--color-gray-light`   | Cinza Claro       | `#E8E4DE` | Bordas, divisórias e fundos secundários                        |
+| `--color-gray-dark`    | Cinza Escuro      | `#5E5A55` | Corpo de texto, captions e textos auxiliares                   |
+| `--color-orange`       | Laranja Principal | `#FF5A00` | CTAs, hover, links, ícones, detalhes e destaques               |
+| `--color-orange-hover` | Laranja Hover     | `#FF5F15` | Hover                                                          |
+| `--color-orange-soft`  | Laranja Soft      | `#FFA87F` | Superfícies e destaques suaves                                 |
+| `--color-blue-muted`   | Azul              | `#116655` | Nomeado como Azul no arquivo, apesar do tom verde-petróleo     |
+| `--color-orange-alt`   | LARANJA           | `#FC4C02` | Laranja alternativo; uso não documentado                       |
 
 Observação: `get_variable_defs` não retornou definições para o frame de cores. Os
 valores acima foram confirmados pelos rótulos e pela screenshot do guia.
@@ -674,16 +674,16 @@ Famílias:
 
 Escala encontrada:
 
-| Estilo | Família | Peso | Tamanho | Line-height | Letter-spacing |
-|---|---|---:|---:|---:|---:|
-| Hero Display | Montserrat | 800 | 88 px | 100% | 0 |
-| H1 | Montserrat | 800 | 64 px | 100% | 0 |
-| H2 | Montserrat | 700 | 48 px | 100% | 0 |
-| H3 | Montserrat | 700 | 32 px | 100% | 0 |
-| H4 | Montserrat | 700 | 24 px | 100% | 0 |
-| Body Large | Poppins | 400 | 20 px | 100% | 0 |
-| Body Default | Poppins | 400 | 16 px | 100% | 0 |
-| Small | Poppins | 400 | 11 px | 100% | 0 |
+| Estilo       | Família    | Peso | Tamanho | Line-height | Letter-spacing |
+| ------------ | ---------- | ---: | ------: | ----------: | -------------: |
+| Hero Display | Montserrat |  800 |   88 px |        100% |              0 |
+| H1           | Montserrat |  800 |   64 px |        100% |              0 |
+| H2           | Montserrat |  700 |   48 px |        100% |              0 |
+| H3           | Montserrat |  700 |   32 px |        100% |              0 |
+| H4           | Montserrat |  700 |   24 px |        100% |              0 |
+| Body Large   | Poppins    |  400 |   20 px |        100% |              0 |
+| Body Default | Poppins    |  400 |   16 px |        100% |              0 |
+| Small        | Poppins    |  400 |   11 px |        100% |              0 |
 
 Usos adicionais encontrados:
 
@@ -768,16 +768,16 @@ imagens do site.
 
 ## 11. Integrações e dados dinâmicos inferidos
 
-| Recurso | Inferência | Necessidade de confirmação |
-|---|---|---|
-| Newsletter | Cadastro de nome e e-mail | Provedor, double opt-in, consentimento, mensagens e política |
-| Contato | Telefone, e-mail e possível formulário | Destino dos leads e proteção antispam |
-| Redes sociais | Instagram, LinkedIn e YouTube | URLs oficiais |
-| Busca | Ícone no header | Escopo, índice e tela de resultados |
-| Blog | Header administrativo e login no footer | CMS, banco, modelo editorial e telas públicas |
-| Autenticação | `Blog Admin`, `Sair` e `login` | Provedor, papéis, sessão e recuperação de senha |
-| Analytics | Não representado visualmente | Ferramenta, consentimento e eventos |
-| Convites de mídia | Texto específico no footer | E-mail, formulário ou CRM |
+| Recurso           | Inferência                              | Necessidade de confirmação                                   |
+| ----------------- | --------------------------------------- | ------------------------------------------------------------ |
+| Newsletter        | Cadastro de nome e e-mail               | Provedor, double opt-in, consentimento, mensagens e política |
+| Contato           | Telefone, e-mail e possível formulário  | Destino dos leads e proteção antispam                        |
+| Redes sociais     | Instagram, LinkedIn e YouTube           | URLs oficiais                                                |
+| Busca             | Ícone no header                         | Escopo, índice e tela de resultados                          |
+| Blog              | Header administrativo e login no footer | CMS, banco, modelo editorial e telas públicas                |
+| Autenticação      | `Blog Admin`, `Sair` e `login`          | Provedor, papéis, sessão e recuperação de senha              |
+| Analytics         | Não representado visualmente            | Ferramenta, consentimento e eventos                          |
+| Convites de mídia | Texto específico no footer              | E-mail, formulário ou CRM                                    |
 
 ### Modelo de conteúdo provável
 

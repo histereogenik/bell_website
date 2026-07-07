@@ -519,12 +519,27 @@
   padding: 32px;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  transition:
+    box-shadow 220ms ease,
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.testimonialCard:hover {
+  box-shadow: 0 18px 34px rgb(0 0 0 / 20%);
+  filter: saturate(1.04);
+  transform: translateY(-8px);
 }
 
 .testimonialCard > img {
   display: block;
   width: 51px;
   height: auto;
+  transition: transform 220ms ease;
+}
+
+.testimonialCard:hover > img {
+  transform: translateY(-3px) scale(1.08) rotate(-5deg);
 }
 
 .testimonialCard p {

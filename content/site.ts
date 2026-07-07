@@ -44,7 +44,7 @@ export const testimonials = [
   {
     quote:
       "Se você está começando no varejo e não sabe por onde começar, eu tenho a resposta: Bell Nacif! Recomendo de olhos fechados para quem precisa de uma consultoria completa para transformar seu sonho em realidade.",
-    author: "Nara Cunha",
+    author: "Nana Cunha",
     role: "CEO da marca Eneene",
   },
   {
