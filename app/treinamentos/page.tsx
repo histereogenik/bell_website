@@ -23,7 +23,7 @@ export default function TrainingsPage() {
             src="/images/trainings/trainings_hero.png"
             alt=""
             fill
-            priority
+            loading="eager"
             sizes="100vw"
             aria-hidden="true"
           />
@@ -33,7 +33,9 @@ export default function TrainingsPage() {
             <p className={styles.eyebrow}>
               <span aria-hidden="true" />
               <span>
-                <strong>Treinamentos</strong> | Vivências de Negociação &amp; Vendas
+                <strong>Treinamentos</strong>
+                {" | "}
+                Vivências de Negociação &amp; Vendas
               </span>
             </p>
 
@@ -206,6 +208,7 @@ export default function TrainingsPage() {
                   src="/images/trainings/grid_1.png"
                   alt="Equipe reunida após treinamento conduzido por Bell Nacif."
                   fill
+                  loading="eager"
                   sizes="(max-width: 820px) 100vw, 31vw"
                 />
               </div>

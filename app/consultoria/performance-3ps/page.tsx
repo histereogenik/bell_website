@@ -178,6 +178,7 @@ export default function Performance3PsConsultingPage() {
               alt="Sistema virtuoso do eixo pessoas com organização, liderança, treinamentos e atendimento."
               width={1280}
               height={679}
+              style={{ width: "100%", height: "auto" }}
             />
             <h3>Um sistema virtuoso que gera resultados</h3>
             <div className={styles.peopleResults}>
@@ -229,6 +230,7 @@ export default function Performance3PsConsultingPage() {
               alt="Eixo produtos com posicionamento, rentabilidade e análises."
               width={1280}
               height={533}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </section>
