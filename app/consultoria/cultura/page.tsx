@@ -88,7 +88,7 @@ const cultureProcess = [
     tag: "Comportamento",
     title: "Tradução de valores em comportamentos",
     description:
-      "Cada valor vira um conjunto de comportamentos esperados para líderes e colaboradores. O que se deve fazer mais, o que se deve parar de fazer, e o que será reforçado.",
+      "Cada valor vira um conjunto de comportamentos esperados para líderes e colaboradores. O que se deve fazer mais, o que se deve parar de fazer e o que será reforçado.",
     tags: ["Definição de comportamentos", "Níveis de liderança", "Indicadores"],
     deliverable: "Matriz de comportamentos por valor e por nível hierárquico.",
   },
@@ -329,9 +329,8 @@ export default function CultureConsultingPage() {
           }
           description={
             <>
-              Vamos conversar sobre como construir uma cultura coerente,
-              <br />
-              viva e aplicável no dia a dia.
+              Vamos conversar sobre como construir uma cultura coerente, viva e
+              aplicável no dia a dia.
             </>
           }
         />

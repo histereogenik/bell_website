@@ -39,7 +39,8 @@
   font-size: clamp(24px, 2.35vw, 40px);
   font-weight: 700;
   line-height: 1.08;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
   animation: quote-in 450ms ease-out both;
 }
 

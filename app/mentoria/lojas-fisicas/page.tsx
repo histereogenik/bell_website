@@ -10,9 +10,9 @@ const contactClientsHref = "/contato/clientes";
 const imageBase = "/images/mentorship_store";
 
 export const metadata: Metadata = {
-  title: "Mentoria para donos de lojas físicas | Bell Nacif",
+  title: "Mentoria para donas de lojas físicas | Bell Nacif",
   description:
-    "Mentoria estratégica para donos de lojas que precisam preparar liderança, rotina comercial e equipe para vender com mais previsibilidade.",
+    "Mentoria estratégica para donas de lojas que precisam preparar liderança, rotina comercial e equipe para vender com mais previsibilidade.",
 };
 
 const improvisoCards = [
@@ -46,13 +46,13 @@ const unlocks = [
   },
   {
     title: "Processos, autonomia e consistência operacional",
-    text: "Para reduzir improvisos, dependência do dono, falhas de execução e falta de padrão de atendimento.",
+    text: "Para reduzir improvisos, dependência da dona, falhas de execução e falta de padrão de atendimento.",
   },
 ];
 
 const faqItems = [
   {
-    question: "Além de donos de loja, a mentoria é indicada para supervisores e gerentes?",
+    question: "Além de donas de loja, a mentoria é indicada para supervisores e gerentes?",
     answer:
       "Sim. A mentoria pode ser realizada para supervisores e gerentes. Caso ocorra em grupo não são misturadas as funções.\n\nCada função tem desafios, responsabilidades e níveis de decisão diferentes. Por isso, a jornada é conduzida de forma separada, respeitando o papel de cada liderança dentro da operação.",
   },
@@ -396,7 +396,7 @@ export default function StoreMentorshipPage() {
           <div className={`container ${styles.unlocksInner}`}>
             <h2 id="unlocks-title">O que destravamos na sua loja</h2>
             <p>
-              A Mentoria LÚMINA Gestão de Lojas foi criada para donos de lojas
+              A Mentoria LÚMINA Gestão de Lojas foi criada para donas de lojas
               físicas que querem organizar a operação, desenvolver líderes e
               fazer o time vender com mais consistência.
             </p>
@@ -413,7 +413,7 @@ export default function StoreMentorshipPage() {
             </div>
             <p className={styles.unlocksClosing}>
               Mesmo quando a empresa ainda não possui todos os processos
-              estruturados, o dono de loja aprende a criar rotina de gestão para
+              estruturados, a dona de loja aprende a criar rotina de gestão para
               organizar melhor sua equipe, acompanhar de forma estratégica os
               resultados e conduzir a loja com clareza.
             </p>
@@ -468,7 +468,7 @@ export default function StoreMentorshipPage() {
                 consciência de liderança, domínio da gestão, condução de
                 pessoas e atendimento com método
               </strong>{" "}
-              ajudam o dono da loja a transformar uma operação reativa em uma
+              ajudam a dona da loja a transformar uma operação reativa em uma
               gestão mais clara, organizada e preparada para vender com
               consistência.
             </p>

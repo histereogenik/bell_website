@@ -86,12 +86,27 @@
   background: #fff1eb;
   border-radius: 6px;
   color: var(--color-black);
+  transition:
+    box-shadow 220ms ease,
+    transform 220ms ease,
+    background-color 220ms ease;
+}
+
+.pillarsGrid article:hover {
+  background: #fff6f2;
+  box-shadow: 0 18px 34px rgb(0 0 0 / 26%);
+  transform: translateY(-8px);
 }
 
 .pillarsGrid img {
   width: 64px;
   height: 64px;
   object-fit: contain;
+  transition: transform 220ms ease;
+}
+
+.pillarsGrid article:hover img {
+  transform: translateY(-4px) scale(1.08) rotate(-4deg);
 }
 
 .pillarsGrid h3 {
@@ -213,16 +228,26 @@
 }
 
 .processAxisImage,
-.productsAxisImage {
+.productsAxisImageFrame {
   width: 100%;
-  height: auto;
   margin-top: 58px;
   border-radius: 6px;
   box-shadow: 0 2px 3px rgb(0 0 0 / 18%);
 }
 
+.processAxisImage {
+  height: auto;
+}
+
+.productsAxisImageFrame {
+  overflow: hidden;
+}
+
 .productsAxisImage {
-  margin-top: 0;
+  display: block;
+  height: auto;
+  transform: translateY(-8%);
+  margin-bottom: -8%;
 }
 
 @media (max-width: 860px) {
@@ -363,11 +388,7 @@
   }
 
   .processAxisImage,
-  .productsAxisImage {
+  .productsAxisImageFrame {
     margin-top: 42px;
-  }
-
-  .productsAxisImage {
-    margin-top: 0;
   }
 }

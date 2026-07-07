@@ -117,9 +117,7 @@ export default function Performance3PsConsultingPage() {
               </p>
               <p>
                 Cada solução começa pela leitura do momento do negócio e avança
-                para decisões práticas, com clareza,
-                <br />
-                método e foco em resultado.
+                para decisões práticas, com clareza, método e foco em resultado.
               </p>
             </div>
             <div className={styles.buildTogetherGrid}>
@@ -178,6 +176,7 @@ export default function Performance3PsConsultingPage() {
               alt="Sistema virtuoso do eixo pessoas com organização, liderança, treinamentos e atendimento."
               width={1280}
               height={679}
+              style={{ width: "100%", height: "auto" }}
             />
             <h3>Um sistema virtuoso que gera resultados</h3>
             <div className={styles.peopleResults}>
@@ -202,9 +201,7 @@ export default function Performance3PsConsultingPage() {
             <h2 id="process-axis-title">Eixo processos</h2>
             <p>
               Conhecendo a execução dos processos no cenário atual, organizamos
-              processos com clareza e eficiência,
-              <br />
-              atuando em três frentes.
+              processos com clareza e eficiência, atuando em três frentes.
             </p>
             <Image
               className={styles.processAxisImage}
@@ -223,13 +220,16 @@ export default function Performance3PsConsultingPage() {
               Conhecendo o mix de produtos no cenário atual, desdobramos com a
               empresa três frentes de atuação:
             </p>
-            <Image
-              className={styles.productsAxisImage}
-              src="/images/consulting/performance/products.png"
-              alt="Eixo produtos com posicionamento, rentabilidade e análises."
-              width={1280}
-              height={533}
-            />
+            <div className={styles.productsAxisImageFrame}>
+              <Image
+                className={styles.productsAxisImage}
+                src="/images/consulting/performance/products.png"
+                alt="Eixo produtos com posicionamento, rentabilidade e análises."
+                width={1280}
+                height={533}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
           </div>
         </section>
 
@@ -247,9 +247,7 @@ export default function Performance3PsConsultingPage() {
           description={
             <>
               Vamos identificar quais eixos precisam ser ajustados para o seu
-              negócio
-              <br />
-              avançar com mais clareza, eficiência e resultado.
+              negócio avançar com mais clareza, eficiência e resultado.
             </>
           }
         />

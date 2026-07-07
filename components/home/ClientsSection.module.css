@@ -25,7 +25,7 @@
 .track {
   display: flex;
   width: max-content;
-  animation: clients-scroll 72s linear infinite;
+  animation: clients-scroll 58s linear infinite;
   will-change: transform;
 }
 
@@ -72,7 +72,7 @@
   }
 
   .track {
-    animation-duration: 62s;
+    animation-duration: 50s;
   }
 }
 

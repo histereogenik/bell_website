@@ -37,8 +37,14 @@ export const navigation = [
 export const testimonials = [
   {
     quote:
+      "Contratamos a melhor “psicanalista\u00A0empresarial” do Brasil, ela atende pelo nome de Bell Nacif.",
+    author: "Rogério Vieira Santigo",
+    role: "Presidente OAB Prev MG",
+  },
+  {
+    quote:
       "Se você está começando no varejo e não sabe por onde começar, eu tenho a resposta: Bell Nacif! Recomendo de olhos fechados para quem precisa de uma consultoria completa para transformar seu sonho em realidade.",
-    author: "Nara Cunha",
+    author: "Nana Cunha",
     role: "CEO da marca Eneene",
   },
   {
@@ -52,12 +58,6 @@ export const testimonials = [
       "Bell prestou um excelente trabalho em minha empresa, desenvolvendo pessoas, disseminando processos e gestão, ministrando excelentes treinamentos de vendas. Sem dúvidas, colaborou muito com o desenvolvimento de pessoas das minhas equipes.",
     author: "Marcelo Daher Salomão",
     role: "CEO Beluga e Casas Lev",
-  },
-  {
-    quote:
-      "Contratamos a melhor “psicanalista empresarial” do Brasil, ela atende pelo nome de Bell Nacif.",
-    author: "Rogério Vieira Santigo",
-    role: "Presidente OAB Prev MG",
   },
   {
     quote:
@@ -99,7 +99,7 @@ export const authorityMetrics = [
 ] as const;
 
 export const clients = [
-  { name: "PepsiCo", image: "/images/clients-logos/pepsico.png" },
+  { name: "OABPrev", image: "/images/clients-logos/oabprev.png" },
   { name: "Lipton", image: "/images/clients-logos/lipton.png" },
   { name: "Columbia", image: "/images/clients-logos/columbia.png" },
   { name: "Natura", image: "/images/clients-logos/natura.png" },
