@@ -329,9 +329,8 @@ export default function CultureConsultingPage() {
           }
           description={
             <>
-              Vamos conversar sobre como construir uma cultura coerente,
-              <br />
-              viva e aplicável no dia a dia.
+              Vamos conversar sobre como construir uma cultura coerente, viva e
+              aplicável no dia a dia.
             </>
           }
         />

@@ -82,7 +82,7 @@ export default function PdvPlansAnalysisConsultingPage() {
           description={
             <>
               Alinhamos o projeto de arquitetura com a visão comercial
-              <br />e a experiência do cliente no seu ponto de venda (PDV)
+              e a experiência do cliente no seu ponto de venda (PDV)
             </>
           }
         />
@@ -140,9 +140,8 @@ export default function PdvPlansAnalysisConsultingPage() {
           description={
             <>
               Antes de inaugurar, vamos avaliar se o seu projeto está preparado
-              para
-              <br />
-              vender, encantar o cliente e funcionar bem na rotina da operação.
+              para vender, encantar o cliente e funcionar bem na rotina da
+              operação.
             </>
           }
         />
