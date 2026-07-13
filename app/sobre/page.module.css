@@ -530,6 +530,324 @@
   line-height: 1.45;
 }
 
+.simMethod {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.simMethodInner {
+  max-width: 1118px;
+  padding-block: clamp(86px, 8.7vw, 125px) clamp(88px, 9vw, 130px);
+}
+
+.simLetters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  align-items: end;
+  max-width: 820px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.simLetters div {
+  display: grid;
+  justify-items: center;
+}
+
+.simLetters span {
+  color: var(--color-orange);
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(82px, 9.44vw, 136px);
+  font-weight: 800;
+  line-height: 0.78;
+}
+
+.simLetters strong {
+  margin-top: 10px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(34px, 3.88vw, 56px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.simCopy {
+  display: grid;
+  gap: clamp(32px, 3.3vw, 48px);
+  margin-top: clamp(64px, 7vw, 101px);
+}
+
+.simCopy p {
+  margin: 0;
+  font-size: clamp(18px, 1.52vw, 22px);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.simCopy p strong {
+  font-weight: 800;
+}
+
+.simCopy h2 {
+  max-width: 980px;
+  margin: clamp(24px, 2.9vw, 42px) 0 0;
+  font-size: clamp(32px, 2.78vw, 40px);
+  font-weight: 400;
+  line-height: 1.46;
+}
+
+.currentWork {
+  background: var(--color-off-white);
+}
+
+.currentWorkInner {
+  display: grid;
+  grid-template-columns: minmax(0, 570px) minmax(0, 598px);
+  align-items: center;
+  gap: clamp(56px, 6.12vw, 88px);
+  padding-block: clamp(88px, 10vw, 144px);
+}
+
+.currentWorkCopy,
+.currentWorkResults {
+  display: grid;
+}
+
+.currentWorkCopy {
+  gap: clamp(34px, 4vw, 58px);
+}
+
+.currentWorkCopy p,
+.currentWorkResults p {
+  margin: 0;
+}
+
+.currentWorkCopy p {
+  color: var(--color-black);
+  font-size: clamp(18px, 1.53vw, 22px);
+  font-weight: 400;
+  line-height: 1.52;
+}
+
+.currentWorkLead {
+  color: var(--color-black);
+  font-size: clamp(23px, 1.95vw, 28px) !important;
+  font-weight: 400;
+  line-height: 1.46 !important;
+}
+
+.currentWorkResults {
+  align-content: center;
+}
+
+.resultsEyebrow {
+  margin-top: clamp(48px, 5vw, 72px) !important;
+  color: var(--color-black);
+  font-size: clamp(18px, 1.53vw, 22px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  gap: 40px 34px;
+  margin-top: clamp(38px, 4vw, 58px);
+}
+
+.resultsGrid span {
+  display: grid;
+  min-height: 82px;
+  place-items: center;
+  padding: 18px 22px;
+  border-radius: 6px;
+  background: var(--color-orange-soft);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+  color: var(--color-black);
+  font-size: clamp(18px, 1.53vw, 22px);
+  font-weight: 800;
+  line-height: 1.18;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.resultsGrid span:nth-child(1) {
+  grid-column: span 8;
+}
+
+.resultsGrid span:nth-child(2) {
+  grid-column: span 12;
+}
+
+.resultsGrid span:nth-child(3) {
+  grid-column: span 11;
+}
+
+.resultsGrid span:nth-child(4) {
+  grid-column: span 9;
+}
+
+.resultsWide {
+  grid-column: 1 / -1 !important;
+  min-height: 114px !important;
+  padding-inline: clamp(24px, 3.8vw, 54px) !important;
+  white-space: normal !important;
+}
+
+.mastery {
+  background: var(--color-white);
+}
+
+.masteryInner {
+  display: grid;
+  grid-template-columns: minmax(0, 626px) minmax(0, 516px);
+  align-items: center;
+  gap: clamp(72px, 9.7vw, 140px);
+  padding-block: clamp(86px, 9vw, 130px);
+}
+
+.masteryCopy {
+  display: grid;
+  gap: clamp(36px, 4vw, 58px);
+}
+
+.masteryCopy h2,
+.masteryCopy p,
+.masteryFigure {
+  margin: 0;
+}
+
+.masteryCopy h2 {
+  font-family: var(--font-body), sans-serif;
+  font-size: clamp(23px, 1.95vw, 28px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.masteryCopy p {
+  color: var(--color-black);
+  font-size: clamp(18px, 1.53vw, 22px);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.masteryLead {
+  font-size: clamp(23px, 1.95vw, 28px) !important;
+  line-height: 1.45 !important;
+}
+
+.masteryFigure {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+
+.masteryFigure img {
+  width: 100%;
+  aspect-ratio: 516 / 608;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.masteryFigure figcaption {
+  color: var(--color-gray-dark);
+  font-size: clamp(16px, 1.39vw, 20px);
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.mission {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgb(255 255 255 / 96%) 0%, rgb(255 255 255 / 88%) 58%, rgb(255 255 255 / 72%) 100%),
+    var(--color-white);
+}
+
+.mission::after {
+  position: absolute;
+  inset: 0 -4% 0 auto;
+  width: min(44vw, 520px);
+  background: url("/images/about/about_bg.png") center right / contain no-repeat;
+  content: "";
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.missionInner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1048px);
+  gap: 28px;
+  align-items: start;
+  padding-block: clamp(74px, 7.9vw, 114px);
+}
+
+.missionQuoteMark {
+  display: block;
+  width: clamp(86px, 9.2vw, 132px);
+  aspect-ratio: 132 / 82;
+  margin-top: 6px;
+  background: var(--color-orange-soft);
+  opacity: 0.72;
+  mask: url("/images/about/aspas_grey.png") center / contain no-repeat;
+}
+
+.missionCopy h2,
+.missionCopy p {
+  margin: 0;
+}
+
+.missionCopy h2 {
+  color: var(--color-orange);
+  font-family: var(--font-body), sans-serif;
+  font-size: clamp(24px, 2.78vw, 40px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.missionCopy p {
+  margin-top: 16px;
+  color: var(--color-black);
+  font-size: clamp(28px, 2.78vw, 40px);
+  font-weight: 400;
+  line-height: 1.52;
+}
+
+.missionCopy strong {
+  font-weight: 800;
+}
+
+.aboutClosing {
+  background: var(--color-black);
+}
+
+.aboutClosingInner {
+  display: grid;
+  min-height: clamp(300px, 27.1vw, 390px);
+  place-items: center;
+  padding-block: clamp(74px, 8.5vw, 122px);
+}
+
+.aboutClosing p {
+  margin: 0;
+  color: var(--color-white);
+  font-size: clamp(40px, 4.45vw, 64px);
+  font-weight: 400;
+  line-height: 1.32;
+  text-align: center;
+}
+
+.aboutClosing span {
+  display: block;
+  color: var(--color-orange);
+}
+
 @media (max-width: 1180px) {
   .hero {
     height: min(660px, calc(100svh - var(--header-height)));
@@ -577,6 +895,32 @@
   .storyKid img {
     width: min(100%, 320px);
     height: auto;
+  }
+
+  .currentWorkInner {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: min(100% - 56px, 820px);
+    gap: 56px;
+  }
+
+  .resultsGrid {
+    grid-template-columns: repeat(20, minmax(0, 1fr));
+  }
+
+  .masteryInner {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: min(100% - 56px, 820px);
+    gap: 54px;
+  }
+
+  .masteryFigure {
+    justify-self: center;
+    width: min(100%, 560px);
+  }
+
+  .missionInner {
+    max-width: min(100% - 56px, 980px);
+    grid-template-columns: 96px minmax(0, 1fr);
   }
 }
 
@@ -813,6 +1157,141 @@
   .preparationBig {
     margin-top: 42px !important;
     font-size: 30px;
+  }
+
+  .simMethodInner {
+    width: calc(100% - 56px);
+    padding-block: 72px;
+  }
+
+  .simLetters span {
+    font-size: clamp(62px, 20vw, 92px);
+  }
+
+  .simLetters strong {
+    font-size: clamp(22px, 7vw, 32px);
+  }
+
+  .simCopy {
+    gap: 28px;
+    margin-top: 56px;
+  }
+
+  .simCopy p {
+    font-size: 18px;
+  }
+
+  .simCopy h2 {
+    margin-top: 22px;
+    font-size: 30px;
+  }
+
+  .currentWorkInner {
+    width: calc(100% - 56px);
+    grid-template-columns: 1fr;
+    gap: 52px;
+    padding-block: 72px;
+  }
+
+  .currentWorkCopy {
+    gap: 30px;
+  }
+
+  .currentWorkCopy p,
+  .currentWorkResults p {
+    font-size: 18px;
+  }
+
+  .currentWorkLead {
+    font-size: 23px !important;
+  }
+
+  .resultsEyebrow {
+    margin-top: 34px !important;
+  }
+
+  .resultsGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 34px;
+  }
+
+  .resultsGrid span {
+    grid-column: 1 / -1 !important;
+    width: 100%;
+    min-height: 64px;
+    font-size: 18px;
+    white-space: normal;
+  }
+
+  .resultsWide {
+    min-height: 92px !important;
+    padding-inline: 22px !important;
+  }
+
+  .masteryInner {
+    width: calc(100% - 56px);
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding-block: 72px;
+  }
+
+  .masteryCopy {
+    gap: 30px;
+  }
+
+  .masteryCopy h2,
+  .masteryLead {
+    font-size: 23px !important;
+  }
+
+  .masteryCopy p {
+    font-size: 18px;
+  }
+
+  .masteryFigure {
+    gap: 14px;
+  }
+
+  .masteryFigure figcaption {
+    font-size: 15px;
+  }
+
+  .mission::after {
+    right: -24%;
+    width: 92vw;
+    opacity: 0.14;
+  }
+
+  .missionInner {
+    width: calc(100% - 56px);
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-block: 64px;
+  }
+
+  .missionQuoteMark {
+    width: 78px;
+    margin-top: 0;
+  }
+
+  .missionCopy h2 {
+    font-size: 22px;
+  }
+
+  .missionCopy p {
+    margin-top: 14px;
+    font-size: 26px;
+    line-height: 1.42;
+  }
+
+  .aboutClosingInner {
+    width: calc(100% - 56px);
+    min-height: 300px;
+  }
+
+  .aboutClosing p {
+    font-size: 34px;
   }
 }
 

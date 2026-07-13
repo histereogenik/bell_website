@@ -353,6 +353,155 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        <section className={styles.simMethod} aria-labelledby="sim-method-title">
+          <div className={`container ${styles.simMethodInner}`}>
+            <div className={styles.simLetters} aria-label="SIM: Servir, Interesse e Meta">
+              <div>
+                <span>S</span>
+                <strong>Servir</strong>
+              </div>
+              <div>
+                <span>I</span>
+                <strong>Interesse</strong>
+              </div>
+              <div>
+                <span>M</span>
+                <strong>Meta</strong>
+              </div>
+            </div>
+
+            <div className={styles.simCopy}>
+              <p>
+                Foi dessa vivência que nasceu o meu{" "}
+                <strong>Método SIM: Servir, Interesse e Meta.</strong>
+              </p>
+              <p>
+                Um método criado a partir da prática, da operação real e da
+                liderança de pessoas em ambientes de alta performance.
+              </p>
+
+              <h2 id="sim-method-title">
+                Porque eu acredito que vendas consistentes não começam pela
+                pressão.
+              </h2>
+
+              <p>
+                Começam quando líderes conduzem melhor, equipes se interessam de
+                verdade pelo cliente e processos ajudam pessoas a entregarem uma
+                experiência mais humana, mais estratégica e mais rentável.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.currentWork} aria-label="Atuação atual de Bell Nacif">
+          <div className={`container ${styles.currentWorkInner}`}>
+            <div className={styles.currentWorkCopy}>
+              <p>
+                Hoje, sigo fazendo o que sempre fiz, mas com mais método,
+                maturidade e consciência.
+              </p>
+              <p className={styles.currentWorkLead}>
+                Como palestrante, consultora, mentora e professora de
+                pós-graduação, desenvolvo pessoas para fortalecer negócios.
+              </p>
+              <p>
+                Levo para empresas, líderes e equipes a experiência real de quem
+                começou no atendimento, cresceu no varejo, liderou grandes
+                operações e transformou essa jornada em conhecimento aplicável.
+              </p>
+              <p>
+                Minha atuação une estratégia comercial, desenvolvimento humano,
+                liderança e processos de venda para ajudar negócios a crescerem
+                com mais verdade, consistência e direção.
+              </p>
+            </div>
+
+            <div className={styles.currentWorkResults}>
+              <p className={styles.currentWorkLead}>
+                Porque resultado sustentável não nasce de pressão vazia.
+              </p>
+              <p className={styles.resultsEyebrow}>Nasce de:</p>
+
+              <div className={styles.resultsGrid}>
+                <span>processos claros</span>
+                <span>equipes encorajadas</span>
+                <span>pessoas bem conduzidas</span>
+                <span>líderes preparados</span>
+                <span className={styles.resultsWide}>
+                  e de uma cultura comercial que entende que vender melhor começa
+                  por servir melhor.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.mastery} aria-labelledby="mastery-title">
+          <div className={`container ${styles.masteryInner}`}>
+            <div className={styles.masteryCopy}>
+              <h2 id="mastery-title">Mestrado e Transformação</h2>
+
+              <p>
+                Em 2020, recebi o título de Mestre em Gestão de Competitividade
+                e Inovação no Varejo pela FGV-SP.
+              </p>
+
+              <p>
+                Na minha pesquisa, estudei a transformação digital sob a
+                perspectiva dos vendedores em grandes varejistas nacionais e
+                internacionais.
+              </p>
+
+              <p>
+                Eu queria entender por que alguns vendedores viam as ferramentas
+                digitais como aliadas, enquanto outros as enxergavam como ameaça.
+              </p>
+
+              <p className={styles.masteryLead}>
+                Essa investigação confirmou o que a prática já havia me ensinado:
+                nenhuma transformação acontece de verdade se as pessoas não forem
+                preparadas para atravessá-la.
+              </p>
+            </div>
+
+            <figure className={styles.masteryFigure}>
+              <Image
+                src="/images/about/speech.png"
+                alt="Bell Nacif discursando em cerimônia de colação de grau na FGV."
+                width={776}
+                height={1663}
+                sizes="(max-width: 900px) 100vw, 40vw"
+              />
+              <figcaption>2022 | Oradora colação de grau Mestrado</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className={styles.mission} aria-labelledby="mission-title">
+          <div className={`container ${styles.missionInner}`}>
+            <span className={styles.missionQuoteMark} aria-hidden="true" />
+            <div className={styles.missionCopy}>
+              <h2 id="mission-title">MINHA MISSÃO</h2>
+              <p>
+                <strong>Servir</strong> pessoas e empresas com{" "}
+                <strong>sabedoria prática, escuta e verdade</strong>, encorajando
+                líderes a enxergarem melhor para{" "}
+                <strong>decidir, desenvolver pessoas e gerar resultados duradouros.</strong>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.aboutClosing} aria-label="Mensagem final">
+          <div className={`container ${styles.aboutClosingInner}`}>
+            <p>
+              Porque negócios crescem quando
+              <span>pessoas são bem conduzidas.</span>
+            </p>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
