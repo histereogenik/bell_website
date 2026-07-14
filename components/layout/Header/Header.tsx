@@ -11,10 +11,12 @@ import {
   MenuIcon,
   SearchIcon,
 } from "@/components/ui/Icons";
+import { HeaderSearch } from "./HeaderSearch";
 import styles from "./Header.module.css";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const pathname = usePathname();
 
   function isActive(href: string) {
@@ -23,7 +25,7 @@ export function Header() {
   }
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    document.body.style.overflow = menuOpen || searchOpen ? "hidden" : "";
 
     function closeOnEscape(event: KeyboardEvent) {
       if (event.key === "Escape") setMenuOpen(false);
@@ -34,7 +36,7 @@ export function Header() {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", closeOnEscape);
     };
-  }, [menuOpen]);
+  }, [menuOpen, searchOpen]);
 
   return (
     <header className={styles.header}>
@@ -82,7 +84,16 @@ export function Header() {
         </nav>
 
         <div className={styles.actions}>
-          <button className={styles.iconButton} type="button">
+          <button
+            className={styles.iconButton}
+            type="button"
+            aria-expanded={searchOpen}
+            aria-controls="header-search"
+            onClick={() => {
+              setMenuOpen(false);
+              setSearchOpen((current) => !current);
+            }}
+          >
             <span className="sr-only">Buscar</span>
             <SearchIcon />
           </button>
@@ -91,7 +102,10 @@ export function Header() {
             type="button"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
-            onClick={() => setMenuOpen((current) => !current)}
+            onClick={() => {
+              setSearchOpen(false);
+              setMenuOpen((current) => !current);
+            }}
           >
             <span className="sr-only">
               {menuOpen ? "Fechar menu" : "Abrir menu"}
@@ -135,6 +149,7 @@ export function Header() {
           ))}
         </nav>
       </div>
+      <HeaderSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 }
