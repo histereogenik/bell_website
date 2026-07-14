@@ -1,18 +1,51 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { articleSearchItems } from "@/content/search";
 import { navigation } from "@/content/site";
 import { BrandLogo } from "@/components/ui/BrandLogo/BrandLogo";
 import {
   ChevronDownIcon,
-  CloseIcon,
-  MenuIcon,
   SearchIcon,
 } from "@/components/ui/Icons";
 import { HeaderSearch } from "./HeaderSearch";
 import styles from "./Header.module.css";
+
+const menuPosts = articleSearchItems.slice(0, 6);
+const featuredPost =
+  articleSearchItems.find((post) =>
+    post.href.includes("erro-silencioso-dono-carregar-empresa"),
+  ) ?? articleSearchItems[0]!;
+
+const socialLinks = [
+  {
+    label: "Instagram",
+    description: "Conecte-se comigo",
+    href: "https://www.instagram.com/bellnacif/",
+    icon: "/vectors/insta.png",
+    width: 28,
+    height: 28,
+  },
+  {
+    label: "LinkedIn",
+    description: "Contato profissional",
+    href: "https://www.linkedin.com/in/bell-nacif/",
+    icon: "/vectors/linkedin.png",
+    width: 25,
+    height: 28,
+  },
+  {
+    label: "YouTube",
+    description: "Conteúdo em vídeo",
+    href: "https://www.youtube.com/@qsmvm-bellnacif5468",
+    icon: "/vectors/yt.png",
+    width: 28,
+    height: 28,
+  },
+];
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +72,7 @@ export function Header() {
   }, [menuOpen, searchOpen]);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${menuOpen ? styles.menuIsOpen : ""}`}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logoLink}>
           <BrandLogo />
@@ -98,7 +131,7 @@ export function Header() {
             <SearchIcon />
           </button>
           <button
-            className={styles.iconButton}
+            className={`${styles.iconButton} ${styles.menuToggleButton}`}
             type="button"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -110,7 +143,16 @@ export function Header() {
             <span className="sr-only">
               {menuOpen ? "Fechar menu" : "Abrir menu"}
             </span>
-            {menuOpen ? <CloseIcon /> : <MenuIcon />}
+            <span
+              className={`${styles.hamburgerIcon} ${
+                menuOpen ? styles.hamburgerIconOpen : ""
+              }`}
+              aria-hidden="true"
+            >
+              <span />
+              <span />
+              <span />
+            </span>
           </button>
         </div>
       </div>
@@ -148,6 +190,76 @@ export function Header() {
             </div>
           ))}
         </nav>
+
+        <aside className={styles.menuAside} aria-label="Conteúdos e redes">
+          <div className={styles.menuContentGrid}>
+          <section
+            className={styles.menuFeatured}
+            aria-labelledby="menu-featured"
+          >
+            <h2 id="menu-featured">Artigo em destaque</h2>
+            <Link href={featuredPost.href} onClick={() => setMenuOpen(false)}>
+              {featuredPost.image ? (
+                <Image
+                  src={featuredPost.image}
+                  alt=""
+                  width={360}
+                  height={220}
+                  sizes="(max-width: 1180px) 100vw, 260px"
+                  aria-hidden="true"
+                />
+              ) : null}
+                <strong>{featuredPost.title}</strong>
+                <p>{featuredPost.description}</p>
+              {featuredPost.duration ? (
+                <small>{featuredPost.duration} min de leitura</small>
+              ) : null}
+            </Link>
+          </section>
+
+          <section className={styles.menuPosts} aria-labelledby="menu-posts">
+            <h2 id="menu-posts">Últimos no Direto ao Ponto</h2>
+            <div>
+              {menuPosts.map((post) => (
+                <Link
+                  href={post.href}
+                  key={post.href}
+                  onClick={() => setMenuOpen(false)}
+                >
+                    <strong>{post.title}</strong>
+                  {post.duration ? <small>{post.duration} min</small> : null}
+                </Link>
+              ))}
+            </div>
+          </section>
+          </div>
+
+          <section className={styles.menuSocial} aria-labelledby="menu-social">
+            <h2 id="menu-social">Redes sociais</h2>
+            <div>
+              {socialLinks.map((social) => (
+                <a
+                  href={social.href}
+                  key={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    src={social.icon}
+                    alt=""
+                    width={social.width}
+                    height={social.height}
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong>{social.label}</strong>
+                    <small>{social.description}</small>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+        </aside>
       </div>
       <HeaderSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
