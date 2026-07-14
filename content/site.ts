@@ -141,8 +141,18 @@ export const clients = [
 ] as const;
 
 export const footerNavigation = [
-  navigation.slice(0, 4),
-  navigation.slice(4),
+  [
+    { label: "Início", href: "/" },
+    { label: "Direto ao Ponto", href: "/direto-ao-ponto" },
+    { label: "Mentoria", href: "/mentoria/donos-de-negocios" },
+    { label: "Consultoria", href: "/consultoria/cultura" },
+  ],
+  [
+    { label: "Palestras", href: "/palestras" },
+    { label: "Treinamentos", href: "/treinamentos" },
+    { label: "Sobre", href: "/sobre" },
+    { label: "Contato", href: "/contato/clientes" },
+  ],
 ] as const;
 
 export const contact = {
