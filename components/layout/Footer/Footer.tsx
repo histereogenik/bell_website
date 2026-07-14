@@ -18,7 +18,12 @@ export function Footer() {
 
         <div className={styles.information}>
           <div className={styles.social}>
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/bellnacif/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
               <Image
                 src="/vectors/insta.png"
                 alt=""
@@ -41,7 +46,12 @@ export function Footer() {
                 aria-hidden="true"
               />
             </a>
-            <a href="#" aria-label="YouTube">
+            <a
+              href="https://www.youtube.com/@qsmvm-bellnacif5468"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+            >
               <Image
                 src="/vectors/yt.png"
                 alt=""

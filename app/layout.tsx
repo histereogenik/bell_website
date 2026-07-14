@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "Bell Nacif | Liderança e vendas",
   description:
     "Mentoria, consultoria, palestras e treinamentos para líderes e negócios que querem crescer com método.",
+  icons: {
+    icon: "/logos/tab_logo.png",
+    shortcut: "/logos/tab_logo.png",
+  },
 };
 
 export default function RootLayout({

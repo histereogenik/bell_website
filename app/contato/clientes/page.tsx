@@ -87,7 +87,7 @@ export default function ContactClientsPage() {
                 variant="black"
                 className={styles.heroButton}
               >
-                Ver canais direto
+                Ver canais diretos
               </CtaButton>
             </div>
           </div>
