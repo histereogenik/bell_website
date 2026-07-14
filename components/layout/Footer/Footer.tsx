@@ -27,7 +27,12 @@ export function Footer() {
                 aria-hidden="true"
               />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/bell-nacif/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
               <Image
                 src="/vectors/linkedin.png"
                 alt=""

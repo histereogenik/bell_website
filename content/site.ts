@@ -31,7 +31,11 @@ export const navigation = [
   { label: "Palestras", href: "/palestras" },
   { label: "Treinamentos", href: "/treinamentos" },
   { label: "Sobre", href: "/sobre" },
-  { label: "Contato", href: "/contato" },
+  {
+    label: "Contato",
+    href: "/contato",
+    children: [{ label: "Para clientes", href: "/contato/clientes" }],
+  },
 ] as const;
 
 export const testimonials = [
