@@ -34,7 +34,10 @@ export const navigation = [
   {
     label: "Contato",
     href: "/contato",
-    children: [{ label: "Para clientes", href: "/contato/clientes" }],
+    children: [
+      { label: "Para clientes", href: "/contato/clientes" },
+      { label: "Para parcerias", href: "/contato/parcerias" },
+    ],
   },
 ] as const;
 
