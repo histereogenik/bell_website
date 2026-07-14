@@ -20,7 +20,13 @@ const topics = [
   "Experiência do cliente",
 ];
 
-const durations = [5, 10, 15, 20, 30];
+const durationOptions = [
+  { label: "Até 5 min", value: "5", min: 0, max: 5 },
+  { label: "6–10 min", value: "10", min: 6, max: 10 },
+  { label: "11–15 min", value: "15", min: 11, max: 15 },
+  { label: "16–20 min", value: "20", min: 16, max: 20 },
+  { label: "21–30 min", value: "30", min: 21, max: 30 },
+];
 
 type FilterPopoverProps = {
   label: string;
@@ -92,8 +98,26 @@ function getTopicDisplayValue(values: string[]) {
 }
 
 function getDurationDisplayValue(values: string[]) {
-  if (values.length === 1) return `${values[0]} min`;
+  if (values.length === 1) {
+    return (
+      durationOptions.find((option) => option.value === values[0])?.label ??
+      `${values[0]} min`
+    );
+  }
   return `${values.length} durações`;
+}
+
+function matchesDurationRange(duration: number, selectedDurations: string[]) {
+  if (selectedDurations.length === 0) return true;
+
+  return selectedDurations.some((selectedDuration) => {
+    const range = durationOptions.find(
+      (option) => option.value === selectedDuration,
+    );
+
+    if (!range) return false;
+    return duration >= range.min && duration <= range.max;
+  });
 }
 
 function toggleFilterValue(currentValues: string[], nextValue: string) {
@@ -115,9 +139,10 @@ export function ArticleExplorer() {
         const matchesTopic =
           selectedTopics.length === 0 ||
           selectedTopics.includes(article.topic);
-        const matchesDuration =
-          selectedDurations.length === 0 ||
-          selectedDurations.includes(String(article.duration));
+        const matchesDuration = matchesDurationRange(
+          article.duration,
+          selectedDurations,
+        );
 
         return matchesTopic && matchesDuration;
       }),
@@ -171,9 +196,9 @@ export function ArticleExplorer() {
             title="Selecione uma duração"
             name="duration"
             selectedValues={selectedDurations}
-            options={durations.map((item) => ({
-              label: `${item} min`,
-              value: String(item),
+            options={durationOptions.map(({ label, value }) => ({
+              label,
+              value,
             }))}
             onChange={updateDurations}
             getDisplayValue={getDurationDisplayValue}
