@@ -22,7 +22,7 @@ export default function BusinessOwnersMentorshipPage() {
         <section className={styles.hero} aria-labelledby="mentorship-title">
           <Image
             className={styles.heroImage}
-            src="/images/metorship/bússola.png"
+            src="/images/mentorship/bússola.png"
             alt=""
             fill
             priority
@@ -111,7 +111,7 @@ export default function BusinessOwnersMentorshipPage() {
             <div className={styles.workScopeGrid}>
               <article className={styles.workCard}>
                 <Image
-                  src="/images/metorship/person.png"
+                  src="/images/mentorship/person.png"
                   alt=""
                   width={64}
                   height={64}
@@ -123,7 +123,7 @@ export default function BusinessOwnersMentorshipPage() {
 
               <article className={styles.workCard}>
                 <Image
-                  src="/images/metorship/octicon_goal.png"
+                  src="/images/mentorship/octicon_goal.png"
                   alt=""
                   width={64}
                   height={64}
@@ -138,7 +138,7 @@ export default function BusinessOwnersMentorshipPage() {
 
               <article className={styles.workCard}>
                 <Image
-                  src="/images/metorship/gear.png"
+                  src="/images/mentorship/gear.png"
                   alt=""
                   width={64}
                   height={64}
@@ -154,7 +154,7 @@ export default function BusinessOwnersMentorshipPage() {
 
               <article className={styles.workCard}>
                 <Image
-                  src="/images/metorship/notebook.png"
+                  src="/images/mentorship/notebook.png"
                   alt=""
                   width={64}
                   height={64}
@@ -195,7 +195,7 @@ export default function BusinessOwnersMentorshipPage() {
 
             <Image
               className={styles.pillarsImage}
-              src="/images/metorship/piramide.png"
+              src="/images/mentorship/piramide.png"
               alt="Os 3 pilares Lúmina: direcionamento e distância, análise de perfil e padrões de decisão, escuta e leitura de cenário."
               width={694}
               height={596}
@@ -214,7 +214,7 @@ export default function BusinessOwnersMentorshipPage() {
             <ul className={styles.journeyList} aria-label="O que a mentoria não é">
               <li>
                 <Image
-                  src="/images/metorship/x.png"
+                  src="/images/mentorship/x.png"
                   alt=""
                   width={15}
                   height={13}
@@ -224,7 +224,7 @@ export default function BusinessOwnersMentorshipPage() {
               </li>
               <li>
                 <Image
-                  src="/images/metorship/x.png"
+                  src="/images/mentorship/x.png"
                   alt=""
                   width={15}
                   height={13}
@@ -234,7 +234,7 @@ export default function BusinessOwnersMentorshipPage() {
               </li>
               <li>
                 <Image
-                  src="/images/metorship/x.png"
+                  src="/images/mentorship/x.png"
                   alt=""
                   width={15}
                   height={13}
@@ -248,7 +248,7 @@ export default function BusinessOwnersMentorshipPage() {
               </li>
               <li>
                 <Image
-                  src="/images/metorship/x.png"
+                  src="/images/mentorship/x.png"
                   alt=""
                   width={15}
                   height={13}
@@ -289,7 +289,7 @@ export default function BusinessOwnersMentorshipPage() {
               <div className={styles.testimonialText}>
                 <Image
                   className={styles.quoteIcon}
-                  src="/images/metorship/aspas.png"
+                  src="/images/mentorship_store/abre.png"
                   alt=""
                   width={51}
                   height={40}
@@ -324,7 +324,7 @@ export default function BusinessOwnersMentorshipPage() {
 
               <figure className={styles.testimonialAuthor}>
                 <Image
-                  src="/images/metorship/renata.png"
+                  src="/images/mentorship/renata.png"
                   alt="Dra. Renata Bomfim Bartolozzi"
                   width={278}
                   height={266}
@@ -342,7 +342,7 @@ export default function BusinessOwnersMentorshipPage() {
                 <VideoThumbnail
                   className={styles.videoPlaceholder}
                   title="Chris Gontigo"
-                  thumbnail="/images/metorship/chris.png"
+                  thumbnail="/images/mentorship/chris.png"
                   aspectRatio="430 / 628"
                   sizes="(max-width: 768px) 100vw, 430px"
                 />
@@ -357,7 +357,7 @@ export default function BusinessOwnersMentorshipPage() {
 
               <blockquote className={styles.videoQuote}>
                 <Image
-                  src="/images/metorship/aspas.png"
+                  src="/images/mentorship_store/abre.png"
                   alt=""
                   width={51}
                   height={40}

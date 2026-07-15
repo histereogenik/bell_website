@@ -208,7 +208,6 @@ export default function TrainingsPage() {
                   src="/images/trainings/grid_1.png"
                   alt="Equipe reunida após treinamento conduzido por Bell Nacif."
                   fill
-                  loading="eager"
                   sizes="(max-width: 820px) 100vw, 31vw"
                 />
               </div>
