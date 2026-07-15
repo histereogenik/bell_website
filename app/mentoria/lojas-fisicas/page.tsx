@@ -107,7 +107,7 @@ export default function StoreMentorshipPage() {
         <section className={styles.hero} aria-labelledby="store-hero-title">
           <Image
             className={styles.heroImage}
-            src={`${imageBase}/mapa.png`}
+            src={`${imageBase}/mapa.webp`}
             alt=""
             fill
             priority
@@ -233,7 +233,7 @@ export default function StoreMentorshipPage() {
 
         <section className={styles.experiencePhoto} aria-label="Bell Nacif em palestra para o varejo">
           <Image
-            src={`${imageBase}/speech_bg.png`}
+            src={`${imageBase}/speech_bg.webp`}
             alt="Bell Nacif em apresentação para uma plateia de profissionais do varejo."
             width={1440}
             height={823}
@@ -327,7 +327,7 @@ export default function StoreMentorshipPage() {
               </div>
               <div className={styles.storeVisual}>
                 <Image
-                  src={`${imageBase}/shopping.png`}
+                  src={`${imageBase}/shopping.webp`}
                   alt="Fachada de loja em shopping."
                   width={592}
                   height={1829}
@@ -455,7 +455,7 @@ export default function StoreMentorshipPage() {
             </p>
             <Image
               className={styles.pillarsImage}
-              src={`${imageBase}/stats.png`}
+              src={`${imageBase}/stats.webp`}
               alt="Os quatro pilares da jornada Quem Sabe Mais Vende Mais: consciência de liderança, domínio da gestão, condução de pessoas e atendimento com método."
               width={1280}
               height={764}

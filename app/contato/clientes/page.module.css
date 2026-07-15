@@ -4,13 +4,13 @@
   align-items: center;
   background:
     linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 94%) 38%, rgb(247 243 238 / 0%) 50%),
-    url("/images/contact/clients_hero.png") right bottom / cover no-repeat;
+    url("/images/contact/clients_hero.webp") right bottom / cover no-repeat;
 }
 
 .partnerHero {
   background:
     linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 94%) 38%, rgb(247 243 238 / 0%) 50%),
-    url("/images/contact/partner_hero.png") right bottom / cover no-repeat;
+    url("/images/contact/partner_hero.webp") right bottom / cover no-repeat;
 }
 
 .heroInner {
@@ -73,13 +73,13 @@
   .hero {
     background:
       linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 94%) 50%, rgb(247 243 238 / 72%) 62%, rgb(247 243 238 / 0%) 76%),
-      url("/images/contact/clients_hero.png") right bottom / 1440px auto no-repeat;
+      url("/images/contact/clients_hero.webp") right bottom / 1440px auto no-repeat;
   }
 
   .partnerHero {
     background:
       linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 94%) 50%, rgb(247 243 238 / 72%) 62%, rgb(247 243 238 / 0%) 76%),
-      url("/images/contact/partner_hero.png") right bottom / 1440px auto no-repeat;
+      url("/images/contact/partner_hero.webp") right bottom / 1440px auto no-repeat;
   }
 }
 
@@ -431,13 +431,13 @@
   .hero {
     background:
       linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 92%) 52%, rgb(247 243 238 / 56%) 100%),
-      url("/images/contact/clients_hero.png") 58% bottom / cover no-repeat;
+      url("/images/contact/clients_hero.webp") 58% bottom / cover no-repeat;
   }
 
   .partnerHero {
     background:
       linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 92%) 52%, rgb(247 243 238 / 56%) 100%),
-      url("/images/contact/partner_hero.png") 58% bottom / cover no-repeat;
+      url("/images/contact/partner_hero.webp") 58% bottom / cover no-repeat;
   }
 
   .directGrid,
@@ -456,13 +456,13 @@
     min-height: min(620px, calc(100svh - var(--header-height)));
     background:
       linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 90%) 64%, rgb(247 243 238 / 58%) 100%),
-      url("/images/contact/clients_hero.png") 64% bottom / cover no-repeat;
+      url("/images/contact/clients_hero.webp") 64% bottom / cover no-repeat;
   }
 
   .partnerHero {
     background:
       linear-gradient(90deg, rgb(247 243 238 / 98%) 0%, rgb(247 243 238 / 90%) 64%, rgb(247 243 238 / 58%) 100%),
-      url("/images/contact/partner_hero.png") 64% bottom / cover no-repeat;
+      url("/images/contact/partner_hero.webp") 64% bottom / cover no-repeat;
   }
 
   .heroInner,

@@ -815,7 +815,7 @@
   display: grid;
   min-height: 574px;
   place-items: center;
-  background: url("/images/tothepoint/share_section.png") center / cover no-repeat;
+  background: url("/images/tothepoint/share_section.webp") center / cover no-repeat;
   color: var(--color-white);
   text-align: center;
 }

@@ -226,7 +226,7 @@
 .pillars {
   min-height: 904px;
   background:
-    url("/images/metorship/background_piramide.png") center / cover no-repeat,
+    url("/images/mentorship/background_piramide.webp") center / cover no-repeat,
     var(--color-white);
 }
 
@@ -274,7 +274,7 @@
   min-height: 664px;
   background:
     linear-gradient(90deg, rgb(0 0 0 / 34%) 0%, rgb(0 0 0 / 2%) 100%),
-    url("/images/metorship/background_bell_brown.png") center / cover no-repeat,
+    url("/images/mentorship/background_bell_brown.webp") center / cover no-repeat,
     var(--color-black);
   color: var(--color-white);
   font-family: var(--font-display), sans-serif;
@@ -522,8 +522,10 @@
   width: 31px;
   height: 31px;
   background:
-    linear-gradient(var(--color-black), var(--color-black)) center / 31px 4px no-repeat,
-    linear-gradient(var(--color-black), var(--color-black)) center / 4px 31px no-repeat;
+    linear-gradient(var(--color-black), var(--color-black)) center / 31px 4px
+      no-repeat,
+    linear-gradient(var(--color-black), var(--color-black)) center / 4px 31px
+      no-repeat;
   content: "";
   transform: translateY(-50%);
   transition: background-size var(--transition-fast);
@@ -551,7 +553,8 @@
   display: grid;
   min-height: 574px;
   place-items: center;
-  background: url("/images/tothepoint/share_section.png") center / cover no-repeat;
+  background: url("/images/tothepoint/share_section.webp") center / cover
+    no-repeat;
   color: var(--color-white);
   text-align: center;
 }

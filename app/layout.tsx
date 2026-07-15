@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
+import { CookieConsent } from "@/components/layout/CookieConsent/CookieConsent";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -30,13 +31,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html
       lang="pt-BR"
       className={`${montserrat.variable} ${poppins.variable}`}
       data-scroll-behavior="smooth"
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsent gaId={gaId} />
+      </body>
     </html>
   );
 }

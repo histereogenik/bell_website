@@ -56,7 +56,7 @@ export function TestimonialHero() {
       <div className={styles.portrait}>
         <Image
           className={styles.portraitImage}
-          src="/images/home/bell_hero.png"
+          src="/images/home/bell_hero.webp"
           alt="Bell Nacif"
           width={674}
           height={872}

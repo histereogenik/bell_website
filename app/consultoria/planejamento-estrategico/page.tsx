@@ -76,7 +76,7 @@ export default function StrategicPlanningConsultingPage() {
         <ConsultingHero
           eyebrow="Planejamento estratégico"
           eyebrowHighlight="Consultoria estratégica"
-          image="/images/consulting/strategy/strategy_hero.png"
+          image="/images/consulting/strategy/strategy_hero.webp"
           imageFit="contain-height"
           scrimVariant="strategy"
           primaryCta={{

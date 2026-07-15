@@ -1,0 +1,112 @@
+.page {
+  background: var(--color-white);
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 82% 20%, rgb(255 90 0 / 9%) 0 18%, transparent 34%),
+    linear-gradient(135deg, var(--color-off-white) 0%, var(--color-white) 74%);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.heroInner {
+  max-width: 980px;
+  padding-block: clamp(88px, 10vw, 150px);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  color: var(--color-orange);
+  font-size: clamp(14px, 1.39vw, 20px);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  width: 56px;
+  height: 2px;
+  background: var(--color-black);
+}
+
+.hero h1 {
+  max-width: 860px;
+  margin: clamp(36px, 5vw, 70px) 0 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(42px, 4.45vw, 64px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: clamp(18px, 2.5vw, 28px) 0 0;
+  color: var(--color-gray-dark);
+  font-size: clamp(18px, 1.67vw, 24px);
+  line-height: 1.35;
+}
+
+.hero time {
+  display: block;
+  margin-top: clamp(28px, 3vw, 40px);
+  color: var(--color-gray-dark);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content {
+  padding-block: clamp(68px, 8vw, 120px);
+}
+
+.contentInner {
+  max-width: 980px;
+}
+
+.section {
+  padding-block: clamp(30px, 4vw, 48px);
+  border-top: 1px solid var(--color-gray-light);
+}
+
+.section:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(24px, 2.22vw, 32px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.section p {
+  margin: 0;
+  color: var(--color-gray-dark);
+  font-size: clamp(17px, 1.39vw, 20px);
+  line-height: 1.65;
+}
+
+.section p + p {
+  margin-top: 16px;
+}
+
+@media (max-width: 620px) {
+  .heroInner {
+    padding-block: 72px;
+  }
+
+  .eyebrow span {
+    width: 42px;
+  }
+
+  .content {
+    padding-block: 56px;
+  }
+}

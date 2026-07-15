@@ -772,7 +772,7 @@
   position: absolute;
   inset: 0 -4% 0 auto;
   width: min(44vw, 520px);
-  background: url("/images/about/about_bg.png") center right / contain no-repeat;
+  background: url("/images/about/about_bg.webp") center right / contain no-repeat;
   content: "";
   opacity: 0.22;
   pointer-events: none;

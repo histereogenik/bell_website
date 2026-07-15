@@ -109,7 +109,7 @@ export default function TalksPage() {
           <div className={`container ${styles.aboutInner}`}>
             <Image
               className={styles.aboutImage}
-              src="/images/lectures/lecture_1.png"
+              src="/images/lectures/lecture_1.webp"
               alt="Bell Nacif palestrando para uma plateia em auditório."
               width={777}
               height={573}
@@ -179,7 +179,7 @@ export default function TalksPage() {
             <div className={styles.featuredVideo}>
               <VideoThumbnail
                 title="Liderança & Vendas: Do Princípio ao SIM"
-                thumbnail="/images/lectures/bell_thumb.png"
+                thumbnail="/images/lectures/bell_thumb.webp"
                 videoUrl="https://youtube.com/shorts/OnRD8NBvBvA"
                 aspectRatio="478 / 774"
                 sizes="(max-width: 980px) calc(100vw - 40px), 478px"
@@ -332,7 +332,7 @@ export default function TalksPage() {
 
         <section className={styles.stagePhotoSection} aria-label="Bell Nacif palestrando em evento">
           <Image
-            src="/images/lectures/lecture_2.png"
+            src="/images/lectures/lecture_2.webp"
             alt="Bell Nacif no palco palestrando para uma grande plateia."
             width={1440}
             height={840}

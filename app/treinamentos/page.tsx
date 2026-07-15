@@ -20,7 +20,7 @@ export default function TrainingsPage() {
         <section className={styles.hero} aria-labelledby="trainings-title">
           <Image
             className={styles.heroImage}
-            src="/images/trainings/trainings_hero.png"
+            src="/images/trainings/trainings_hero.webp"
             alt=""
             fill
             loading="eager"
@@ -205,10 +205,9 @@ export default function TrainingsPage() {
             <div className={styles.photoWallGrid}>
               <div className={`${styles.photoTile} ${styles.tileOne}`}>
                 <Image
-                  src="/images/trainings/grid_1.png"
+                  src="/images/trainings/grid_1.webp"
                   alt="Equipe reunida após treinamento conduzido por Bell Nacif."
                   fill
-                  loading="eager"
                   sizes="(max-width: 820px) 100vw, 31vw"
                 />
               </div>
@@ -216,7 +215,7 @@ export default function TrainingsPage() {
               <div className={styles.middleColumn}>
                 <div className={`${styles.photoTile} ${styles.tileTwo}`}>
                   <Image
-                    src="/images/trainings/trainings_hero.png"
+                    src="/images/trainings/trainings_hero.webp"
                     alt="Bell Nacif conduzindo treinamento em sala."
                     fill
                     sizes="(max-width: 820px) 100vw, 33vw"
@@ -225,7 +224,7 @@ export default function TrainingsPage() {
                 <div className={styles.middleBottom}>
                   <div className={`${styles.photoTile} ${styles.tileThree}`}>
                     <Image
-                      src="/images/trainings/grid_3.png"
+                      src="/images/trainings/grid_3.webp"
                       alt="Participantes exibindo certificados em loja."
                       fill
                       sizes="(max-width: 820px) 50vw, 16vw"
@@ -233,7 +232,7 @@ export default function TrainingsPage() {
                   </div>
                   <div className={`${styles.photoTile} ${styles.tileFour}`}>
                     <Image
-                      src="/images/trainings/grid_4.png"
+                      src="/images/trainings/grid_4.webp"
                       alt="Grupo em treinamento de vendas em sala."
                       fill
                       sizes="(max-width: 820px) 50vw, 16vw"
@@ -245,7 +244,7 @@ export default function TrainingsPage() {
               <div className={styles.rightColumn}>
                 <div className={`${styles.photoTile} ${styles.tileFive}`}>
                   <Image
-                    src="/images/trainings/grid_5.png"
+                    src="/images/trainings/grid_5.webp"
                     alt="Equipe em dinâmica de treinamento."
                     fill
                     sizes="(max-width: 820px) 100vw, 31vw"
@@ -253,7 +252,7 @@ export default function TrainingsPage() {
                 </div>
                 <div className={`${styles.photoTile} ${styles.tileSix}`}>
                   <Image
-                    src="/images/trainings/grid_6.png"
+                    src="/images/trainings/grid_6.webp"
                     alt="Participantes em reunião de treinamento ao redor da mesa."
                     fill
                     sizes="(max-width: 820px) 100vw, 31vw"
@@ -261,7 +260,7 @@ export default function TrainingsPage() {
                 </div>
                 <div className={`${styles.photoTile} ${styles.tileSeven}`}>
                   <Image
-                    src="/images/trainings/grid_7.png"
+                    src="/images/trainings/grid_7.webp"
                     alt="Participantes posando em loja após treinamento."
                     fill
                     sizes="(max-width: 820px) 100vw, 31vw"

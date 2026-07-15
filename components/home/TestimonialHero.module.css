@@ -6,7 +6,7 @@
   overflow: hidden;
   grid-template-columns: minmax(0, 1fr) minmax(430px, 0.82fr);
   background:
-    url("/images/home/background_grey.png") center / cover no-repeat,
+    url("/images/home/background_grey.webp") center / cover no-repeat,
     var(--color-off-white);
 }
 

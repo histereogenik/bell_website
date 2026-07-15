@@ -121,13 +121,27 @@ export function Footer() {
 
       <div className={styles.legal}>
         <div className={`container ${styles.legalInner}`}>
-          <p>© 2026 Bell Nacif. Todos os direitos reservados.</p>
-          <div>
+          <div className={styles.legalTop}>
+            <p>© 2026 Bell Nacif. Todos os direitos reservados.</p>
             <Link href="/politica-de-privacidade">
               Política de privacidade
             </Link>
-            <Link href="/login">Login</Link>
           </div>
+          <a
+            className={styles.tuskCredit}
+            href="https://wa.me/5562936180408"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Desenvolvido por TUSK Sistemas"
+          >
+            <Image
+              src="/logos/tusklogo2.png"
+              alt="TUSK Sistemas"
+              width={120}
+              height={120}
+            />
+            <span>Desenvolvido por TUSK Sistemas™</span>
+          </a>
         </div>
       </div>
     </footer>

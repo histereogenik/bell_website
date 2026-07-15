@@ -221,7 +221,7 @@ export default async function ArticlePage({
                 </div>
                 <div className={styles.questionPortrait}>
                   <Image
-                    src="/images/home/bell_hero.png"
+                    src="/images/home/bell_hero.webp"
                     alt="Bell Nacif"
                     width={220}
                     height={220}
