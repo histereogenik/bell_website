@@ -61,7 +61,7 @@ export default function PdvPlansAnalysisConsultingPage() {
         <ConsultingHero
           eyebrow="Análise de plantas PDV"
           eyebrowHighlight="Consultoria estratégica"
-          image="/images/consulting/analysis/analysis_hero.png"
+          image="/images/consulting/analysis/analysis_hero.webp"
           scrimVariant="strategy"
           ctaLayout="column"
           primaryCta={{

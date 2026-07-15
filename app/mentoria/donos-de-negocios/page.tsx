@@ -22,7 +22,7 @@ export default function BusinessOwnersMentorshipPage() {
         <section className={styles.hero} aria-labelledby="mentorship-title">
           <Image
             className={styles.heroImage}
-            src="/images/mentorship/bússola.png"
+            src="/images/mentorship/bussola.webp"
             alt=""
             fill
             priority

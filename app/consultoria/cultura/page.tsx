@@ -146,7 +146,7 @@ export default function CultureConsultingPage() {
         <ConsultingHero
           eyebrow="Cultura"
           eyebrowHighlight="Consultoria estratégica"
-          image="/images/consulting/culture/culture_hero.png"
+          image="/images/consulting/culture/culture_hero.webp"
           primaryCta={{
             label: "Conheça essa solução",
             href: contactClientsHref,

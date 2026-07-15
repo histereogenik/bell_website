@@ -18,7 +18,7 @@ export default function AboutPage() {
         <section className={styles.hero} aria-labelledby="about-title">
           <Image
             className={styles.heroBackground}
-            src="/images/about/about_bg.png"
+            src="/images/about/about_bg.webp"
             alt=""
             fill
             loading="eager"
@@ -178,7 +178,7 @@ export default function AboutPage() {
             <div className={styles.storyMural}>
               <figure className={styles.storyRoom}>
                 <Image
-                  src="/images/about/room.png"
+                  src="/images/about/room.webp"
                   alt="Mesa de costura com moldes e tecidos."
                   width={1441}
                   height={1081}
@@ -226,7 +226,7 @@ export default function AboutPage() {
 
             <figure className={styles.retailStartFigure}>
               <Image
-                src="/images/about/fashion.png"
+                src="/images/about/fashion.webp"
                 alt="Bell Nacif jovem com colegas no varejo de moda."
                 width={946}
                 height={978}
@@ -280,7 +280,7 @@ export default function AboutPage() {
             <div className={styles.preparationBoard}>
               <figure className={styles.boardOne}>
                 <Image
-                  src="/images/about/board_1.png"
+                  src="/images/about/board_1.webp"
                   alt="Bell Nacif com equipe de gerentes celebrando resultados."
                   width={1057}
                   height={794}
@@ -293,7 +293,7 @@ export default function AboutPage() {
               </figure>
               <figure className={styles.boardTwo}>
                 <Image
-                  src="/images/about/board_2.png"
+                  src="/images/about/board_2.webp"
                   alt="Bell Nacif com equipe em mesa de restaurante."
                   width={928}
                   height={1234}
@@ -306,7 +306,7 @@ export default function AboutPage() {
               </figure>
               <figure className={styles.boardThree}>
                 <Image
-                  src="/images/about/board_3.png"
+                  src="/images/about/board_3.webp"
                   alt="Bell Nacif com equipe em treinamento."
                   width={968}
                   height={730}
@@ -468,7 +468,7 @@ export default function AboutPage() {
 
             <figure className={styles.masteryFigure}>
               <Image
-                src="/images/about/speech.png"
+                src="/images/about/speech.webp"
                 alt="Bell Nacif discursando em cerimônia de colação de grau na FGV."
                 width={776}
                 height={1663}

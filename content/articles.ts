@@ -40,7 +40,7 @@ export type Article = {
   sources?: string[];
 };
 
-const defaultCoverImage = "/images/tothepoint/tothepoint_hero.png";
+const defaultCoverImage = "/images/tothepoint/tothepoint_hero.webp";
 const placeholderTitle = "Lorem ipsum dolor sit amet consectetur";
 const placeholderExcerpt =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non sem vitae justo faucibus facilisis.";
@@ -68,7 +68,7 @@ export const articles: Article[] = [
     breadcrumb: "Aprender | Direto ao Ponto",
     topic: "Liderança",
     duration: 6,
-    coverImage: "/images/posts/erro-silencioso/hero.png",
+    coverImage: "/images/posts/erro-silencioso/hero.webp",
     cardImagePosition: "center 58%",
     author: "Bell Nacif",
     learningPoints: [
@@ -96,7 +96,7 @@ export const articles: Article[] = [
         title: "O verdadeiro problema não é a falta de cobrança",
         layout: "image-left",
         image: {
-          src: "/images/posts/erro-silencioso/section-1.png",
+          src: "/images/posts/erro-silencioso/section-1.webp",
           alt: "Bell Nacif orientando uma equipe em reunião.",
         },
         paragraphs: [
@@ -118,7 +118,7 @@ export const articles: Article[] = [
         id: "pilares",
         layout: "image-right",
         image: {
-          src: "/images/posts/erro-silencioso/section-2.png",
+          src: "/images/posts/erro-silencioso/section-2.webp",
           alt: "Equipe acompanhando uma apresentação sobre crescimento.",
         },
         paragraphs: [
@@ -140,7 +140,7 @@ export const articles: Article[] = [
         id: "direcao",
         layout: "image-left",
         image: {
-          src: "/images/posts/erro-silencioso/section-3.png",
+          src: "/images/posts/erro-silencioso/section-3.webp",
           alt: "Bell Nacif conduzindo conversa estratégica com uma equipe.",
         },
         paragraphs: [

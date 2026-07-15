@@ -5,7 +5,7 @@
   align-items: center;
   background:
     linear-gradient(90deg, rgb(247 243 238 / 8%), rgb(247 243 238 / 3%)),
-    url("/images/tothepoint/tothepoint_hero.png") center / cover no-repeat;
+    url("/images/tothepoint/tothepoint_hero.webp") center / cover no-repeat;
 }
 
 .heroContent {
@@ -384,7 +384,7 @@
   min-height: 575px;
   place-items: center;
   overflow: hidden;
-  background: url("/images/tothepoint/share_section.png") center / cover no-repeat;
+  background: url("/images/tothepoint/share_section.webp") center / cover no-repeat;
   color: var(--color-white);
   text-align: center;
 }

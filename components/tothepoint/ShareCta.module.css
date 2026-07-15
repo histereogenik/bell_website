@@ -4,7 +4,7 @@
   min-height: 575px;
   place-items: center;
   overflow: hidden;
-  background: url("/images/tothepoint/share_section.png") center / cover no-repeat;
+  background: url("/images/tothepoint/share_section.webp") center / cover no-repeat;
   color: var(--color-white);
   text-align: center;
 }

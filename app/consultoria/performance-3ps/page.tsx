@@ -74,7 +74,7 @@ export default function Performance3PsConsultingPage() {
         <ConsultingHero
           eyebrow="Performance 3 P's"
           eyebrowHighlight="Consultoria estratégica"
-          image="/images/consulting/performance/performance_hero.png"
+          image="/images/consulting/performance/performance_hero.webp"
           imageFit="contain-height"
           scrimVariant="strategy"
           primaryCta={{
@@ -172,7 +172,7 @@ export default function Performance3PsConsultingPage() {
             </div>
             <Image
               className={styles.peopleAxisImage}
-              src="/images/consulting/performance/eixo.png"
+              src="/images/consulting/performance/eixo.webp"
               alt="Sistema virtuoso do eixo pessoas com organização, liderança, treinamentos e atendimento."
               width={1280}
               height={679}
@@ -205,7 +205,7 @@ export default function Performance3PsConsultingPage() {
             </p>
             <Image
               className={styles.processAxisImage}
-              src="/images/consulting/performance/process.png"
+              src="/images/consulting/performance/process.webp"
               alt="Eixo processos com estruturação, padronização e ferramentas."
               width={1280}
               height={720}
@@ -223,7 +223,7 @@ export default function Performance3PsConsultingPage() {
             <div className={styles.productsAxisImageFrame}>
               <Image
                 className={styles.productsAxisImage}
-                src="/images/consulting/performance/products.png"
+                src="/images/consulting/performance/products.webp"
                 alt="Eixo produtos com posicionamento, rentabilidade e análises."
                 width={1280}
                 height={533}

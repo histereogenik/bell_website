@@ -226,7 +226,7 @@
 .pillars {
   min-height: 904px;
   background:
-    url("/images/mentorship/background_piramide.png") center / cover no-repeat,
+    url("/images/mentorship/background_piramide.webp") center / cover no-repeat,
     var(--color-white);
 }
 
@@ -274,7 +274,7 @@
   min-height: 664px;
   background:
     linear-gradient(90deg, rgb(0 0 0 / 34%) 0%, rgb(0 0 0 / 2%) 100%),
-    url("/images/mentorship/background_bell_brown.png") center / cover no-repeat,
+    url("/images/mentorship/background_bell_brown.webp") center / cover no-repeat,
     var(--color-black);
   color: var(--color-white);
   font-family: var(--font-display), sans-serif;
@@ -553,7 +553,7 @@
   display: grid;
   min-height: 574px;
   place-items: center;
-  background: url("/images/tothepoint/share_section.png") center / cover
+  background: url("/images/tothepoint/share_section.webp") center / cover
     no-repeat;
   color: var(--color-white);
   text-align: center;
