@@ -30,15 +30,15 @@ export default function TalksPage() {
         </section>
 
         <section className={styles.videoSection} aria-label="Vídeo de apresentação">
-          <div className={`container ${styles.videoInner}`}>
-            <div className={styles.videoFrame}>
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
-                title="Vídeo placeholder de palestras"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
+          <div className={styles.videoInner}>
+            <VideoThumbnail
+              className={styles.heroVideo}
+              title="Vídeo de apresentação de palestras"
+              thumbnail="/images/lectures/lecture_2.webp"
+              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              aspectRatio="12 / 7"
+              sizes="100vw"
+            />
           </div>
         </section>
 
@@ -327,17 +327,6 @@ export default function TalksPage() {
               </article>
             </div>
           </div>
-        </section>
-
-        <section className={styles.stagePhotoSection} aria-label="Bell Nacif palestrando em evento">
-          <Image
-            src="/images/lectures/lecture_2.webp"
-            alt="Bell Nacif no palco palestrando para uma grande plateia."
-            width={1440}
-            height={840}
-            sizes="100vw"
-            className={styles.stagePhoto}
-          />
         </section>
 
         <section
