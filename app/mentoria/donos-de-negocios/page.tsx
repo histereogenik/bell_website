@@ -424,14 +424,14 @@ export default function BusinessOwnersMentorshipPage() {
           <div className={`container ${styles.finalCtaInner}`}>
             <h2 id="final-cta-title">
               Quer parar de decidir no
-              <br />
+              <br className="desktopBreak" />{" "}
               escuro e sozinho?
             </h2>
             <p>
               Imagine conduzir o negócio com clareza sobre o que priorizar,
-              <br />
+              <br className="desktopBreak" />{" "}
               quais decisões tomar e quais ajustes podem destravar vendas,
-              <br />
+              <br className="desktopBreak" />{" "}
               processos e liderança.
             </p>
             <CtaButton

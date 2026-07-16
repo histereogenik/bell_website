@@ -53,8 +53,8 @@
     font-size: 34px;
   }
 
-  .cta h2 br,
-  .cta p br {
+  .cta h2 :global(.desktopBreak),
+  .cta p :global(.desktopBreak) {
     display: none;
   }
 

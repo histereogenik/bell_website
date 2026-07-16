@@ -699,7 +699,7 @@
     margin-top: 56px;
   }
 
-  .closing br {
+  .closing :global(.desktopBreak) {
     display: none;
   }
 
@@ -739,7 +739,7 @@
     margin-bottom: 34px;
   }
 
-  .aboutCopy h2 br {
+  .aboutCopy h2 :global(.desktopBreak) {
     display: none;
   }
 
@@ -782,7 +782,7 @@
     margin-top: 34px;
   }
 
-  .featuredCopy h3 br {
+  .featuredCopy h3 :global(.desktopBreak) {
     display: none;
   }
 
@@ -794,7 +794,7 @@
     padding-block: 72px;
   }
 
-  .methodInner h2 br {
+  .methodInner h2 :global(.desktopBreak) {
     display: none;
   }
 

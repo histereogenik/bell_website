@@ -278,7 +278,7 @@
     font-size: 18px;
   }
 
-  .buildTogetherIntro br {
+  .buildTogetherIntro :global(.desktopBreak) {
     display: none;
   }
 
@@ -342,7 +342,7 @@
     font-size: 18px;
   }
 
-  .peopleAxisIntro br {
+  .peopleAxisIntro :global(.desktopBreak) {
     display: none;
   }
 
@@ -382,8 +382,8 @@
     font-size: 18px;
   }
 
-  .processAxis p br,
-  .productsAxis p br {
+  .processAxis p :global(.desktopBreak),
+  .productsAxis p :global(.desktopBreak) {
     display: none;
   }
 

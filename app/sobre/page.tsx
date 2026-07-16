@@ -133,7 +133,7 @@ export default function AboutPage() {
               <p>
                 Transformar negócios é sobre transformar{" "}
                 <span>PESSOAS.</span>
-                <br />É com elas que os resultados acontecem.”
+                <br className="desktopBreak" />{" "}É com elas que os resultados acontecem.”
               </p>
               <footer>
                 <span aria-hidden="true" />
@@ -308,7 +308,7 @@ export default function AboutPage() {
               </figure>
               <figure className={styles.boardThree}>
                 <Image
-                  src="/images/about/board_3.webp"
+                  src="/images/about/board_3_new.webp"
                   alt="Bell Nacif com equipe em treinamento."
                   width={968}
                   height={730}

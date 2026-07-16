@@ -84,6 +84,10 @@ img {
   background: currentColor;
 }
 
+.desktopBreak {
+  display: block;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

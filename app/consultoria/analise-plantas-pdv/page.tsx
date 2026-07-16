@@ -133,6 +133,7 @@ export default function PdvPlansAnalysisConsultingPage() {
           title={
             <>
               Sua loja está pronta para vender ou
+              <br className="desktopBreak" />{" "}
               só para ficar bonita?
             </>
           }

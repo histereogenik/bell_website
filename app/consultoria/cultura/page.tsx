@@ -158,13 +158,14 @@ export default function CultureConsultingPage() {
           title={
             <>
               Cultura clara,
-              <br />
+              <br className="desktopBreak" />{" "}
               coerente e aplicável
             </>
           }
           description={
             <>
               Transforme identidade em direção, valores
+              <br className="desktopBreak" />{" "}
               em comportamento e estratégia em prática.
             </>
           }
@@ -174,6 +175,7 @@ export default function CultureConsultingPage() {
           <div className={`container ${styles.cultureIntroInner}`}>
             <h2 id="culture-intro-title">
               Cultura não é o que a empresa
+              <br className="desktopBreak" />{" "}
               escreve na parede.
             </h2>
             <p>
@@ -205,7 +207,7 @@ export default function CultureConsultingPage() {
             <header className={styles.practiceHeader}>
               <h2 id="practice-title">
                 Cultura se constrói na prática,
-                <br />
+                <br className="desktopBreak" />{" "}
                 não apenas no discurso.
               </h2>
               <p>Cinco frentes para tornar a cultura visível e praticável</p>
@@ -229,7 +231,7 @@ export default function CultureConsultingPage() {
             <p className={styles.resultEyebrow}>O resultado</p>
             <h2 id="culture-result-title">
               Uma cultura que orienta decisões, fortalece lideranças e
-              <br />
+              <br className="desktopBreak" />{" "}
               alinha pessoas em torno do mesmo propósito.
             </h2>
             <div className={styles.resultGrid}>
@@ -261,7 +263,7 @@ export default function CultureConsultingPage() {
             <div className={styles.processTimeline}>
               {cultureProcess.map((step, index) => (
                 <div className={styles.processStep} key={step.title}>
-                  <details className={styles.processCard}>
+                  <details className={styles.processCard} name="culture-process">
                     <summary>
                       <span className={styles.processTag}>{step.tag}</span>
                       <span className={styles.processToggle} aria-hidden="true" />
@@ -318,7 +320,7 @@ export default function CultureConsultingPage() {
           title={
             <>
               Quer transformar a cultura da sua
-              <br />
+              <br className="desktopBreak" />{" "}
               empresa em direção clara e prática?
             </>
           }

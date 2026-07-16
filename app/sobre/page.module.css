@@ -1008,7 +1008,7 @@
     font-size: 28px;
   }
 
-  .quoteCard p br {
+  .quoteCard p :global(.desktopBreak) {
     display: none;
   }
 

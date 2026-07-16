@@ -104,7 +104,7 @@ export default function StrategicPlanningConsultingPage() {
             <h2 id="program-title">Conteúdo do programa</h2>
             <div className={styles.programList}>
               {programContent.map((item, index) => (
-                <details className={styles.programCard} key={item.title}>
+                <details className={styles.programCard} key={item.title} name="strategy-program">
                   <summary>
                     <span className={styles.programNumber}>
                       {String(index + 1).padStart(2, "0")}
@@ -139,6 +139,7 @@ export default function StrategicPlanningConsultingPage() {
           title={
             <>
               Pronto para estruturar
+              <br className="desktopBreak" />{" "}
               a sua estratégia?
             </>
           }

@@ -19,7 +19,7 @@ const buildTogetherItems = [
     title: (
       <>
         Mapeamento de
-        <br />
+        <br className="desktopBreak" />{" "}
         cenário
       </>
     ),
@@ -84,24 +84,24 @@ export default function Performance3PsConsultingPage() {
           title={
             <>
               PESSOAS,
-              <br />
+              <br className="desktopBreak" />{" "}
               PROCESSOS e
-              <br />
+              <br className="desktopBreak" />{" "}
               PRODUTOS
-              <br />
+              <br className="desktopBreak" />{" "}
               alinhados para gerar
-              <br />
+              <br className="desktopBreak" />{" "}
               crescimento.
             </>
           }
           description={
             <>
               Entenda como Bell Nacif pode contribuir com sua
-              <br />
+              <br className="desktopBreak" />{" "}
               empresa e desenvolver Pessoas, organizar
-              <br />
+              <br className="desktopBreak" />{" "}
               Processos e direcionar Produtos para potencializar
-              <br />
+              <br className="desktopBreak" />{" "}
               resultados.
             </>
           }
@@ -159,14 +159,14 @@ export default function Performance3PsConsultingPage() {
               <p>
                 Com base no mapeamento do cenário atual, cocriamos com a empresa
                 um sistema virtuoso em quatro
-                <br />
+                <br className="desktopBreak" />{" "}
                 frentes que organiza, desenvolve e fortalece a atuação das
                 equipes.
               </p>
               <p>
                 A metodologia integra experiência do colaborador, liderança,
                 atendimento e treinamento para gerar
-                <br />
+                <br className="desktopBreak" />{" "}
                 soluções consistentes e aplicáveis aos desafios reais do negócio.
               </p>
             </div>
@@ -240,6 +240,7 @@ export default function Performance3PsConsultingPage() {
           title={
             <>
               Vamos construir juntos o próximo
+              <br className="desktopBreak" />{" "}
               movimento do seu negócio?
             </>
           }
