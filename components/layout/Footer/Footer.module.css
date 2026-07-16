@@ -174,9 +174,7 @@
   min-height: 100px;
   align-items: center;
   justify-content: center;
-  gap: 12px;
   padding-block: 18px;
-  flex-direction: column;
 }
 
 .legal p,
@@ -187,27 +185,17 @@
 
 .legalTop {
   align-items: center;
-  display: flex;
+  display: grid;
   width: 100%;
   gap: var(--space-5);
-  justify-content: space-between;
+  grid-template-columns: 1fr auto auto;
   text-transform: uppercase;
 }
 
 .tuskCredit {
-  align-items: center;
-  display: inline-flex;
-  gap: 8px;
   font-weight: 400;
-  justify-content: center;
-  text-align: center;
+  text-align: right;
   text-transform: none;
-}
-
-.tuskCredit img {
-  width: auto;
-  height: 32px;
-  object-fit: contain;
 }
 
 @media (max-width: 900px) {
@@ -256,7 +244,10 @@
 
   .legalTop {
     align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+  }
+
+  .tuskCredit {
+    text-align: left;
   }
 }

@@ -27,7 +27,7 @@ export async function generateMetadata({
 }
 
 function buildShareLinks(article: Article) {
-  const pageUrl = `https://bellnacif.com.br/direto-ao-ponto/${article.slug}`;
+  const pageUrl = `https://bell-website-gray.vercel.app/direto-ao-ponto/${article.slug}`;
   const text = `${article.title} — um aprendizado direto ao ponto com Bell Nacif.`;
   const encodedUrl = encodeURIComponent(pageUrl);
   const encodedText = encodeURIComponent(`${text} ${pageUrl}`);
@@ -67,7 +67,7 @@ export default async function ArticlePage({
   if (!article) notFound();
 
   const shareLinks = buildShareLinks(article);
-  const pageUrl = `https://bellnacif.com.br/direto-ao-ponto/${article.slug}`;
+  const pageUrl = `https://bell-website-gray.vercel.app/direto-ao-ponto/${article.slug}`;
   const shareText = `${article.title} — um aprendizado direto ao ponto com Bell Nacif.`;
 
   return (

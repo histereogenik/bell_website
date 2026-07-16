@@ -126,22 +126,16 @@ export function Footer() {
             <Link href="/politica-de-privacidade">
               Política de privacidade
             </Link>
-          </div>
-          <a
+            <a
             className={styles.tuskCredit}
             href="https://wa.me/5562936180408"
             target="_blank"
             rel="noreferrer"
             aria-label="Desenvolvido por TUSK Sistemas"
           >
-            <Image
-              src="/logos/tusklogo2.png"
-              alt="TUSK Sistemas"
-              width={120}
-              height={120}
-            />
-            <span>Desenvolvido por TUSK Sistemas™</span>
-          </a>
+            Desenvolvido por TUSK Sistemas™
+            </a>
+          </div>
         </div>
       </div>
     </footer>

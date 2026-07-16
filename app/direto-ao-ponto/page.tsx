@@ -5,7 +5,7 @@ import styles from "@/components/tothepoint/DirectToPoint.module.css";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 
-const pageUrl = "https://bellnacif.com.br/direto-ao-ponto";
+const pageUrl = "https://bell-website-gray.vercel.app/direto-ao-ponto";
 const shareText =
   "Aprendizados práticos com Bell Nacif para quem empreende, lidera e vende.";
 
