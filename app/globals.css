@@ -76,6 +76,14 @@ img {
   margin-inline: auto;
 }
 
+.heroDash {
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  flex: 0 0 auto;
+  background: currentColor;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

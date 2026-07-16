@@ -23,6 +23,7 @@ export default function DirectToPointPage() {
         <section className={styles.hero} aria-labelledby="direct-title">
           <div className={`container ${styles.heroContent}`}>
             <p className={styles.eyebrow}>
+              <span className="heroDash" aria-hidden="true" />
               <span>
                 <strong>Aprendizados práticos com</strong> Bell Nacif
               </span>

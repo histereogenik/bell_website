@@ -187,12 +187,15 @@
   align-items: center;
   display: grid;
   width: 100%;
-  gap: var(--space-5);
-  grid-template-columns: 1fr auto auto;
+  column-gap: var(--space-5);
+  row-gap: 8px;
+  grid-template-columns: 1fr auto;
   text-transform: uppercase;
 }
 
 .tuskCredit {
+  grid-column: 2;
+  font-size: 8px !important;
   font-weight: 400;
   text-align: right;
   text-transform: none;
@@ -248,6 +251,7 @@
   }
 
   .tuskCredit {
+    grid-column: 1;
     text-align: left;
   }
 }
