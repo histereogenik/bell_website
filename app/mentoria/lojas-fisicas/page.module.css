@@ -1151,6 +1151,10 @@
     min-height: 0;
   }
 
+  .roundStamp {
+    width: min(100%, 330px);
+  }
+
   .improvisoQuote {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -1196,6 +1200,7 @@
 
   .pillarsInner {
     padding-block: 68px 36px;
+    max-width: 336px;
   }
 
   .pillarsIntro {

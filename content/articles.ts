@@ -61,7 +61,7 @@ function buildDraftSections(excerpt: string): ArticleSection[] {
 export const articles: Article[] = [
   {
     slug: "erro-silencioso-dono-carregar-empresa",
-    title: "O erro silencioso que faz o dono carregar a empresa nas costas",
+    title: "Um erro silencioso que faz o dono carregar a empresa nas costas",
     excerpt:
       "Achar que cobrar mais é liderar melhor, quando, na verdade, a equipe precisa de clareza, processo e acompanhamento.",
     eyebrow: "Aprendizados práticos com Bell Nacif",

@@ -240,7 +240,6 @@ export default function Performance3PsConsultingPage() {
           title={
             <>
               Vamos construir juntos o próximo
-              <br />
               movimento do seu negócio?
             </>
           }

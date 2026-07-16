@@ -42,7 +42,7 @@ const unlocks = [
   },
   {
     title: "Rotina de gestão comercial e financeira",
-    text: "Para acompanhar indicadores ( KPIs), metas e performance com mais clareza.",
+    text: "Para acompanhar indicadores (KPIs), metas e performance com mais clareza.",
   },
   {
     title: "Processos, autonomia e consistência operacional",
@@ -544,7 +544,7 @@ export default function StoreMentorshipPage() {
                   height={266}
                 />
                 <figcaption>
-                  Camila Eduardo –<br />
+                  Camila Eduardo<br />
                   Supervisora de Loja
                   <br />
                   Física
@@ -674,7 +674,7 @@ export default function StoreMentorshipPage() {
         <section className={styles.finalCta} aria-labelledby="store-final-cta">
           <div className={`container ${styles.finalCtaInner}`}>
             <h2 id="store-final-cta">
-              Prontos para parar de carregar
+              Quer parar de carregar
               <br />a loja nas costas?
             </h2>
             <p>

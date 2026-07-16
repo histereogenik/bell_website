@@ -90,7 +90,7 @@
 }
 
 .description {
-  max-width: 690px;
+  max-width: 600px;
   margin: 32px 0 0;
   font-size: clamp(18px, 1.67vw, 24px);
   line-height: 1.14;
@@ -167,6 +167,7 @@
     gap: 10px;
     margin-bottom: 58px;
     font-size: 14px;
+    max-width: 250px;
   }
 
   .eyebrow > span:first-child {
@@ -180,7 +181,7 @@
   }
 
   .description {
-    max-width: 360px;
+    max-width: 230px;
     margin-top: 28px;
     font-size: 18px;
   }

@@ -92,7 +92,7 @@ export default function StrategicPlanningConsultingPage() {
           }
           description={
             <>
-              Direção clara para transformar
+              Clareza para transformar
               <br />
               intenção em direção.
             </>
@@ -139,7 +139,7 @@ export default function StrategicPlanningConsultingPage() {
           title={
             <>
               Pronto para estruturar
-              <br />a sua estratégia?
+              a sua estratégia?
             </>
           }
         />

@@ -160,6 +160,7 @@
   font-size: clamp(34px, 3.33vw, 48px);
   font-weight: 700;
   line-height: 1.22;
+  max-width: 770px;
 }
 
 .quoteInner footer {
@@ -405,7 +406,7 @@
   margin: 26px 0 0;
   font-family: var(--font-display), sans-serif;
   font-size: clamp(20px, 1.67vw, 24px);
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.12;
 }
 
@@ -717,10 +718,6 @@
     margin-top: 5px;
   }
 
-  .quoteText br {
-    display: none;
-  }
-
   .quoteInner footer {
     margin-top: 24px;
   }
@@ -820,7 +817,7 @@
 
   .methodItem p {
     margin-top: 16px;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   .methodClosing {

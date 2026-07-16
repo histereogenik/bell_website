@@ -16,7 +16,7 @@ const contactClientsHref = "/contato/clientes";
 
 const processSteps = [
   {
-    title: "Alinhamentos com as equipes de produtos, VM comercial",
+    title: "Alinhamentos com as equipes de produtos, VM e comercial",
     text:
       "Entendemos os objetivos do negócio para garantir que o espaço sirva à estratégia.",
   },
@@ -26,7 +26,7 @@ const processSteps = [
       "Avaliamos o espaço com foco em performance e experiência de compra.",
   },
   {
-    title: "Recomendações e ajustes com profissionais executores",
+    title: "Recomendações e ajustes para os profissionais executores",
     text: "Contribuição para que o projeto tenha uma única visão estratégica.",
   },
   {
@@ -133,7 +133,6 @@ export default function PdvPlansAnalysisConsultingPage() {
           title={
             <>
               Sua loja está pronta para vender ou
-              <br />
               só para ficar bonita?
             </>
           }

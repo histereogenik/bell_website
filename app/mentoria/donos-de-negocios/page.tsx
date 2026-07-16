@@ -42,9 +42,9 @@ export default function BusinessOwnersMentorshipPage() {
               <br />
               decidir.
               <br />
-              Direção para o
+              Direção para
               <br />
-              vender, liderar
+              liderar, vender
               <span className={styles.desktopOnly}> e</span>
               <br />
               <span className={styles.mobileOnly}>e </span>
@@ -195,8 +195,8 @@ export default function BusinessOwnersMentorshipPage() {
 
             <Image
               className={styles.pillarsImage}
-              src="/images/mentorship/piramide.png"
-              alt="Os 3 pilares Lúmina: direcionamento e distância, análise de perfil e padrões de decisão, escuta e leitura de cenário."
+              src="/images/mentorship/piramide_2.png"
+              alt="Os 3 pilares Lúmina: direcionamento e ação, análise de perfil e padrões de decisão, escuta e leitura de cenário."
               width={694}
               height={596}
             />
@@ -364,9 +364,9 @@ export default function BusinessOwnersMentorshipPage() {
                   aria-hidden="true"
                 />
                 <p>
-                  Eu não indico eu
+                  Eu não apenas indico,
                   <br />
-                  assino embaixo.
+                  eu assino embaixo.
                   <br />
                   Bell, sem você eu não
                   <br />

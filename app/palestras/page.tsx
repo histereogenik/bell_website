@@ -74,7 +74,6 @@ export default function TalksPage() {
 
             <p className={styles.closing}>
               Mais do que falar sobre vendas, Bell provoca pessoas e empresas a
-              <br />
               venderem com mais consciência, conexão e intenção.
             </p>
           </div>
@@ -93,7 +92,6 @@ export default function TalksPage() {
                 />
                 <p>
                   Vender é um ato de amor, amor
-                  <br />
                   em servir aos clientes.
                 </p>
               </div>
