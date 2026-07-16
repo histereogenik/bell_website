@@ -22,7 +22,7 @@ export default function TalksPage() {
           <div className={`container ${styles.heroInner}`}>
             <h1 id="talks-title">
               Liderança e vendas
-              <br />
+              <br className="desktopBreak" />{" "}
               humanizadas no seu palco
             </h1>
             <p>Ofereça ao seu público mais do que inspiração.</p>
@@ -30,15 +30,15 @@ export default function TalksPage() {
         </section>
 
         <section className={styles.videoSection} aria-label="Vídeo de apresentação">
-          <div className={`container ${styles.videoInner}`}>
-            <div className={styles.videoFrame}>
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
-                title="Vídeo placeholder de palestras"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
+          <div className={styles.videoInner}>
+            <VideoThumbnail
+              className={styles.heroVideo}
+              title="Vídeo de apresentação de palestras"
+              thumbnail="/images/lectures/lecture_2.webp"
+              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              aspectRatio="12 / 7"
+              sizes="100vw"
+            />
           </div>
         </section>
 
@@ -46,7 +46,7 @@ export default function TalksPage() {
           <div className={`container ${styles.introInner}`}>
             <h2 id="talks-intro-title">
               Boas palestras emocionam.
-              <br />
+              <br className="desktopBreak" />{" "}
               Palestras com verdade, método e vivência provocam movimento.
             </h2>
 
@@ -74,7 +74,6 @@ export default function TalksPage() {
 
             <p className={styles.closing}>
               Mais do que falar sobre vendas, Bell provoca pessoas e empresas a
-              <br />
               venderem com mais consciência, conexão e intenção.
             </p>
           </div>
@@ -92,9 +91,9 @@ export default function TalksPage() {
                   aria-hidden="true"
                 />
                 <p>
-                  Vender é um ato de amor, amor
+                  Vender é um ato de amor, 
                   <br />
-                  em servir aos clientes.
+                  amor em servir aos clientes.
                 </p>
               </div>
               <footer>
@@ -119,7 +118,7 @@ export default function TalksPage() {
             <div className={styles.aboutCopy}>
               <h2 id="talks-about-title">
                 Prazer, sou Sibelle Nacif,
-                <br />
+                <br className="desktopBreak" />{" "}
                 mas pode me chamar de Bell
               </h2>
 
@@ -190,14 +189,14 @@ export default function TalksPage() {
               <p className={styles.featuredEyebrow}>Palestra em destaque</p>
               <h2 id="featured-talk-title">
                 Liderança &amp; Vendas:
-                <br />
+                <br className="desktopBreak" />{" "}
                 Do Princípio ao SIM
               </h2>
               <h3>
                 Uma palestra sobre liderança,{" "}
-                <br />
+                <br className="desktopBreak" />{" "}
                 vendas humanizadas e o caminho{" "}
-                <br />
+                <br className="desktopBreak" />{" "}
                 até o SIM do cliente.
               </h3>
               <p>
@@ -303,7 +302,7 @@ export default function TalksPage() {
                   </p>
                   <p>
                     Bell fala do que viveu.
-                    <br />
+                    <br className="desktopBreak" />{" "}
                     E quando alguém fala do que viveu, a plateia sente a diferença.
                   </p>
                   <p>
@@ -330,17 +329,6 @@ export default function TalksPage() {
           </div>
         </section>
 
-        <section className={styles.stagePhotoSection} aria-label="Bell Nacif palestrando em evento">
-          <Image
-            src="/images/lectures/lecture_2.webp"
-            alt="Bell Nacif no palco palestrando para uma grande plateia."
-            width={1440}
-            height={840}
-            sizes="100vw"
-            className={styles.stagePhoto}
-          />
-        </section>
-
         <section
           className={styles.talkTestimonials}
           aria-labelledby="talk-testimonials-title"
@@ -360,7 +348,7 @@ export default function TalksPage() {
                 <p>Muito obrigada por me ensinar a vender com amor.</p>
                 <footer>
                   <strong>Eliane Basso</strong>
-                  <br />
+                  <br className="desktopBreak" />{" "}
                   Evento Prospere Falando
                 </footer>
               </article>
@@ -379,7 +367,7 @@ export default function TalksPage() {
                 </p>
                 <footer>
                   <strong>Evento Movimento Vida 360</strong>
-                  <br />N Produções
+                  <br className="desktopBreak" />{" "}N Produções
                 </footer>
               </article>
 
@@ -397,7 +385,7 @@ export default function TalksPage() {
                 </p>
                 <footer>
                   <strong>Eunice Gomes</strong>
-                  <br />
+                  <br className="desktopBreak" />{" "}
                   Franqueada | Convenção Natura
                 </footer>
               </article>
@@ -413,7 +401,7 @@ export default function TalksPage() {
                 <p>Queria te ouvir muito mais!</p>
                 <footer>
                   <strong>Laryssa Queiroz</strong>
-                  <br />
+                  <br className="desktopBreak" />{" "}
                   Evento Prospere Falando
                 </footer>
               </article>
@@ -429,7 +417,7 @@ export default function TalksPage() {
                 <p>Sua palestra nos ajudou muito.</p>
                 <footer>
                   <strong>Catia Oshira</strong>
-                  <br />
+                  <br className="desktopBreak" />{" "}
                   Franqueada | Convenção Natura
                 </footer>
               </article>
@@ -445,7 +433,7 @@ export default function TalksPage() {
                 <p>Você ilumina tudo por onde passa. Sua palestra é show demais!</p>
                 <footer>
                   <strong>Erick Barbi</strong>
-                  <br />
+                  <br className="desktopBreak" />{" "}
                   Evento Prospere Falando
                 </footer>
               </article>
@@ -457,9 +445,9 @@ export default function TalksPage() {
           title={
             <>
               Sua plateia merece uma
-              <br />
+              <br className="desktopBreak" />{" "}
               experiência que muda
-              <br />
+              <br className="desktopBreak" />{" "}
               perspectivas.
             </>
           }

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 const contactClientsHref = "/contato/clientes";
+const chrisVideoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
 export default function BusinessOwnersMentorshipPage() {
   return (
@@ -42,9 +43,9 @@ export default function BusinessOwnersMentorshipPage() {
               <br />
               decidir.
               <br />
-              Direção para o
+              Direção para
               <br />
-              vender, liderar
+              liderar, vender
               <span className={styles.desktopOnly}> e</span>
               <br />
               <span className={styles.mobileOnly}>e </span>
@@ -195,8 +196,8 @@ export default function BusinessOwnersMentorshipPage() {
 
             <Image
               className={styles.pillarsImage}
-              src="/images/mentorship/piramide.png"
-              alt="Os 3 pilares Lúmina: direcionamento e distância, análise de perfil e padrões de decisão, escuta e leitura de cenário."
+              src="/images/mentorship/piramide_2.png"
+              alt="Os 3 pilares Lúmina: direcionamento e ação, análise de perfil e padrões de decisão, escuta e leitura de cenário."
               width={694}
               height={596}
             />
@@ -343,6 +344,7 @@ export default function BusinessOwnersMentorshipPage() {
                   className={styles.videoPlaceholder}
                   title="Chris Gontigo"
                   thumbnail="/images/mentorship/chris.png"
+                  videoUrl={chrisVideoUrl}
                   aspectRatio="430 / 628"
                   sizes="(max-width: 768px) 100vw, 430px"
                 />
@@ -364,9 +366,9 @@ export default function BusinessOwnersMentorshipPage() {
                   aria-hidden="true"
                 />
                 <p>
-                  Eu não indico eu
+                  Eu não apenas indico,
                   <br />
-                  assino embaixo.
+                  eu assino embaixo.
                   <br />
                   Bell, sem você eu não
                   <br />
@@ -424,14 +426,14 @@ export default function BusinessOwnersMentorshipPage() {
           <div className={`container ${styles.finalCtaInner}`}>
             <h2 id="final-cta-title">
               Quer parar de decidir no
-              <br />
+              <br className="desktopBreak" />{" "}
               escuro e sozinho?
             </h2>
             <p>
               Imagine conduzir o negócio com clareza sobre o que priorizar,
-              <br />
+              <br className="desktopBreak" />{" "}
               quais decisões tomar e quais ajustes podem destravar vendas,
-              <br />
+              <br className="desktopBreak" />{" "}
               processos e liderança.
             </p>
             <CtaButton

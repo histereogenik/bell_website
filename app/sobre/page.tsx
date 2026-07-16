@@ -133,7 +133,7 @@ export default function AboutPage() {
               <p>
                 Transformar negócios é sobre transformar{" "}
                 <span>PESSOAS.</span>
-                <br />É com elas que os resultados acontecem.”
+                <br className="desktopBreak" />{" "}É com elas que os resultados acontecem.”
               </p>
               <footer>
                 <span aria-hidden="true" />
@@ -233,7 +233,7 @@ export default function AboutPage() {
                 sizes="(max-width: 860px) 100vw, 45vw"
               />
               <figcaption>
-                <strong>2000 |</strong> Como vendedora responsável junto com
+                2000 | Como vendedora responsável junto com
                 minha equipe, fazendo de uma situação difícil uma brincadeira.
               </figcaption>
             </figure>
@@ -269,7 +269,9 @@ export default function AboutPage() {
               <p className={styles.serviceTruthHighlight}>
                 Com o tempo, cheguei à posição de Head de Vendas e Operações de
                 marcas nacionais e internacionais, liderando operações
-                responsáveis por faturamentos superiores a R$ 100 milhões ao ano.
+                responsáveis por faturamentos superiores a 
+                <br />
+                R$ 100 milhões ao ano.
               </p>
             </div>
           </div>
@@ -306,7 +308,7 @@ export default function AboutPage() {
               </figure>
               <figure className={styles.boardThree}>
                 <Image
-                  src="/images/about/board_3.webp"
+                  src="/images/about/board_3_new.webp"
                   alt="Bell Nacif com equipe em treinamento."
                   width={968}
                   height={730}
@@ -425,10 +427,10 @@ export default function AboutPage() {
               <p className={styles.resultsEyebrow}>Nasce de:</p>
 
               <div className={styles.resultsGrid}>
+                <span>líderes preparados</span>
+                <span>pessoas bem conduzidas</span>
                 <span>processos claros</span>
                 <span>equipes encorajadas</span>
-                <span>pessoas bem conduzidas</span>
-                <span>líderes preparados</span>
                 <span className={styles.resultsWide}>
                   e de uma cultura comercial que entende que vender melhor começa
                   por servir melhor.
@@ -498,7 +500,7 @@ export default function AboutPage() {
           <div className={`container ${styles.aboutClosingInner}`}>
             <p>
               Porque negócios crescem quando
-              <span>pessoas são bem conduzidas.</span>
+              <span>PESSOAS são bem conduzidas.</span>
             </p>
           </div>
         </section>

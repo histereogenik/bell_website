@@ -40,7 +40,7 @@
 .row p {
   margin: 0;
   color: rgb(255 255 255 / 86%);
-  font-size: clamp(14px, 1.25vw, 18px);
+  font-size: clamp(14px, 1.35vw, 20px);
 }
 
 @media (max-width: 680px) {

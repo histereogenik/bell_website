@@ -31,6 +31,12 @@
 
 .image {
   object-fit: cover;
+  transition: transform 260ms ease;
+}
+
+.thumbnail:not(:disabled):hover .image,
+.thumbnail:not(:disabled):focus-visible .image {
+  transform: scale(1.04);
 }
 
 .play {

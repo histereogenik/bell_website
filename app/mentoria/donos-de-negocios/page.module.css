@@ -698,7 +698,7 @@
     margin-top: 64px;
   }
 
-  .finalCta p br {
+  .finalCta p :global(.desktopBreak) {
     display: none;
   }
 }

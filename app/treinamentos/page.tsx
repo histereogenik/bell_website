@@ -275,9 +275,9 @@ export default function TrainingsPage() {
           title={
             <>
               Vamos desenhar juntos o
-              <br />
+              <br className="desktopBreak" />{" "}
               treinamento ideal para o
-              <br />
+              <br className="desktopBreak" />{" "}
               momento de seu negócio?
             </>
           }

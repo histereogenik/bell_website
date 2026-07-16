@@ -21,13 +21,6 @@
   text-transform: uppercase;
 }
 
-.eyebrow::before {
-  width: 44px;
-  height: 1px;
-  background: var(--color-black);
-  content: "";
-}
-
 .eyebrow strong {
   color: var(--color-orange);
   font-weight: 500;
@@ -492,7 +485,7 @@
     line-height: 1.5;
   }
 
-  .eyebrow::before {
+  .eyebrow :global(.heroDash) {
     width: 28px;
     margin-top: 8px;
     flex: 0 0 auto;

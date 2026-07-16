@@ -171,17 +171,42 @@
 
 @media (max-width: 700px) {
   .hero {
+    position: relative;
+    min-height: min(720px, calc(100svh - var(--header-height)));
     height: auto;
     grid-template-columns: 1fr;
   }
 
   .copy {
-    order: 1;
-    min-height: 530px;
-    padding-top: 42px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-height: min(720px, calc(100svh - var(--header-height)));
+    align-items: flex-end;
+    padding-top: 280px;
+    padding-bottom: 42px;
+    overflow: hidden;
+  }
+
+  .copy::before {
+    position: absolute;
+    z-index: 0;
+    inset: auto 0 0;
+    height: 60%;
+    background: linear-gradient(
+      180deg,
+      rgb(248 245 240 / 0%) 0%,
+      rgb(248 245 240 / 75%) 20%,
+      rgb(248 245 240 / 100%) 70%,
+      rgb(248 245 240 / 100%) 100%
+    );
+    content: "";
+    pointer-events: none;
   }
 
   .copyInner {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: auto;
     min-height: 0;
@@ -204,24 +229,29 @@
   }
 
   .portrait {
-    order: 2;
-    height: min(110vw, 520px);
-    min-height: 390px;
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    pointer-events: none;
   }
 
   .portraitImage {
-    right: 50%;
+    right: 48%;
+    bottom: 64px;
     width: auto;
     max-width: none;
-    height: 100%;
+    height: min(100%, 640px);
     transform: translateX(50%);
   }
 }
 
 @media (max-width: 560px) {
   .copy {
-    min-height: 525px;
-    padding-block: 42px 36px;
+    min-height: min(690px, calc(100svh - var(--header-height)));
+    padding-block: 260px 36px;
   }
 
   .copyInner {
@@ -242,7 +272,13 @@
   }
 
   .portrait {
-    height: 450px;
-    min-height: 450px;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .portraitImage {
+    right: 45%;
+    bottom: 72px;
+    height: min(100%, 610px);
   }
 }
