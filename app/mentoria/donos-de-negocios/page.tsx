@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 const contactClientsHref = "/contato/clientes";
+const chrisVideoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
 export default function BusinessOwnersMentorshipPage() {
   return (
@@ -343,6 +344,7 @@ export default function BusinessOwnersMentorshipPage() {
                   className={styles.videoPlaceholder}
                   title="Chris Gontigo"
                   thumbnail="/images/mentorship/chris.png"
+                  videoUrl={chrisVideoUrl}
                   aspectRatio="430 / 628"
                   sizes="(max-width: 768px) 100vw, 430px"
                 />

@@ -493,7 +493,8 @@
   inset: 0;
   z-index: -1;
   display: grid;
-  overflow: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: #52514f;
   opacity: 0;
   pointer-events: none;
@@ -514,6 +515,7 @@
   display: grid;
   width: min(40vw, 560px);
   min-width: 390px;
+  min-height: 100svh;
   align-content: center;
   padding: clamp(48px, 6vw, 88px) clamp(44px, 7vw, 108px);
   background: var(--color-white);
@@ -575,6 +577,13 @@
   grid-row: 1;
   justify-self: stretch;
   margin-left: min(40vw, 560px);
+}
+
+@media (max-height: 760px) and (min-width: 561px) {
+  .mobileNav,
+  .menuAside {
+    align-content: start;
+  }
 }
 
 .menuContentGrid,
@@ -792,6 +801,7 @@
   .mobileNav {
     width: 46vw;
     min-width: 330px;
+    min-height: calc(100svh - var(--header-height));
     padding-inline: clamp(30px, 6vw, 72px);
     clip-path: polygon(0 0, 100% 0, calc(100% - 48px) 100%, 0 100%);
   }
@@ -854,6 +864,7 @@
   .mobileNav {
     width: 100%;
     min-width: 0;
+    min-height: 0;
     padding: 92px 28px 28px;
     clip-path: none;
   }

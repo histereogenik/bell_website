@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import styles from "./VideoThumbnail.module.css";
 
 type VideoThumbnailProps = {
@@ -55,11 +55,30 @@ export function VideoThumbnail({
   sizes = "(max-width: 768px) 100vw, 33vw",
 }: VideoThumbnailProps) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLDivElement>(null);
   const embedUrl = useMemo(() => getYouTubeEmbedUrl(videoUrl), [videoUrl]);
   const style = { "--video-aspect-ratio": aspectRatio } as CSSProperties;
 
+  useEffect(() => {
+    if (!isPlaying) return;
+
+    function handlePointerDown(event: PointerEvent) {
+      const target = event.target;
+
+      if (target instanceof Node && !videoRef.current?.contains(target)) {
+        setIsPlaying(false);
+      }
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, [isPlaying]);
+
   return (
-    <div className={`${styles.video} ${className ?? ""}`} style={style}>
+    <div className={`${styles.video} ${className ?? ""}`} style={style} ref={videoRef}>
       {isPlaying && embedUrl ? (
         <iframe
           src={embedUrl}
