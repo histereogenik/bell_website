@@ -58,6 +58,16 @@ function buildShareLinks(article: Article) {
   ];
 }
 
+function renderInlineText(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
+    }
+
+    return part;
+  });
+}
+
 export default async function ArticlePage({
   params,
 }: PageProps<"/direto-ao-ponto/[slug]">) {
@@ -94,7 +104,9 @@ export default async function ArticlePage({
                 <em>Direto ao Ponto</em>
                 <b aria-hidden="true">→</b>
               </Link>
-              <h1 id="article-title">{article.title}</h1>
+              <h1 id="article-title">
+                <span className={styles.heroTitleText}>{article.title}</span>
+              </h1>
 
               <div className={styles.heroBottom}>
                 <aside className={styles.shareRail} aria-label="Compartilhar">
@@ -170,8 +182,8 @@ export default async function ArticlePage({
                     className={styles.sectionImage}
                     src={section.image.src}
                     alt={section.image.alt}
-                    width={942}
-                    height={992}
+                    width={section.image.width ?? 942}
+                    height={section.image.height ?? 992}
                     sizes="(max-width: 900px) 100vw, 520px"
                   />
                 )}
@@ -180,9 +192,9 @@ export default async function ArticlePage({
                   {section.paragraphs?.map((paragraph) => (
                     <p key={paragraph}>
                       {paragraph.split("\n").map((line, index) => (
-                        <span key={line}>
+                        <span key={`${line}-${index}`}>
                           {index > 0 && <br />}
-                          {line}
+                          {renderInlineText(line)}
                         </span>
                       ))}
                     </p>
