@@ -1,3 +1,4 @@
+import { crmNaoESoftwareEMemoriaArticle } from "./crm-nao-e-software-e-memoria";
 import { erroSilenciosoDonoCarregarEmpresaArticle } from "./erro-silencioso-dono-carregar-empresa";
 import { quandoOSucessoPedeMaisEstruturaArticle } from "./quando-o-sucesso-pede-mais-estrutura";
 import { objetivoInegociavelDiferencaEntreQuemDecideEQuemSoDesejaArticle } from "./objetivo-inegociavel-diferenca-entre-quem-decide-e-quem-so-deseja";
@@ -13,6 +14,7 @@ export const articles: Article[] = [
   quandoOSucessoPedeMaisEstruturaArticle,
   voceConheceOsNumerosDoSeuNegocioArticle,
   objetivoInegociavelDiferencaEntreQuemDecideEQuemSoDesejaArticle,
+  crmNaoESoftwareEMemoriaArticle,
 ];
 
 export function getArticleBySlug(slug: string) {
