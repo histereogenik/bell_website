@@ -1,4 +1,5 @@
 import { erroSilenciosoDonoCarregarEmpresaArticle } from "./erro-silencioso-dono-carregar-empresa";
+import { quandoOSucessoPedeMaisEstruturaArticle } from "./quando-o-sucesso-pede-mais-estrutura";
 import { venderNaoEEmpurrarArticle } from "./vender-nao-e-empurrar";
 import type { Article } from "./types";
 
@@ -7,6 +8,7 @@ export type { Article, ArticleImage, ArticleSection, ArticleTopic } from "./type
 export const articles: Article[] = [
   erroSilenciosoDonoCarregarEmpresaArticle,
   venderNaoEEmpurrarArticle,
+  quandoOSucessoPedeMaisEstruturaArticle,
 ];
 
 export function getArticleBySlug(slug: string) {
