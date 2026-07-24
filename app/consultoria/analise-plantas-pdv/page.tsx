@@ -4,6 +4,7 @@ import { ConsultingHero } from "@/components/consulting/ConsultingHero";
 import { FinalCtaSection } from "@/components/layout/FinalCtaSection";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     "Consultoria estratégica para alinhar projeto de arquitetura, visão comercial e experiência do cliente no ponto de venda.",
 };
 
-const contactClientsHref = "/contato/clientes";
+const pdvAnalysisWhatsAppHref = createBellWhatsAppHref(
+  "Olá, Bell! Quero saber se meu projeto está realmente preparado para vender e não apenas para ficar bonito. Podemos agendar um bate-papo sobre a análise da planta do meu PDV?",
+);
 
 const processSteps = [
   {
@@ -66,7 +69,8 @@ export default function PdvPlansAnalysisConsultingPage() {
           ctaLayout="column"
           primaryCta={{
             label: "Conheça essa solução",
-            href: contactClientsHref,
+            href: pdvAnalysisWhatsAppHref,
+            ...whatsappLinkProps,
           }}
           secondaryCta={{
             label: "Como funciona",
@@ -128,7 +132,8 @@ export default function PdvPlansAnalysisConsultingPage() {
 
         <FinalCtaSection
           titleId="analysis-final-cta-title"
-          href={contactClientsHref}
+          href={pdvAnalysisWhatsAppHref}
+          {...whatsappLinkProps}
           buttonLabel="Quero conversar com a Bell"
           title={
             <>

@@ -96,7 +96,7 @@ export function ContactPartnersForm() {
         type="submit"
         disabled={status === "loading"}
       >
-        {status === "loading" ? "Enviando..." : "Quero conversar com a Bell"}
+        {status === "loading" ? "Enviando..." : "ENVIAR"}
       </button>
 
       {message ? (

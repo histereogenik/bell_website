@@ -4,6 +4,7 @@ import { FinalCtaSection } from "@/components/layout/FinalCtaSection";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import { CtaButton } from "@/components/ui/CtaButton";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -11,6 +12,10 @@ export const metadata: Metadata = {
   description:
     "Treinamentos em negociação e vendas com formato de workshop, exercícios práticos e aplicação orientada para equipes comerciais.",
 };
+
+const trainingsWhatsAppHref = createBellWhatsAppHref(
+  "Olá, Bell! Quero colocar minha equipe em ação e transformar o treinamento em resultado na prática. Vamos marcar um bate papo?",
+);
 
 export default function TrainingsPage() {
   return (
@@ -65,7 +70,11 @@ export default function TrainingsPage() {
               </p>
             </div>
 
-            <CtaButton className={styles.heroCta} href="/contato/clientes">
+            <CtaButton
+              className={styles.heroCta}
+              href={trainingsWhatsAppHref}
+              {...whatsappLinkProps}
+            >
               Quero minha equipe performando melhor
             </CtaButton>
           </div>
@@ -282,7 +291,8 @@ export default function TrainingsPage() {
             </>
           }
           buttonLabel="Agende com Bell"
-          href="/contato/clientes"
+          href={trainingsWhatsAppHref}
+          {...whatsappLinkProps}
           titleId="trainings-final-cta-title"
         />
       </main>

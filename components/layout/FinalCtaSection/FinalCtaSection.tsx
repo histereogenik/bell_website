@@ -7,6 +7,8 @@ type FinalCtaSectionProps = {
   description?: ReactNode;
   buttonLabel: string;
   href: string;
+  target?: string;
+  rel?: string;
   titleId?: string;
 };
 
@@ -15,6 +17,8 @@ export function FinalCtaSection({
   description,
   buttonLabel,
   href,
+  target,
+  rel,
   titleId = "final-cta-title",
 }: FinalCtaSectionProps) {
   return (
@@ -22,7 +26,7 @@ export function FinalCtaSection({
       <div className={`container ${styles.inner}`}>
         <h2 id={titleId}>{title}</h2>
         {description ? <p>{description}</p> : null}
-        <CtaButton className={styles.button} href={href}>
+        <CtaButton className={styles.button} href={href} target={target} rel={rel}>
           {buttonLabel}
         </CtaButton>
       </div>

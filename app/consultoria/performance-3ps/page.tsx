@@ -4,6 +4,7 @@ import { ConsultingHero } from "@/components/consulting/ConsultingHero";
 import { FinalCtaSection } from "@/components/layout/FinalCtaSection";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -13,6 +14,9 @@ export const metadata: Metadata = {
 };
 
 const contactClientsHref = "/contato/clientes";
+const performanceWhatsAppHref = createBellWhatsAppHref(
+  "Olá, Bell! Quero avaliar se pessoas, processos e produtos estão realmente alinhados para o crescimento do meu negócio. Podemos agendar um bate-papo?",
+);
 
 const buildTogetherItems = [
   {
@@ -79,7 +83,8 @@ export default function Performance3PsConsultingPage() {
           scrimVariant="strategy"
           primaryCta={{
             label: "Quero falar com Bell",
-            href: contactClientsHref,
+            href: performanceWhatsAppHref,
+            ...whatsappLinkProps,
           }}
           title={
             <>
