@@ -28,6 +28,14 @@ export const quandoOSucessoPedeMaisEstruturaArticle: Article = {
     {
       id: "fila-oportunidades",
       title: "A fila que escondia oportunidades",
+      paragraphs: [
+        "Observando melhor, percebi que a mesma fila servia para fazer o pedido, pagar e retirar a bebida. O cliente chegava ao balcão, escolhia os ingredientes diante dos liquidificadores e aguardava o preparo. A equipe trabalhava em ritmo acelerado para acompanhar o movimento, mas cada pedido levava cerca de dois minutos e meio para ser batido no liquidificador.",
+        "A dedicação da equipe, a força do produto e o volume de vendas já estavam evidentes, e percebi que a operação ainda não conseguia transformar todo aquele movimento em informação confiável para orientar decisões.",
+        "Não estou falando de tecnologia para substituir pessoas ou descaracterizar um negócio “raiz” que já funciona, pensei em informação para compreender melhor aquilo que o quiosque já havia conquistado.",
+      ],
+    },
+    {
+      id: "oportunidades",
       layout: "image-left",
       image: {
         src: "/images/posts/art_3/image_1.webp",
@@ -36,9 +44,6 @@ export const quandoOSucessoPedeMaisEstruturaArticle: Article = {
         height: 1254,
       },
       paragraphs: [
-        "Observando melhor, percebi que a mesma fila servia para fazer o pedido, pagar e retirar a bebida. O cliente chegava ao balcão, escolhia os ingredientes diante dos liquidificadores e aguardava o preparo. A equipe trabalhava em ritmo acelerado para acompanhar o movimento, mas cada pedido levava cerca de dois minutos e meio para ser batido no liquidificador.",
-        "A dedicação da equipe, a força do produto e o volume de vendas já estavam evidentes, e percebi que a operação ainda não conseguia transformar todo aquele movimento em informação confiável para orientar decisões.",
-        "Não estou falando de tecnologia para substituir pessoas ou descaracterizar um negócio “raiz” que já funciona, pensei em informação para compreender melhor aquilo que o quiosque já havia conquistado.",
         "Oportunidades\nSem registros estruturados, como o proprietário saberia, com precisão, quais eram os horários de maior movimento, quais sabores tinham melhor saída, quais combinações proporcionavam maior margem e quanto tempo transcorria entre o pedido e a entrega?",
         "Como definir a escala de equipe mais adequada para cada horário? Quais etapas poderiam ser adiantadas antes da abertura? Quais ingredientes estavam sobrando e quais corriam o risco de faltar? E havia uma pergunta crucial: quanto cada cliente gastava, em média?",
         "Imagine que o ticket médio aumentasse apenas R$ 2 em uma operação com 500 vendas diárias. Isso representaria R$ 1 mil a mais por dia, sem que o quiosque precisasse atrair um único cliente novo.",
