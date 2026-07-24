@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { VideoThumbnail } from "@/components/ui/VideoThumbnail";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     "Mentoria estratégica para donos de negócios que buscam clareza para vender, liderar e crescer com direção.",
 };
 
-const contactClientsHref = "/contato/clientes";
+const businessMentorshipHref = createBellWhatsAppHref(
+  "Olá, Bell! Conheci seu trabalho pelo site e gostaria de agendar um bate-papo sobre a mentoria para donos de negócios.",
+);
 const chrisVideoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
 export default function BusinessOwnersMentorshipPage() {
@@ -57,7 +60,11 @@ export default function BusinessOwnersMentorshipPage() {
               e transformar ruídos em próximos passos claros para vender,
               liderar e crescer com direção.
             </p>
-            <CtaButton className={styles.heroCta} href={contactClientsHref} />
+            <CtaButton
+              className={styles.heroCta}
+              href={businessMentorshipHref}
+              {...whatsappLinkProps}
+            />
           </div>
         </section>
 
@@ -88,8 +95,9 @@ export default function BusinessOwnersMentorshipPage() {
               </p>
               <CtaButton
                 className={styles.introCta}
-                href={contactClientsHref}
+                href={businessMentorshipHref}
                 variant="black"
+                {...whatsappLinkProps}
               />
             </div>
           </div>
@@ -204,8 +212,9 @@ export default function BusinessOwnersMentorshipPage() {
 
             <CtaButton
               className={styles.pillarsCta}
-              href={contactClientsHref}
+              href={businessMentorshipHref}
               variant="black"
+              {...whatsappLinkProps}
             />
           </div>
         </section>
@@ -438,7 +447,8 @@ export default function BusinessOwnersMentorshipPage() {
             </p>
             <CtaButton
               className={styles.finalCtaButton}
-              href={contactClientsHref}
+              href={businessMentorshipHref}
+              {...whatsappLinkProps}
             />
           </div>
         </section>

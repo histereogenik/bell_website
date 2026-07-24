@@ -4,6 +4,7 @@ import { VerticalTestimonialsCarousel } from "@/components/consulting/VerticalTe
 import { FinalCtaSection } from "@/components/layout/FinalCtaSection";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     "Consultoria estratégica para transformar intenção em direção clara, prática e aplicável.",
 };
 
-const contactClientsHref = "/contato/clientes";
+const strategyWhatsAppHref = createBellWhatsAppHref(
+  "Olá, Bell! Quero entender como o planejamento estratégico pode dar mais direção ao meu negócio. Podemos agendar uma conversa?",
+);
 
 const programContent = [
   {
@@ -81,7 +84,8 @@ export default function StrategicPlanningConsultingPage() {
           scrimVariant="strategy"
           primaryCta={{
             label: "Quero falar com Bell",
-            href: contactClientsHref,
+            href: strategyWhatsAppHref,
+            ...whatsappLinkProps,
           }}
           title={
             <>
@@ -134,7 +138,8 @@ export default function StrategicPlanningConsultingPage() {
 
         <FinalCtaSection
           titleId="strategy-final-cta-title"
-          href={contactClientsHref}
+          href={strategyWhatsAppHref}
+          {...whatsappLinkProps}
           buttonLabel="Solicite uma reunião para Bell entender seu momento"
           title={
             <>

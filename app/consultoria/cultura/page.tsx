@@ -4,6 +4,7 @@ import { ConsultingHero } from "@/components/consulting/ConsultingHero";
 import { FinalCtaSection } from "@/components/layout/FinalCtaSection";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -13,6 +14,9 @@ export const metadata: Metadata = {
 };
 
 const contactClientsHref = "/contato/clientes";
+const cultureWhatsAppHref = createBellWhatsAppHref(
+  "Olá, Bell! Conheci seu trabalho pelo site e gostaria de agendar um bate-papo sobre cultura organizacional.",
+);
 
 const culturePillars = [
   {
@@ -315,7 +319,8 @@ export default function CultureConsultingPage() {
 
         <FinalCtaSection
           titleId="culture-final-cta-title"
-          href={contactClientsHref}
+          href={cultureWhatsAppHref}
+          {...whatsappLinkProps}
           buttonLabel="Quero conversar com a Bell"
           title={
             <>

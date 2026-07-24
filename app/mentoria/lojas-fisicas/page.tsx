@@ -4,9 +4,12 @@ import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { VideoThumbnail } from "@/components/ui/VideoThumbnail";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
-const contactClientsHref = "/contato/clientes";
+const storeMentorshipHref = createBellWhatsAppHref(
+  "Olá, Bell! Conheci seu trabalho pelo site e gostaria de agendar um bate-papo sobre a mentoria para donas de lojas físicas.",
+);
 const imageBase = "/images/mentorship_store";
 
 export const metadata: Metadata = {
@@ -144,7 +147,11 @@ export default function StoreMentorshipPage() {
               mais preparados, organizados e responsáveis para vender mais sem
               depender da presença constante da dona.
             </p>
-            <CtaButton className={styles.heroCta} href={contactClientsHref}>
+            <CtaButton
+              className={styles.heroCta}
+              href={storeMentorshipHref}
+              {...whatsappLinkProps}
+            >
               Quero saber mais sobre a mentoria
             </CtaButton>
           </div>
@@ -221,8 +228,9 @@ export default function StoreMentorshipPage() {
                 </p>
                 <CtaButton
                   className={styles.realityCta}
-                  href={contactClientsHref}
+                  href={storeMentorshipHref}
                   variant="black"
+                  {...whatsappLinkProps}
                 >
                   Quero liderar melhor e vender mais
                 </CtaButton>
@@ -682,7 +690,11 @@ export default function StoreMentorshipPage() {
               uma loja que venda com mais método, clareza e consistência, sem
               tudo depender só de você.
             </p>
-            <CtaButton className={styles.finalCtaButton} href={contactClientsHref}>
+            <CtaButton
+              className={styles.finalCtaButton}
+              href={storeMentorshipHref}
+              {...whatsappLinkProps}
+            >
               Quero vender mais com o meu time
             </CtaButton>
           </div>

@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer/Footer";
 import { Header } from "@/components/layout/Header/Header";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { VideoThumbnail } from "@/components/ui/VideoThumbnail";
+import { createBellWhatsAppHref, whatsappLinkProps } from "@/utils/whatsapp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -12,6 +13,10 @@ export const metadata: Metadata = {
   description:
     "Palestras sobre liderança, vendas e gestão humanizada para eventos, empresas e equipes comerciais.",
 };
+
+const talksWhatsAppHref = createBellWhatsAppHref(
+  "Olá , Bell! Quero agendar um bate papo para contar um pouco sobre o meu evento e entendermos qual palestra e abordagem podem fazer mais sentido para o meu público.",
+);
 
 export default function TalksPage() {
   return (
@@ -166,7 +171,11 @@ export default function TalksPage() {
                 <span aria-hidden="true">→</span>
               </a>
 
-              <CtaButton className={styles.eventCta} href="/contato/clientes">
+              <CtaButton
+                className={styles.eventCta}
+                href={talksWhatsAppHref}
+                {...whatsappLinkProps}
+              >
                 Quero levar Bell ao meu evento
               </CtaButton>
             </div>
@@ -458,7 +467,8 @@ export default function TalksPage() {
             </>
           }
           buttonLabel="Quero Bell no meu evento"
-          href="/contato/clientes"
+          href={talksWhatsAppHref}
+          {...whatsappLinkProps}
           titleId="talks-final-cta-title"
         />
       </main>

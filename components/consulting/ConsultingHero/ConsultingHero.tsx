@@ -14,10 +14,14 @@ type ConsultingHeroProps = {
   primaryCta: {
     label: string;
     href: string;
+    target?: string;
+    rel?: string;
   };
   secondaryCta?: {
     label: string;
     href: string;
+    target?: string;
+    rel?: string;
   };
   ctaLayout?: "row" | "column";
   scrimVariant?: "default" | "strategy";
@@ -76,9 +80,20 @@ export function ConsultingHero({
         <h1 id="consulting-hero-title">{title}</h1>
         <p className={styles.description}>{description}</p>
         <div className={actionsClassName}>
-          <CtaButton href={primaryCta.href}>{primaryCta.label}</CtaButton>
+          <CtaButton
+            href={primaryCta.href}
+            target={primaryCta.target}
+            rel={primaryCta.rel}
+          >
+            {primaryCta.label}
+          </CtaButton>
           {secondaryCta ? (
-            <CtaButton href={secondaryCta.href} variant="black">
+            <CtaButton
+              href={secondaryCta.href}
+              target={secondaryCta.target}
+              rel={secondaryCta.rel}
+              variant="black"
+            >
               {secondaryCta.label}
             </CtaButton>
           ) : null}
