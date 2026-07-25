@@ -174,8 +174,9 @@
 }
 
 .aboutImage {
-  width: min(100%, 777px);
-  height: auto;
+  width: 100%;
+  height: clamp(420px, 51vw, 720px);
+  object-fit: cover;
   margin-inline: auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
@@ -696,6 +697,10 @@
 
   .aboutInner {
     padding-block: 64px 78px;
+  }
+
+  .aboutImage {
+    height: clamp(300px, 62vw, 520px);
   }
 
   .aboutCopy {
