@@ -40,7 +40,7 @@ export default function TalksPage() {
               className={styles.heroVideo}
               title="Vídeo de apresentação de palestras"
               thumbnail="/images/lectures/lecture_2.webp"
-              videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              videoUrl="https://www.youtube.com/watch?v=nRKYATuewRM"
               aspectRatio="12 / 7"
               sizes="100vw"
             />
@@ -113,11 +113,11 @@ export default function TalksPage() {
           <div className={`container ${styles.aboutInner}`}>
             <Image
               className={styles.aboutImage}
-              src="/images/lectures/lecture_1.webp"
+              src="/images/lectures/lecture_1_new.webp"
               alt="Bell Nacif palestrando para uma plateia em auditório."
-              width={777}
-              height={573}
-              sizes="(max-width: 980px) calc(100vw - 40px), 777px"
+              width={1024}
+              height={1024}
+              sizes="(max-width: 980px) calc(100vw - 40px), 1220px"
             />
 
             <div className={styles.aboutCopy}>

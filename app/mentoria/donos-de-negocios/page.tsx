@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const businessMentorshipHref = createBellWhatsAppHref(
   "Olá, Bell! Conheci seu trabalho pelo site e gostaria de agendar um bate-papo sobre a mentoria para donos de negócios.",
 );
-const chrisVideoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+const chrisVideoUrl = "https://www.youtube.com/shorts/jwVs27iILUw";
 
 export default function BusinessOwnersMentorshipPage() {
   return (
