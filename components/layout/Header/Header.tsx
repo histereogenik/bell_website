@@ -31,7 +31,7 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    description: "Contato profissional",
+    description: "Conecte-se comigo",
     href: "https://www.linkedin.com/in/bell-nacif/",
     icon: "/vectors/linkedin.png",
     width: 25,
