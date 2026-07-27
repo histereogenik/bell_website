@@ -87,6 +87,7 @@ export const erroSilenciosoDonoCarregarEmpresaArticle: Article = {
         ],
       },
     ],
+    questionsIntro: "Antes de cobrar mais da equipe, responda com sinceridade:",
     questions: [
       "Minha equipe sabe exatamente o que precisa fazer, como fazer e qual resultado se espera dela?",
       "Eu tenho processos claros de atendimento, vendas e rotina, ou tudo ainda depende da minha orientação diária?",

@@ -91,7 +91,7 @@ export default async function ArticlePage({
               src={article.coverImage}
               alt=""
               fill
-              priority
+              preload
               sizes="100vw"
               aria-hidden="true"
             />
@@ -224,7 +224,7 @@ export default async function ArticlePage({
               >
                 <div>
                   <h2 id="questions-title">Perguntas Transformadoras da Bell</h2>
-                  <p>Antes de cobrar mais da equipe, responda com sinceridade:</p>
+                  {article.questionsIntro ? <p>{article.questionsIntro}</p> : null}
                   <ol>
                     {article.questions.map((question) => (
                       <li key={question}>{question}</li>

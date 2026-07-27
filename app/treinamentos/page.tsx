@@ -287,7 +287,7 @@ export default function TrainingsPage() {
               <br className="desktopBreak" />{" "}
               treinamento ideal para o
               <br className="desktopBreak" />{" "}
-              momento de seu negócio?
+              momento do seu negócio?
             </>
           }
           buttonLabel="Agende com Bell"

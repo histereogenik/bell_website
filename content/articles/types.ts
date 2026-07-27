@@ -38,6 +38,7 @@ export type Article = {
   author: string;
   learningPoints: string[];
   sections: ArticleSection[];
+  questionsIntro?: string;
   questions?: string[];
   sources?: string[];
 };
