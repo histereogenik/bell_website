@@ -14,10 +14,10 @@ export function TestimonialHero() {
 
     const timer = window.setInterval(() => {
       setActiveIndex((current) => (current + 1) % testimonials.length);
-    }, 7000);
+    }, 11000);
 
     return () => window.clearInterval(timer);
-  }, []);
+  }, [activeIndex]);
 
   const active = testimonials[activeIndex];
 

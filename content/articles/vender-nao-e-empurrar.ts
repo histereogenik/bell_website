@@ -74,7 +74,7 @@ export const venderNaoEEmpurrarArticle: Article = {
         paragraphs: [
           "Alguns sinais aparecem rápido:\n• vendedores apresentam produtos e serviços antes de fazer perguntas;\n• clientes que pedem desconto logo no início da conversa;\n• atendimentos guiados só por prazo e desconto, sem espaço para entender o cliente;\n• equipes que confundem insistência com condução.",
           "Quando esses sinais se repetem, são um alerta e passam a revelar algo que merece atenção, porque impacta diretamente o resultado. Em vez de perguntar apenas “por que não vendemos?”, talvez a pergunta mais importante seja: **“como estamos ensinando a nossa equipe a vender?”**",
-          "Pressão funciona uma vez. Um vendedor fecha porque a cobrança aumentou, uma equipe acelera porque o mês está terminando, mas esse resultado não se sustenta. Um time pressionado vende quando alguém está olhando. Um time que aprendeu a servir, se interessar de verdade e de conduzir vende porque internalizou uma forma de se relacionar com o cliente.",
+          "Pressão funciona uma vez. Um vendedor fecha porque a cobrança aumentou, uma equipe acelera porque o mês está terminando, mas esse resultado não se sustenta. Um time pressionado vende quando alguém está olhando. Um time que aprendeu a servir, se interessar de verdade e sabe conduzir vende porque internalizou uma forma de se relacionar com o cliente.",
         ],
       },
       {

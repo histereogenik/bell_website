@@ -40,7 +40,7 @@ export default function TalksPage() {
               className={styles.heroVideo}
               title="Vídeo de apresentação de palestras"
               thumbnail="/images/lectures/lecture_2.webp"
-              videoUrl="https://www.youtube.com/watch?v=nRKYATuewRM"
+              videoUrl="https://www.youtube.com/watch?v=rsqc59vKiU0"
               aspectRatio="12 / 7"
               sizes="100vw"
             />

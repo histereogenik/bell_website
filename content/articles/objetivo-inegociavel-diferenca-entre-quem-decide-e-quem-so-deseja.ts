@@ -64,7 +64,9 @@ export const objetivoInegociavelDiferencaEntreQuemDecideEQuemSoDesejaArticle: Ar
       paragraphs: [
         "O caminho é sempre parecido: você pega uma meta vaga e adiciona prazo, métrica e responsável.",
         "**Veja como fica na prática:**",
-        "Ideia: melhorar o atendimento.\nMeta: aumentar a nota de satisfação.\nObjetivo Inegociável: até o fim do trimestre, 90% dos clientes avaliados precisam sair com nota 9 ou 10, toda avaliação abaixo disso será revisada semanalmente com o time e toda avaliação acima será celebrada com o time.",
+        "Ideia: melhorar o atendimento.",
+        "Meta: aumentar a nota de satisfação.",
+        "Objetivo Inegociável: até o fim do trimestre, 90% dos clientes avaliados precisam sair com nota 9 ou 10, toda avaliação abaixo disso será revisada semanalmente com o time e toda avaliação acima será celebrada com o time.",
         "Repare a diferença, a meta é bonita, mas não muda a rotina de ninguém. O Objetivo Inegociável já nasce com data, número e uma consequência prática para resultados positivos e negativos.",
       ],
     },
