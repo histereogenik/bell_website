@@ -2,7 +2,6 @@
 
 import { useSyncExternalStore } from "react";
 import Script from "next/script";
-import Link from "next/link";
 import styles from "./CookieConsent.module.css";
 
 type ConsentStatus = "accepted" | "rejected" | "pending";
@@ -93,27 +92,25 @@ export function CookieConsent({ gaId }: CookieConsentProps) {
           role="dialog"
         >
           <div className={styles.copy}>
-            <strong>Cookies de análise</strong>
+            <strong>Valorizamos a sua privacidade.</strong>
             <p>
-              Usamos cookies opcionais para entender a performance do site com
-              Google Analytics. Você pode aceitar ou recusar. Cookies técnicos
-              continuam ativos para o funcionamento básico.
+              Usamos cookies para melhorar sua experiência de navegação, exibir
+              anúncios ou conteúdo personalizados e analisar nosso tráfego. Ao
+              clicar em &quot;Aceitar tudo&quot;, você concorda com o uso de
+              cookies.
             </p>
-            <Link href="/politica-de-privacidade">
-              Ver política de privacidade
-            </Link>
           </div>
 
           <div className={styles.actions}>
             <button type="button" onClick={() => handleConsent("rejected")}>
-              Recusar
+              Rejeitar tudo
             </button>
             <button
               className={styles.primary}
               type="button"
               onClick={() => handleConsent("accepted")}
             >
-              Aceitar análise
+              Aceitar tudo
             </button>
           </div>
         </aside>

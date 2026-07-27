@@ -1,66 +1,58 @@
 .banner {
   position: fixed;
-  right: clamp(18px, 3vw, 40px);
-  bottom: clamp(18px, 3vw, 40px);
+  bottom: clamp(14px, 2vw, 28px);
+  left: clamp(14px, 3vw, 40px);
   z-index: 1200;
   display: grid;
-  width: min(640px, calc(100vw - 36px));
-  gap: 24px;
-  padding: clamp(22px, 3vw, 30px);
-  background: var(--color-black);
-  border: 1px solid rgb(255 255 255 / 12%);
-  border-radius: 16px;
-  box-shadow: 0 24px 70px rgb(0 0 0 / 22%);
+  width: min(500px, calc(100vw - 28px));
+  gap: 14px;
+  padding: clamp(15px, 1.67vw, 20px);
+  background: rgb(11 11 11 / 96%);
+  border: 1px solid rgb(255 90 0 / 42%);
+  border-radius: 4px;
+  box-shadow: 0 18px 60px rgb(0 0 0 / 28%);
   color: var(--color-white);
-  grid-template-columns: 1fr auto;
 }
 
 .copy {
   display: grid;
   gap: 8px;
+  padding-left: 12px;
+  border-left: 3px solid var(--color-orange);
 }
 
 .copy strong {
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(18px, 1.67vw, 24px);
+  font-size: clamp(18px, 1.39vw, 20px);
   font-weight: 800;
   line-height: 1.1;
 }
 
 .copy p {
-  max-width: 440px;
+  max-width: 100%;
   margin: 0;
   color: rgb(255 255 255 / 78%);
-  font-size: 14px;
+  font-size: clamp(13px, 0.97vw, 14px);
   line-height: 1.45;
 }
 
-.copy a {
-  width: fit-content;
-  color: var(--color-orange-soft);
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 .actions {
-  display: flex;
-  align-items: end;
-  gap: 10px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .actions button {
-  min-height: 44px;
-  padding: 12px 18px;
-  border: 1px solid rgb(255 255 255 / 22%);
-  border-radius: 7px;
+  min-height: 42px;
+  padding: 10px 16px;
+  border: 1px solid rgb(255 255 255 / 28%);
+  border-radius: 4px;
   background: transparent;
   color: var(--color-white);
   cursor: pointer;
   font-family: var(--font-display), sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   transition:
     background var(--transition-fast),
@@ -70,31 +62,33 @@
 }
 
 .actions button:hover {
-  border-color: var(--color-white);
+  border-color: var(--color-orange);
+  color: var(--color-orange-soft);
   transform: translateY(-1px);
 }
 
 .actions .primary {
   background: var(--color-orange);
   border-color: var(--color-orange);
+  color: var(--color-white);
 }
 
 .actions .primary:hover {
   background: var(--color-orange-hover);
   border-color: var(--color-orange-hover);
+  color: var(--color-white);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 560px) {
   .banner {
-    grid-template-columns: 1fr;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100vw - 20px);
+    gap: 12px;
+    padding: 16px;
   }
 
   .actions {
-    align-items: stretch;
-    flex-direction: column-reverse;
-  }
-
-  .actions button {
-    width: 100%;
+    grid-template-columns: 1fr;
   }
 }
