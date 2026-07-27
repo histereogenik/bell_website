@@ -14,7 +14,7 @@ import {
 import { HeaderSearch } from "./HeaderSearch";
 import styles from "./Header.module.css";
 
-const menuPosts = articleSearchItems.slice(0, 6);
+const menuPosts = articleSearchItems.slice(0, 3);
 const featuredPost =
   articleSearchItems.find((post) =>
     post.href.includes("erro-silencioso-dono-carregar-empresa"),
