@@ -21,9 +21,39 @@ export async function generateMetadata({
 
   if (!article) return {};
 
+  const articleUrl = getAbsoluteUrl(`/direto-ao-ponto/${article.slug}`);
+
   return {
     title: `${article.title} | Bell Nacif`,
     description: article.excerpt,
+    robots: {
+      index: false,
+      follow: false,
+    },
+    alternates: {
+      canonical: articleUrl,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      url: articleUrl,
+      siteName: "Bell Nacif",
+      locale: "pt_BR",
+      type: "article",
+      authors: [article.author],
+      images: [
+        {
+          url: article.coverImage,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+      images: [article.coverImage],
+    },
   };
 }
 

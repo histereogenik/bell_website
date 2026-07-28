@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "Direto ao Ponto | Bell Nacif",
   description:
     "Aprendizados práticos sobre liderança, vendas, gestão e varejo para aplicar na rotina do seu negócio.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function DirectToPointPage() {
