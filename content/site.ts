@@ -57,7 +57,7 @@ export const testimonials = [
   {
     quote:
       "Bell desempenha um trabalho de capacitação fora da curva, muito acima da média, conquistando a todos. Com insights rápidos, domina as ferramentas de gestão e vendas e é extremamente objetiva e adequada.",
-    author: "Sérgio Rossi",
+    author: "Sérgio Rosi",
     role: "Sócio-diretor, RCP Advogados",
   },
   {
